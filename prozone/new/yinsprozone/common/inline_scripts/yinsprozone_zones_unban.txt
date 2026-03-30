@@ -80,7 +80,7 @@ triggered_district_planet_modifier = {
 
 triggered_district_country_modifier = {
 	potential = {
-		has_building = buildings_yinsprozone_unban
+		has_building = buildings_yinsprozone_unban_1
 	}
 	country_resource_max_add = 3500	# 国家资源上限
 }

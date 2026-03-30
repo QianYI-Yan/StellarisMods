@@ -1,0 +1,806 @@
+
+zone_urban_energy_better_69 = {
+	icon = GFX_resource_energy_large
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no						# AI isn't great at handling these
+		}
+		NOT = {
+			#is_planet_class = pc_city
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+	}
+
+	included_building_sets = {
+		generator
+		urban
+		fallen_empire_generator
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_technician_produces_mult = 0.15
+		technician_jobs_bonus_workforce_mult = 0.05
+		planet_technician_energy_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#发电支持
+
+zone_urban_minerals_better_69 = {
+	icon = GFX_resource_minerals_large
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no						# AI isn't great at handling these
+		}
+		NOR = {
+			is_planet_class = pc_ringworld_habitable
+			is_planet_class = pc_city
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	zone_sets = {
+		urban
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	included_building_sets = {
+		mining
+		urban
+		fallen_empire_mining
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_miners_produces_mult = 0.15
+		miner_jobs_bonus_workforce_mult = 0.05
+		planet_miners_minerals_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#采矿支持
+
+zone_urban_food_better_69 = {
+	icon = GFX_resource_food_large
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no						# AI isn't great at handling these
+		}
+		NOT = {
+			is_planet_class = pc_city
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+	}
+
+	included_building_sets = {
+		farming
+		hydroponics
+		urban
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_farmers_produces_mult = 0.15
+		farmer_jobs_bonus_workforce_mult = 0.05
+		planet_farmers_food_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#农业支持
+
+zone_urban_industrial_69 = {
+	icon = GFX_colony_type_industrial
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+			country_uses_consumer_goods = yes
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+			country_uses_consumer_goods = yes
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		industrial
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_artisans_produces_mult = 0.2
+		planet_metallurgists_produces_mult = 0.2
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#混合工业支持
+
+zone_urban_foundry_69 = {
+	icon = GFX_colony_type_foundry
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		foundry
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_metallurgists_produces_mult = 0.15
+		foundry_jobs_bonus_workforce_mult = 0.05
+		planet_metallurgists_alloys_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#冶金支持
+
+zone_urban_factory_69 = {
+	icon = GFX_colony_type_factory
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+			country_uses_consumer_goods = yes
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			#is_wilderness_empire = no
+			is_ai = no
+			country_uses_consumer_goods = yes
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		factory
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_artisans_produces_mult = 0.15
+		artisan_jobs_bonus_workforce_mult = 0.05
+		planet_artisans_consumer_goods_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#工厂支持
+
+zone_urban_research_69 = {
+	icon = GFX_colony_type_research
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		research
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_researchers_produces_mult = 0.2
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#研究支持
+
+zone_urban_physics_69 = {
+	icon = GFX_job_physicist
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		physics
+		research
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_physicists_produces_mult = 0.15
+		physicist_jobs_bonus_workforce_mult = 0.05
+		planet_physicists_physics_research_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#物理学支持
+
+zone_urban_society_69 = {
+	icon = GFX_job_biologist
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		physics
+		research
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_biologists_produces_mult = 0.15
+		biologist_jobs_bonus_workforce_mult = 0.05
+		planet_biologists_society_research_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#社会学支持
+
+zone_urban_engineering_69 = {
+	icon = GFX_job_engineer
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		physics
+		research
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_engineers_produces_mult = 0.15
+		engineer_jobs_bonus_workforce_mult = 0.05
+		planet_engineers_engineering_research_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#工程学支持
+
+zone_urban_unity_69 = {
+	icon = GFX_colony_type_bureaucratic
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+	}
+
+	included_building_sets = {
+		unity
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_bureaucrats_produces_mult = 0.15
+		bureaucrat_jobs_bonus_workforce_mult = 0.05
+		planet_bureaucrats_unity_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#凝聚力支持
+
+zone_urban_trade_69 = {
+	icon = GFX_resource_trade_large
+	base_buildtime = 360
+	potential = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	unlock = { # planet scope
+		hidden_trigger = { exists = owner }
+		owner = {
+			is_wilderness_empire = no
+			is_ai = no
+		}
+	}
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = 1000
+		}
+	}
+
+	inline_script = {
+		script = jobs/zone_trader_add
+		AMOUNT = 50
+	}
+
+	max_buildings = 3
+
+	zone_sets = {
+		urban
+		habitat_urban
+		resort
+	}
+
+	included_building_sets = {
+		urban
+		trade
+		urban_automation
+		origin
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_traders_produces_mult = 0.15
+		trader_jobs_bonus_workforce_mult = 0.05
+		planet_traders_trade_produces_add = 0.1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_urban_triggered_desc
+	}
+}#贸易支持
+
+
+
+
+
+
+
+
+
+
+
+
+

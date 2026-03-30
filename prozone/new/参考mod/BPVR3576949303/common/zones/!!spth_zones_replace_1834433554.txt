@@ -1,0 +1,98 @@
+inline_script = {
+    script = zones/spth_common_zones ID = spth_human_village
+    minerals = 500 energy = 2 max_bld = @BPV_ZONE_SLOT
+    ptl = "OR = { uses_district_set = standard uses_district_set = shattered_ring_world }"
+    zone_sets = ""
+}
+inline_script = {
+    script = zones/spth_common_zones ID = spth_generic_factory
+    minerals = 500 energy = 2 max_bld = @BPV_ZONE_SLOT
+    ptl = "OR = { uses_district_set = standard uses_district_set = shattered_ring_world }"
+    zone_sets = "spth_generic_factory"
+}
+inline_script = {
+    script = zones/spth_common_zones ID = spth_sp_produce
+    minerals = 1000 energy = 5 max_bld = @BPV_CITY_SLOT
+    ptl = "spth_use_spth_sp_produce_6_bld_zone = yes"
+    zone_sets = "spth_sp_produce"
+}
+spth_sp_produce_common_zone = {
+    icon = GFX_district_gensokyo
+    base_buildtime = 30
+    potential = {
+        spth_check_gensokyo_auth = yes
+        spth_use_spth_sp_produce_6_bld_zone = no
+    }
+    unlock = { always = yes }
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = 1000
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+    max_buildings = @BPV_CITY_SLOT
+    include = {
+        all
+    }
+    excluded_building_sets = {
+        knights
+    }
+    zone_sets = {
+        spth_sp_produce
+    }
+}
+
+# gensokyo city
+inline_script = { script = zones/spth_city_zones ID = gensokyo_jinja max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_city_zones ID = gensokyo_tushu max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_city_zones ID = gensokyo_jiqiao max_bld = @BPV_ZONE_SLOT }
+# gensokyo planet
+inline_script = { script = zones/spth_planet_zones ID = gensokyo_mosen max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_planet_zones ID = gensokyo_yaoguai max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_planet_zones ID = gensokyo_misty_lake max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_planet_zones ID = gensokyo_genbu_ravine max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_planet_zones ID = gensokyo_kyuuto max_bld = @BPV_CITY_SLOT }
+# gensokyo planet - extra
+# 
+# 
+# 
+# 
+# 
+# both
+gensokyo_renli_zone = {
+    icon = GFX_district_gensokyo
+    base_buildtime = 30
+    potential = {
+        OR = {
+            uses_district_set = gensokyo_planet
+            uses_district_set = gensokyo_city
+            has_planet_flag = has_shell_world_touhou_gensokyo_city
+        }
+    }
+    unlock = { always = yes }
+    inline_script = { script = zones/spth_rss_tbl_gensokyo_renli }
+    max_buildings = @BPV_ZONE_SLOT
+    include = {
+        all
+    }
+    excluded_building_sets = {
+        knights
+    }
+    ai_priority = 10
+}
+# megastructure
+inline_script = { script = zones/spth_mega_zones ID = space_shrine_sp_produce_base dis_set = mega_space_shrine_habitat max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_mega_zones ID = space_shrine_sp_produce_array dis_set = mega_space_shrine_habitat max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_mega_zones ID = torifune_shrine_fuka_produce_base dis_set = mega_torifune_shrine_habitat max_bld = @BPV_CITY_SLOT }
+inline_script = { script = zones/spth_mega_zones ID = torifune_shrine_fuka_produce_array dis_set = mega_torifune_shrine_habitat max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_mega_zones ID = torifune_shrine_research_produce_base dis_set = mega_torifune_shrine_habitat max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_mega_zones ID = torifune_shrine_research_produce_array dis_set = mega_torifune_shrine_habitat max_bld = @BPV_ZONE_SLOT }
+# habitat
+inline_script = { script = zones/spth_habitat_zones ID = spiritual_power_research max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_habitat_zones ID = spiritual_power_forge max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_habitat_zones ID = spiritual_power_housing max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_habitat_zones ID = spiritual_power_resources max_bld = @BPV_ZONE_SLOT }
+inline_script = { script = zones/spth_habitat_zones ID = spiritual_power_natural max_bld = @BPV_ZONE_SLOT }

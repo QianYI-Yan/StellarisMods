@@ -1,0 +1,205 @@
+# 领导层/管理类
+administrator          # 管理员
+coordinator           # 协调者
+executive             # 执行官
+manager               # 经理
+noble                 # 贵族
+high_priest           # 高阶祭司
+
+# 专家/专业类
+artisan               # 工匠
+artist                # 艺术家（注：原列表中未单独出现，可能包含在文化工作者中）
+calculator            # 计算者
+chemist               # 化学家
+culture_worker        # 文化工作者
+dimensional_portal_researcher      # 维度门户研究员
+dimensional_portal_researcher_gestalt  # 格式塔维度门户研究员
+duelist               # 决斗者
+enforcer              # 执法者
+entertainer           # 演艺人员
+fabricator            # 制造工
+gas_extraction_drone  # 气体采集无人机（专业）
+head_researcher       # 首席研究员
+healthcare            # 医护人员
+merchant              # 商人
+mote_harvester        # 微尘收集者
+preacher              # 传教士
+priest                # 祭司
+refiner               # 精炼工
+replicator            # 复制者
+researcher            # 研究员
+roboticist            # 机器人专家
+soldier               # 士兵
+technician            # 技师
+telepath              # 心灵感应者
+translucer            # 转换者（能量相关）
+
+# 劳动者/基础生产类
+clerk                 # 职员
+colonist              # 殖民者
+crystal_miner         # 水晶矿工
+extractor             # 提取工
+farmer                # 农民
+foundry               # 铸造工
+hunter_gatherer       # 狩猎采集者
+miner                 # 矿工
+peasant               # 农民（封建）
+refiner_drone         # 精炼无人机
+servant               # 仆人
+technician_drone      # 技师无人机
+
+# 无人机/机器人专用类
+agri_drone            # 农业无人机
+alloy_drone           # 合金无人机
+artisan_drone         # 工匠无人机
+brain_drone           # 脑控无人机
+chemist_drone         # 化学家无人机
+corrupt_drone         # 腐化无人机
+crystal_mining_drone  # 水晶采矿无人机
+deviant_drone         # 异常无人机
+extractor_drone       # 采集无人机（注：原列表未单独出现）
+fe_guardian_bot       # 堕落帝国守卫机器人
+fe_maintenance_bot    # 堕落帝国维护机器人
+maintenance_drone     # 维护无人机
+mining_drone          # 采矿无人机
+mote_harvesting_drone # 微尘采集无人机
+odd_factory_drone     # 异常工厂无人机
+patrol_drone          # 巡逻无人机
+spawning_drone        # 繁殖无人机
+synapse_drone         # 突触无人机（虫群）
+translucer_drone      # 转换者无人机
+underground_contact_drone  # 地下联络无人机
+
+# 奴隶类
+slave_overseer        # 奴隶监工
+slave_toiler          # 奴隶苦工
+
+#  purge/清除相关
+crisis_purge          # 危机清除
+event_purge           # 事件清除
+purge                 # 清除
+
+# 蜂群/同化相关
+assimilation          # 同化中人口
+bio_trophy            # 生物战利品（蜂巢收藏品）
+
+# 犯罪/异常类
+criminal              # 罪犯
+deviant_drone         # 异常无人机（已列）
+odd_factory_worker    # 异常工厂工人
+
+# 堕落帝国专用
+fe_acolyte_artisan    # 堕落帝国艺徒工匠
+fe_acolyte_farm       # 堕落帝国艺徒农民
+fe_acolyte_generator  # 堕落帝国艺徒发电工
+fe_acolyte_mine       # 堕落帝国艺徒矿工
+fe_archivist          # 堕落帝国档案员
+fe_augur              # 堕落帝国占卜师
+fe_hedonist           # 堕落帝国享乐者
+fe_overseer           # 堕落帝国监工
+fe_protector          # 堕落帝国守护者
+fe_sky_cardinal       # 堕落帝国天空主教
+fe_xeno_keeper        # 堕落帝国异族保管者
+fe_xeno_ward          # 堕落帝国异族监护员
+
+# 原始文明专用
+primitive_bureaucrat  # 原始官僚
+primitive_farmer      # 原始农民
+primitive_laborer     # 原始劳工
+primitive_miner       # 原始矿工
+primitive_noble       # 原始贵族
+primitive_priest      # 原始祭司
+primitive_priest_2    # 原始祭司（变体）
+primitive_researcher  # 原始研究员
+primitive_researcher_2# 原始研究员（变体）
+primitive_technician  # 原始技师
+primitive_warrior     # 原始战士
+primitive_warrior_2   # 原始战士（变体）
+
+# 特殊/事件类
+livestock             # 牲畜
+organic_battery       # 有机电池
+pre_sapient           # 前智慧物种
+ratling_scavenger     # 鼠人拾荒者
+underground_trade_worker  # 地下贸易工人
+warrior_drone         # 战士无人机
+
+
+# 政客
+job_politician_add = 100
+# 执行官
+job_executive_add = 100
+# 大司祭
+job_high_priest_add = 100
+# 贵族
+job_noble_add = 100
+# 商人
+job_merchant_add = 100
+
+
+# 医务工作者
+job_healthcare_add = 100
+# 执法者
+job_enforcer_add = 100
+# 教育家
+job_educator_add = 100
+# 灵能使
+job_telepath_add = 100
+# 灵能导师
+job_educator_telepath_add = 100
+
+
+# 冶金师
+job_foundry_add = 100
+# 工匠
+job_artisan_add = 100
+
+
+# 物理学家
+job_physicist_add = 100
+# 星界气象学家
+job_astral_meteorologist_add = 100
+# 生物学家
+job_biologist_add = 100
+# 动物园饲养员
+job_xeno_zoo_keeper_add = 100
+# 护林员
+job_ranger_add = 100
+# 工程学家
+job_engineer_add = 100
+
+
+# 商贩
+job_trader_add = 100
+# 演艺人员
+job_entertainer_add = 100
+
+
+# 官僚
+job_bureaucrat_add = 100
+# 文化工作者
+job_culture_worker_add = 100
+# 祭司
+job_priest_add = 100
+# 经理
+job_manager_plural_add = 100
+# 管务员
+job_steward_add = 100
+# 统一干事
+job_unifier_add = 100
+
+
+# 技工
+job_technician_add = 100
+# 微粒捕获工
+job_mote_harvester_add = 100
+# 矿工
+job_miner_add = 100
+# 水晶矿工
+job_crystal_miner_add = 100
+# 农夫
+job_farmer_add = 100
+# 气体采集工
+job_gas_extractor_add = 100
+# 士兵
+job_soldier_add = 100

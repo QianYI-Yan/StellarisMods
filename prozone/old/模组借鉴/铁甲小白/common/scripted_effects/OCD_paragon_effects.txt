@@ -1,0 +1,535 @@
+create_official_delegate = {
+		create_leader = {
+			name = subclass_official_delegate 					#帝国代表
+			# species = from
+			# gender = male
+			class = official
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_official_delegate_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+			traits = {
+				trait = subclass_official_delegate 				#帝国代表
+				trait = leader_trait_diplo_weight 				#无上庄严 Gravitas
+				trait = leader_trait_supporting_voter 			#相互支持 Mutual Support
+				trait = leader_trait_federal_negotiator_3
+				trait = leader_trait_federal_greeter_3
+				trait = leader_trait_federal_sweet_talker_3
+				trait = leader_trait_federal_joint_navy_3
+				trait = leader_trait_resolution_category_commerce_focus_3
+				trait = leader_trait_resolution_category_industry_focus_3
+				trait = leader_trait_resolution_category_politics_traditions_focus_3
+				trait = leader_trait_resolution_category_greatergood_focus_3
+				trait = leader_trait_resolution_category_galacticreforms_focus_3
+				trait = leader_trait_resolution_category_ecology_focus_3
+				trait = leader_trait_resolution_category_galacticstudies_focus_3
+				trait = leader_trait_resolution_category_divinity_focus_3
+				trait = leader_trait_resolution_category_mutualdefense_focus_3
+				trait = leader_trait_resolution_category_rulesofwar_focus_3
+				trait = leader_trait_resolution_category_defenseprivatization_focus_3
+				trait = leader_trait_resolution_category_intergalacticdirective_focus_3
+				trait = leader_trait_resolution_category_bureaucraticsurveillance_focus_3
+				trait = leader_trait_resolution_category_pre_ftl_stances_focus_3
+				trait = leader_trait_resolution_category_sanctions_focus_3
+			}
+		}
+}
+
+create_official_governor = {
+		create_leader = {
+			name = subclass_official_governor 					#产业专员
+			# species = from
+			# gender = male
+			class = official
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_official_governor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_official_governor 				#产业专员
+				
+				trait = leader_trait_trade_focus 			# 商贸专精 Trader（总督）
+				#老练
+				trait = leader_trait_distribution_lines_3 					# 资源分发规划 Distribution Manager
+				trait = leader_trait_settler_3 								# 安居佑民 Settler
+				trait = leader_trait_refinement_focus_3 					# 精炼专精 Refinery Focused 	#这三项互斥
+				trait = leader_trait_forge_focus_3 							# 冶金专精 Forge Focused 		#这三项互斥
+				trait = leader_trait_industrial_focus_3 					# 工业专精 Industrial Focused 	#这三项互斥
+				trait = leader_trait_pop_focused_3 							# 高效委派 Efficient Staffing
+				#命定
+				trait = leader_trait_efficient 					#精英施益者 Elite Benefactor
+				trait = leader_trait_galvanizer 				#激人奋进 Galvanizer
+				trait = leader_trait_urbanist 					#城建专家 Urbanist
+				trait = leader_trait_utopian_idealist 			#乌托邦理想家 Utopian Idealist
+
+				#通用特质
+				trait = leader_trait_bureaucrat 				# 上下同心 Unifier
+				trait = leader_trait_environmental_engineer 	# 环境工程师 Environmental Engineer
+				trait = leader_trait_architectural_interest 	# 建筑学爱好者 Architectural Interest 	# Official or Scientist
+				trait = leader_trait_agrarian_upbringing 		# 土地培育师 Agrarian Upbringing
+				trait = leader_trait_righteous_2 				# 正义凌然 Righteous 					# Official or Commander
+				trait = leader_trait_space_miner_3 			# 地质专家Geology Expert
+				trait = leader_trait_manufacturer_3 		# 民用制造Manufacturer
+				trait = leader_trait_naturalist_3 			# 自然主义Naturalist 		# Industrialist or Analyst
+				trait = leader_trait_assembler_3 			# 组装专家Assembler 		# Industrialist or Analyst
+				trait = leader_trait_mediator 				#异种调停者
+				trait = leader_trait_robotist 				#机器人之王
+				trait = leader_trait_shroud_preacher 		#虚境布道者
+			}
+			
+		}
+}
+
+create_official_diplomacy_councilor = {
+		create_leader = {
+			name = subclass_official_diplomacy_councilor 		#外交使节
+			# species = from
+			# gender = male
+			class = official
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_official_diplomacy_councilor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_official_diplomacy_councilor 	#外交使节
+				
+				trait = leader_trait_principled_2 			# 恪守底线 Principled
+				trait = leader_trait_spycraft_2 			# 谍战专家 Spycraft
+				trait = leader_trait_shipwright 			# 造舰高手 Shipwright
+				trait = trait_ruler_fertility_preacher 		# 重视农耕 Fertility Preacher
+				#老练
+				trait = leader_trait_ambassador_ear_to_the_ground_3 		# 耳目众多 All-knowing
+				trait = leader_trait_ambassador_whisper_networks_3 			# 巧舌如簧 Blabbermouth
+				trait = trait_ruler_deep_connections_3 						# 关系深厚 Deep Connections
+				trait = leader_trait_ambassador_extra_envoys_3 				# 随从团队 Entourage
+				trait = leader_trait_ambassador_favor_maker_3 				# 见机行事 Opportunist
+				trait = leader_trait_ambassador_bully_3 					# 煽风点火 Spiteful
+				trait = leader_trait_ambassador_pact_keeper_3 				# 温文尔雅 Charmer
+				trait = leader_trait_ambassador_research_pact_focus_3 		# 研究交流 Research Exchange
+				trait = leader_trait_ambassador_commercial_pact_focus_3 	# 企业精神 Entrepreneur
+				trait = leader_trait_shadow_broker_2 						# 影子经纪人 Shady Contacts
+				trait = leader_trait_consul_general_2 						# 总领事官 Consul-General
+				trait = leader_trait_overseer_2 							# 秩序监察 Overseer
+				trait = leader_trait_courtroom_training_3 					# 外语学家 Xenolinguist
+				#命定
+				trait = leader_trait_spymaster 					#影中人 Shadow Broker
+				trait = leader_trait_totalitarian 				#帝国掌礼官 Herald of the Empire 威权
+				trait = leader_trait_master_diplomat 			#外交大师 Master Diplomat
+
+				#通用内阁
+				trait = trait_ruler_charismatic_2 				# 魅力非凡 Charisma
+				trait = trait_ruler_eye_for_talent_2 			# 伯乐之眼 Eye for Talent
+				trait = trait_ruler_logistic_understanding_2 	# 深通后勤 Logistic Understanding
+				trait = trait_ruler_industrialist_2 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+				trait = leader_trait_politician 				# 政治家 Politician
+				trait = trait_ruler_champion_of_the_people_2 	# 人民公仆 Champion of the People 		# Individualist
+				trait = leader_trait_army_veteran 				# 退伍老兵 Army Veteran 				# Official or Scientist No Retired Fleet Officer
+				trait = leader_trait_retired_fleet_officer 		# 退伍海军军官 Retired Fleet Officer 	# Official or Scientist No Army Veteran
+				trait = leader_trait_cartographer_3 		# 测绘专家Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+				trait = leader_trait_master_bureaucrat 		#官场老手
+				trait = leader_trait_educator 				#敏锐导师
+				trait = leader_trait_peacekeeper 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+			}
+			
+		}
+}
+
+create_official_economy_councilor = {
+		create_leader = {
+			name = subclass_official_economy_councilor 			#国务顾问
+			# species = from
+			# gender = male
+			class = official
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_official_economy_councilor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_official_economy_councilor 	#国务顾问
+
+				trait = leader_trait_principled_2 			# 恪守底线 Principled
+				trait = leader_trait_spycraft_2 			# 谍战专家 Spycraft
+				trait = leader_trait_shipwright 			# 造舰高手 Shipwright
+				trait = trait_ruler_fertility_preacher 		# 重视农耕 Fertility Preacher
+				#老练
+				trait = trait_ruler_architectural_sense_3 					# 重视建筑Architectural Sense
+				trait = leader_trait_reformer_3 							# 改革家Reformer
+				trait = trait_ruler_investor_3 								# 投资者Investor
+				trait = leader_trait_cartographer_3 						# 测绘专家Cartographer
+				trait = leader_trait_frontier_spirit_2 						# 开拓精神Frontier Spirit
+				trait = leader_trait_cultural_focus_3 						# 文宣专精Unified Focus
+				#命定
+				trait = leader_trait_supreme_organizer 			#幕后主使 Gray Eminence
+
+				#通用内阁
+				trait = trait_ruler_charismatic_2 				# 魅力非凡 Charisma
+				trait = trait_ruler_eye_for_talent_2 			# 伯乐之眼 Eye for Talent
+				trait = trait_ruler_logistic_understanding_2 	# 深通后勤 Logistic Understanding
+				trait = trait_ruler_industrialist_2 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+				trait = leader_trait_politician 				# 政治家 Politician
+				trait = trait_ruler_champion_of_the_people_2 	# 人民公仆 Champion of the People 		# Individualist
+				trait = leader_trait_army_veteran 				# 退伍老兵 Army Veteran 				# Official or Scientist No Retired Fleet Officer
+				trait = leader_trait_retired_fleet_officer 		# 退伍海军军官 Retired Fleet Officer 	# Official or Scientist No Army Veteran
+				trait = leader_trait_cartographer_3 		# 测绘专家Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+				trait = leader_trait_master_bureaucrat 		#官场老手
+				trait = leader_trait_educator 				#敏锐导师
+				trait = leader_trait_peacekeeper 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+			}
+			
+		}
+}
+
+create_commander_admiral = {
+		create_leader = {
+			name = subclass_commander_admiral
+			# species = from
+			# gender = male
+			class = commander
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_commander_admiral_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_commander_admiral 				#舰队司令
+
+				trait = leader_trait_aggressive 			# 火力全开 Aggressive
+				trait = leader_trait_engineer 				# 工程师 Engineer
+				trait = leader_trait_cautious 				# 谨慎 Prudence
+				trait = leader_trait_trickster 				# 诡术师 Trickster
+				trait = leader_trait_unyielding 			# 坚强不屈 Unyielding
+				trait = leader_trait_void_hunter_2 			# 虚空猎手 Void Hunter
+				#老练
+				trait = leader_trait_artillerist_2 					# 大炮兵主义 Artillerist
+				trait = leader_trait_commanding_presence_2 			# 威风堂堂 Commanding Presence
+				trait = leader_trait_corsair_2 						# 物资掠夺 Material Liberator
+				trait = leader_trait_shipbreaker_2 					# 残舰拆解 Shipbreaker
+				trait = leader_trait_juryrigger_2 					# 应急维修 Jury-Rigger
+				trait = leader_trait_wrecker_2 						# 片甲不留 Wrecker
+				trait = leader_trait_rocketry_specialization_2 		# 制导专精 Guidance System Focus
+				trait = leader_trait_juryrigger_2 					# 炮艇专精 Gunship Focus
+				trait = leader_trait_artillery_specialization_2 	# 炮击专精 Artillery Focus
+				trait = leader_trait_carrier_specialization_2 		# 航母专精 Carrier Focus
+				trait = leader_trait_archaeo_specialization_2 		# 远古科技专精 Archaeotech Focus
+				#命定
+				trait = leader_trait_guerilla_tactics 			#游击大师 Guerilla Tactician -25%指挥上限,+50%撤离
+				trait = leader_trait_destiny_engineer 			#维护指挥官 Resilient Commander
+				trait = leader_trait_survivalist 				#帝国之盾 Shield of the Empire
+				trait = leader_trait_master_gunner 				#枪炮大师 Master Gunner
+				trait = leader_trait_trophy_hunter 				#战利品猎人 Trophy Hunter（对太空兽群伤害+30%）
+			}
+			
+		}
+}
+
+create_commander_general = {
+		create_leader = {
+			name = subclass_commander_general
+			# species = from
+			# gender = male
+			class = commander
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_commander_general_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_commander_general 				#陆军司令
+
+				trait = leader_trait_butcher 				# 屠夫 Butcher
+				trait = leader_trait_restrained 			# 小心慎重 Carefulness
+				trait = leader_trait_enlister 				# 征募者 Enlister
+				trait = leader_trait_iron_fist_2 			# 铁拳 Iron Fist
+				#老练
+				trait = leader_trait_crusader_2 					# 卫道勇士 Crusader
+				trait = leader_trait_demolisher_2 					# 定点爆破 Demolisher
+				trait = leader_trait_dreaded_2 						# 恐惧灌输 Dreaded
+				trait = leader_trait_hardy_2 						# 坚韧不拔 Hardiness
+				trait = leader_trait_heavy_hitter_2 				# 重拳出击 Heavy Hitter
+				trait = leader_trait_interrogator_2 				# 审讯专家 Interrogator
+				trait = leader_trait_surgical_bombardment_2 		# 精准轰炸 Surgical Bombardment
+				trait = leader_trait_annihilator_2 					# 赶尽杀绝 Annihilator
+				#命定
+				trait = leader_trait_fortress_cracker 			#堡垒克星 Fortress Cracker
+				trait = leader_trait_supreme_warrior 			#终极战士 Supreme Warrior
+				trait = leader_trait_chainbreaker 				#枷锁破除者 Chainbreaker 平等 进攻时煽动奴隶起义
+			}
+			
+		}
+}
+
+create_commander_governor = {
+		create_leader = {
+			name = subclass_commander_governor
+			# species = from
+			# gender = male
+			class = commander
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_commander_governor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_commander_governor 			#督管专员
+				#老练
+				trait = leader_trait_conscripter_2 					# 征募专员 Conscription Agent
+				trait = leader_trait_generator_focus_3 				# 发电专精 Generator Focused
+				trait = leader_trait_mining_focus_3 				# 矿业专精 Mine Focused
+				trait = leader_trait_farming_focus_3 				# 农业专精 Agriculture Focused
+				trait = leader_trait_reinforcer_2 					# 铜墙铁壁 Reinforcer
+				trait = leader_trait_martinet_2 					# 纪律森严 Martinet
+				trait = leader_trait_warden_2 						# 星球守望 Warden
+				#命定
+				trait = leader_trait_taskmaster 				#大监工 Grand Taskmaster
+				trait = leader_trait_academia_recruiter 		#学院征募官 Academic Recruiter 唯物
+				trait = leader_trait_honored_warmaster 			#荣耀老将 Honored Warmaster 亲外
+				trait = leader_trait_arbiter 					#冷酷开发者 Ruthless Developer 威权 减幸福度和人口增长
+
+				#通用
+				trait = leader_trait_bureaucrat 				# 上下同心 Unifier
+				trait = leader_trait_environmental_engineer 	# 环境工程师 Environmental Engineer
+				trait = leader_trait_architectural_interest 	# 建筑学爱好者 Architectural Interest 	# Official or Scientist
+				trait = leader_trait_agrarian_upbringing 		# 土地培育师 Agrarian Upbringing
+				trait = leader_trait_righteous_2 				# 正义凌然 Righteous 					# Official or Commander
+			}
+			
+		}
+}
+
+create_commander_councilor = {
+		create_leader = {
+			name = subclass_commander_councilor
+			# species = from
+			# gender = male
+			class = commander
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_commander_councilor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_commander_councilor 			#战略家
+
+				trait = leader_trait_fleet_organizer_2 		# 舰队组织者 Fleet Organizer
+				trait = trait_ruler_warlike_2 				# 好战 Hostility
+				trait = leader_trait_defence_engineer 		# 防御工程师 Defense Engineer
+				trait = leader_trait_skirmisher 			# 出其不意 Skirmisher
+				#老练
+				trait = leader_trait_armada_logistician_2 			# 舰队后勤专家 Armada Logistician
+				trait = trait_ruler_fortifier_2 					# 驻防者 Fortifier
+				trait = leader_trait_gale_speed_2 					# 其疾如风 Gale-Speed
+				trait = trait_ruler_military_pioneer_2 				# 军事先驱 Military Pioneer
+				trait = trait_ruler_recruiter_2 					# 征兵官 Recruiter
+				trait = trait_ruler_from_the_ranks_2 				# 出身士卒 From the Ranks
+				trait = leader_trait_border_guard_2 				# 边防卫士 Border Guard
+				trait = leader_trait_guardian_2 					# 守护者 Guardian
+				trait = leader_trait_home_guard_2 					# 家园卫士 Home Guard
+				trait = leader_trait_intimidator_2 					# 武力恫吓 Intimidator
+				trait = leader_trait_crew_trainer_2 				# 海军教官 Navy Instructor
+				#命定
+				trait = leader_trait_maven_of_war 				#战争构筑师 Architect of War
+				trait = leader_trait_bellicose 					#崇敬军需官 steemed Quartermaster
+				trait = leader_trait_armorer 					#天才军械师 Genius Armorer
+				trait = leader_trait_military_overseer 			#军事监督者 Military Overseer
+			}
+			
+		}
+}
+
+create_scientist_explorer = {
+		create_leader = {
+			name = subclass_scientist_explorer
+			# species = from
+			# gender = male
+			class = scientist
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_scientist_explorer_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_scientist_explorer 			#探索者
+				trait = leader_trait_roamer_2 					# 漫游者 Roamer 			# 探索者
+				trait = leader_trait_meticulous_2 				# 精益求精 Perfectionist 	# 探索者
+				trait = leader_trait_slippery_2 						# 来去自如 Evasiveness
+				trait = leader_trait_prospector_3 						# 资源勘探 Prospector
+				trait = leader_trait_tuner_2 							# 引擎调谐 Tuner
+				trait = leader_trait_explorer_cloaking_focus_3 			# 机密研究 Confidential Research
+				trait = leader_trait_xeno_cataloger 			#异种编目家
+				trait = leader_trait_frontier_adventurer 		#边疆冒险家
+				trait = leader_trait_gifted_trapper 			#天生捕手（兽群捕获率+25%，重力陷阱冷却-25%）
+			}
+			
+		}
+}
+
+create_scientist_scholar = {
+		create_leader = {
+			name = subclass_scientist_scholar
+			# species = from
+			# gender = male
+			class = scientist
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_scientist_scholar_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_scientist_scholar 				#前沿学者
+				trait = leader_trait_carefree_2 				# 直觉敏锐 Intuition 		# 前沿学者
+				trait = leader_trait_archaeologist_2 			# 考古学家 Archaeologist 	# 前沿学者
+				trait = leader_trait_academic_dig_site_expert_3 		# 发掘专家Excavator
+				trait = leader_trait_salvager_3 						# 残骸打捞Salvager
+				trait = leader_trait_academic_minor_artifacts_expert_3 	# 文物学者Antiquarian
+				trait = leader_trait_academic_astral_rift_expert 		# 裂隙行者Riftwalker
+				trait = leader_trait_collective_wisdom 			#细致入微
+				trait = leader_trait_midas_touch 				#活力讲古人
+			}
+			
+		}
+}
+
+create_scientist_governor = {
+		create_leader = {
+			name = subclass_scientist_governor
+			# species = from
+			# gender = male
+			class = scientist
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_scientist_governor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_scientist_governor 					#分析专员
+				#老练
+				trait = leader_trait_collaborator_3 					# 研究协作Collaborator
+				trait = leader_trait_engineering_focus_3 				# 工程专精Engineering Focus
+				trait = leader_trait_physics_focus_3 					# 物理专精Physics Focus
+				trait = leader_trait_society_focus_3 					# 社会专精Society Focus
+				#命定
+				trait = leader_trait_surveyor 							# Analyst 行星分析师
+				trait = leader_trait_truth_seeker 						# Analyst 真理探求者
+				
+				#通用
+				trait = leader_trait_bureaucrat 				# 上下同心 Unifier
+				trait = leader_trait_environmental_engineer 	# 环境工程师 Environmental Engineer
+				trait = leader_trait_architectural_interest 	# 建筑学爱好者 Architectural Interest 	# Official or Scientist
+				trait = leader_trait_agrarian_upbringing 		# 土地培育师 Agrarian Upbringing
+				trait = leader_trait_righteous_2 				# 正义凌然 Righteous 					# Official or Commander
+
+				trait = leader_trait_mediator 				#异种调停者
+				trait = leader_trait_robotist 				#机器人之王
+				trait = leader_trait_shroud_preacher 		#虚境布道者
+			}
+			
+		}
+}
+
+create_scientist_councilor = {
+		create_leader = {
+			name = subclass_scientist_councilor
+			# species = from
+			# gender = male
+			class = scientist
+			skill = 10
+			set_age = 100
+			# background_planet = "母星"
+			# background_job = "此前岗位"
+			# background_ethic = "思潮"
+			# custom_catch_phrase = "招募时的弹窗信息"
+			custom_description = subclass_scientist_councilor_desc #领袖介绍
+			randomize_traits = no
+			immortal = yes #不朽
+
+			traits = {
+				trait = subclass_scientist_councilor 					#统计学家
+
+				trait = leader_trait_spark_of_genius 					# 灵光一闪 Spark of Genius
+				trait = leader_trait_planar_theorist_2 					# 位面理论家 Planar Theorist
+				#老练
+				trait = trait_ruler_expansionist_3 						#扩张主义者Expansionist
+				trait = leader_trait_maniacal_3 						#超级专注Hyper Focus
+				trait = leader_trait_science_communicator_3 			#档案管理Archivist
+				trait = leader_trait_inquisitive_3 						#求知若渴Inquisitor
+				#专精
+				trait = leader_trait_expertise_industry_3 				#专长：工业 III
+				trait = leader_trait_expertise_materials_3 				#专长：材料科学 III
+				trait = leader_trait_expertise_propulsion_3 			#专长：推进力学 III
+				trait = leader_trait_expertise_voidcraft_3 				#专长：宇航技术 III
+				trait = leader_trait_expertise_computing_3 				#专长：计算技术 III
+				trait = leader_trait_expertise_field_manipulation_3 	#专长：力场操控 III
+				trait = leader_trait_expertise_particles_3 				#专长：粒子物理 III
+				trait = leader_trait_expertise_biology_3 				#专长：生物学 III
+				trait = leader_trait_expertise_military_theory_3 		#专长：军事理论 III
+				trait = leader_trait_expertise_new_worlds_3 			#专长：新世界理论 III
+				trait = leader_trait_expertise_statecraft_3				#专长：治国术 III
+				trait = leader_trait_expertise_psionics_3 				#专长：灵能理论 III
+				trait = leader_trait_expertise_archaeostudies_3			#专长：远古学 III
+				#命定
+				trait = leader_trait_great_researcher 					# Statistician 大研究者
+				trait = leader_trait_brilliant_shipwright 				# Statistician 卓越造船家
+				trait = leader_trait_knowledge_for_the_masses 			# Statistician 致力教育家
+			}
+		}
+}
+
+

@@ -1,0 +1,48 @@
+
+building_generator_districts_1 = {
+	base_buildtime = @b1_time
+	planet_limit = 1
+	category = resource
+
+	building_sets = {
+		generator
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_wilderness_empire = no }
+		has_any_capped_planet_generator_district = yes
+	}
+
+	destroy_trigger = {
+		exists = owner
+		OR = {
+			owner = {
+				is_wilderness_empire = yes
+			}
+			has_any_capped_planet_generator_district = no
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	planet_modifier = {
+		district_generator_max_add = @b1_max_districts_add
+	}
+
+	upgrades = {
+		building_generator_districts_2
+	}
+
+	prerequisites = {
+		tech_power_plant_1
+	}
+}

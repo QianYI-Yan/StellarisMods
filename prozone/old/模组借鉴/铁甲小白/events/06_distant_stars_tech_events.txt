@@ -1,0 +1,45 @@
+namespace = distant_stars_tech_event
+
+country_event = {
+    id = distant_stars_tech_event.1
+	title = distant_stars_tech_event.1.name
+	desc = distant_stars_tech_event.1.desc
+	picture = GFX_evt_gray_goo
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_gargantuan_evolution 				# 超体进化
+		# add_research_option = tech_lgate_activation 					# L-星门启动
+		# add_research_option = tech_repeatable_lcluster_clue 			# L-星门线索
+		# add_research_option = tech_experimental_subspace_navigation 	# 试验性超空间导航
+		add_research_option = tech_neuroregeneration 					# 神经组织工程
+		add_research_option = tech_nanite_repair_system 				# 纳米修复系统
+		add_research_option = tech_nanite_autocannon 					# 纳米机关炮
+		add_research_option = tech_nanite_flak_batteries 				# 纳米高射炮
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_gargantuan_evolution message = no }
+		# give_technology = { tech = tech_lgate_activation message = no }
+		# give_technology = { tech = tech_repeatable_lcluster_clue message = no }
+		# give_technology = { tech = tech_experimental_subspace_navigation message = no }
+		give_technology = { tech = tech_neuroregeneration message = no }
+		give_technology = { tech = tech_nanite_repair_system message = no }
+		give_technology = { tech = tech_nanite_autocannon message = no }
+		give_technology = { tech = tech_nanite_flak_batteries message = no }
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

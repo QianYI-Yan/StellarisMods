@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+  edict_yin_mod_menu_edicts: "yin的mod设置菜单"
+  edict_yin_mod_menu_edicts_desc: "打开yin的mod设置菜单，你可以在这里开关一些东西"
+  yin_mod_menu.0.title: "菜单"
+  yin_mod_menu.0.desc: "你可以在这里开关一些东西"
+  mod_menu.exit: "退出菜单"
+  mod_menu.exit.tooltip: "点击退出mod设置菜单"
+  ETDZ6.off: "关闭六期开发区"
+  ETDZ6.on: "开启六期开发区"
+  ETDZ6.change.tooltip: "切换经济技术开发区六期的状态"

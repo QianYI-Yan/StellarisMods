@@ -1,0 +1,15 @@
+yin_mod_menu_edicts = {
+    icon = GFX_edict_type_policy
+    length = 1
+    potential = {
+        is_ai = no
+    }
+    allow = {
+        is_ai = no
+    }
+    effect = {
+        country_event = {
+            id = yin_mod_menu.0
+        }
+    }
+}

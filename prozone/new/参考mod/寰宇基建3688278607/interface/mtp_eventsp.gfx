@@ -1,0 +1,28 @@
+spriteTypes = {	
+
+
+	spriteType = {
+		name = "GFX_mtp_syst_killeve"
+		texturefile = "gfx/event_pictures/mtp_syst_killeve.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_mtp_newteb"
+		texturefile = "gfx/event_pictures/mtp_newtab.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_mtp_syst_killeve2"
+		texturefile = "gfx/event_pictures/mtp_syst_killeve2.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+	spriteType = {
+		name = "GFX_mtp_pojec_up1"
+		texturefile = "gfx/event_pictures/mtp_up1.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}

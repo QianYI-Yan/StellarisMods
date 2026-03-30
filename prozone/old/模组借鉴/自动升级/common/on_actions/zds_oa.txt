@@ -1,0 +1,8 @@
+on_monthly_pulse_country = {
+    events = {
+        zds.1
+        zds.2
+        zds.3
+        zds_module.100
+    }
+}

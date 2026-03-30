@@ -1,0 +1,77 @@
+﻿l_simp_chinese:
+ #法令
+ edict_EVE_edicts_MaternityAllowance: "§HCI:生育补贴§!£pop£"
+ edict_EVE_edicts_MaternityAllowance_desc: "为鼓励人口增长、稳固帝国未来，帝国向所有符合条件的家庭发放生育补贴，减轻育儿负担，提升人口幸福度与自然增长速率。当然代价就是我们要付出更多。（我们的专家提醒我们需要注意人口结构问题，但是迫在眉睫的需求不允许我们考虑更多了。）"
+ edict_EVE_edicts_SystemicProductionLine: "§HCI:体系产线§!£pop£"
+ edict_EVE_edicts_SystemicProductionLine_desc: "通过全域工业调度与标准化组装流程，大幅提升机械人口的建造效率，让机械单位以更快速度投入帝国运作。"
+ edict_EVE_edicts_BroodHivePropagation: "§HCI:母巢繁育§!£pop£"
+ edict_EVE_edicts_BroodHivePropagation_desc: "我们的母巢意志需要将更多的精力放在子个体的繁衍上，工蜂会源源不断的将食物送入繁育子个体的口中。"
+
+ #科技种类
+ structural_iteration:"§U架构学§!"
+ structural_iteration_desc:"将一个事物放大或是缩小、加强或是减弱并不是简单的加减法，而是这个整体结构的改写。我们的基建最终将彻底改变生产的规则。"
+
+ #科技
+ eve_tech_decision_focus_1:0 "§CCI:意志聚焦§!£society£"
+ eve_tech_decision_focus_1_desc:0 "§W我们的政府齐心协力将注意力放在一件事情上。§!"
+ eve_tech_EnergyCycleFeedback:0 "§CCI:能量循环回馈§!£energy£"
+ eve_tech_EnergyCycleFeedback_desc:0 "通过对舰船与设施废能的闭环回收与再利用，帝国的能源利用效率得到飞跃性提升，让每一位技工都能产出更多能量。"
+ eve_ci_tech_agri_architecture:0 "§CCI:技术农业架构§!£society£"
+ eve_ci_tech_tech_agri_architecture_desc:0 "通过专业化技术团队深入支援农业生产环节，实现耕种、育种与资源循环的全流程智能化管控；同时将农业实践中积累的生态数据与基因样本反向注入生物研究体系，大幅推动相关领域的科研进展。"
+ eve_ci_tech_self_evolving_production_system: "§CCI:自进化生产系统§!£engineering£"
+ eve_ci_tech_self_evolving_production_system_desc: "突破传统静态工业范式的极限，引入分布式智能模块与涌现式计算逻辑。该系统允许生产单元在无人工干预的情况下，自主分析运行数据并动态重构工艺流程。一旦部署，所有工业复合体将具备自我诊断、自适应优化乃至自我复制的能力，能够根据星系资源波动与战争需求，瞬间调整产线配比，实现生产力的指数级飞跃。"
+ eve_ci_tech_energy_research_institute: "§CCI:私人能源科研机构§!£physics£"
+ eve_ci_tech_energy_research_institute_desc: "整合恒星物理、真空能量提取与高能粒子学的前沿研究设施，将分散的能源实验室升级为跨星系级科研枢纽。该机构不仅能加速可控核聚变、零点能提取等清洁能源技术的突破，更可通过巨型能量透镜阵列，实现对恒星能量的定向观测与模拟，为戴森云、星际能量传输等巨构工程提供核心理论支撑。部署后，全帝国的能源相关科研速度将显著提升，并解锁更高阶的宇宙能源利用技术。"
+ eve_tech_modular_vertical_farming: "§CCI:模块化垂直耕种§!£food£"
+ eve_tech_modular_vertical_farming_desc: "突破传统平面农业限制，以标准化模块与垂直层叠架构重构行星耕种体系。通过环境闭环调控、光能高效利用与自动化培育网络，大幅提升单位土地产能，降低宜居度依赖，让荒漠、冰原与轨道殖民地均可实现稳定粮食自给，彻底改写星系农业生产规则。巨大的垂直耕种系统甚至深入地下数千公里。"
+ eve_tech_Deep_Full_Prospecting: "§CCI:深层全域勘探§!£minerals£"
+ eve_tech_Deep_Full_Prospecting_desc: "突破传统行星表层勘探的技术瓶颈，将勘探范围延伸至行星地壳、地幔乃至地核的全段结构，大幅提升矿物、战略资源的探测精度与采集效率。"
+ eve_tech_grid_coordination_control:0 "§CCI:全域电网协同调控§!£energy£"
+ eve_tech_grid_coordination_control_desc:0 "突破传统行星级电网的传输损耗瓶颈，将能量调度范围延伸至星系内殖民地、空间站与发电设施的全域网络，大幅提升能量产出效率与电网稳定性。解锁全域智能配电系统，可回收工业与舰船运行中的废热能量，同时降低高耗能建筑的电力消耗。"
+ eve_tech_tactical_command_system:0 "§CCI:临场指挥系统§!£commander£"
+ eve_tech_tactical_command_system_desc:0 "整合舰队火控、舰船机动与战场情报分析网络，大幅提升舰队在复杂交战环境下的实时响应能力。将一切战场细节彻底展现在指挥官眼中，强化指挥官战术效果，降低舰船延误率与战损损耗，让舰队在深空遭遇战中占据绝对优势。"
+
+ #区域特化
+ eve_ci_zone_food_biology: "§UCI:高级生物研究支持§!£society£"
+ eve_ci_zone_minerals_engineering: "§UCI:高级材料学研究支持§!£engineering£"
+ eve_ci_zone_energy_physics: "§UCI:高级物理学研究支持§!£physics£"
+ eve_ci_zone_urban_energy: "§UCI:高级能量专注§!£energy£"
+ eve_ci_zone_urban_minerals: "§UCI:高级矿物专注§!£minerals£"
+ eve_ci_zone_urban_food: "§UCI:高级食物专注§!£food£"
+ eve_ci_zone_food_biology_desc: "我们可以调派一部分专家观察我们的基础资源产出，同时优化我们现有的技术。"
+ mod_planet_eve_ci_zone_food_biology_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_food_biology_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_minerals_engineering_desc: "我们可以调派一部分专家观察我们的基础资源产出，同时优化我们现有的技术。"
+ mod_planet_eve_ci_zone_minerals_engineering_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_minerals_engineering_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_energy_physics_desc: "我们可以调派一部分专家观察我们的基础资源产出，同时优化我们现有的技术。"
+ mod_planet_eve_ci_zone_energy_physics_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_energy_physics_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_energy_desc: "我们可以将更多的配套设施融入我们的基础资源产出。"
+ mod_planet_eve_ci_zone_urban_energy_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_energy_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_minerals_desc: "我们可以将更多的配套设施融入我们的基础资源产出。"
+ mod_planet_eve_ci_zone_urban_minerals_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_minerals_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_food_desc: "我们可以将更多的配套设施融入我们的基础资源产出。"
+ mod_planet_eve_ci_zone_urban_food_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_food_build_speed_mult_desc: "REPLACE_ME"
+
+#区划
+ eve_district_jg_physics: "§UCI:物理学产研结合体§!£physics£"
+ #eve_district_generator_physics_name: "§UCI:物理学产研结合体§!£physics£"
+ eve_district_jg_physics_plural: "§UCI:物理学产研结合体§!£physics£"
+ jg_0: "§H物理学倾向园区§!"
+ eve_district_kg_engineering: "§UCI:工程学产研结合体§!£engineering£"
+ eve_district_kg_engineering_plural: "§UCI:工程学产研结合体§!£engineering£"
+ kg_0: "§H工程学倾向园区§!"
+ eve_district_nm_society: "§UCI:社会学产研结合体§!£society£"
+ eve_district_nm_society_plural: "§UCI:社会学产研结合体§!£society£"
+ nm_0: "§H社会学倾向园区§!"
+
+#修正
+ mod_country_energy_cost_mult: "§U国家能量花费§!£energy£"
+
+#飞升
+ ap_cosmic_infrastructure: "§U寰宇基建§!£megastructure£"
+ ap_cosmic_infrastructure_desc: "§W终于，在经过无数的创造之后，我们当中的每一个人都明白了。创造，就是宇宙的最终目的。为此我们愿意付出一切。§!"

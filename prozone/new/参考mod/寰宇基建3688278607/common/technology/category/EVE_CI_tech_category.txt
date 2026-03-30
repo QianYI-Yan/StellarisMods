@@ -1,0 +1,66 @@
+####
+#	Technology categories
+#
+#	weight_modifier = {
+#		factor = 1
+#		modifier = {
+#			add = 10
+#			OR = {
+#				has_government = "military_dictatorship"
+#				has_government = "martial_empire"
+#			}
+#		}
+#	}
+####
+
+#维度技术
+Multidimensional_Technology = {
+    icon = "gfx/interface/icons/traits/leader_traits/Multidimensional_Technology.dds"
+}
+
+#异位面材料学
+Heterotopic_materials = {
+    icon = "gfx/interface/icons/traits/leader_traits/Heterotopic_materials.dds"
+}
+
+#维度工程学
+Dimension_Engineering = {
+    icon = "gfx/interface/icons/traits/leader_traits/Dimension_Engineering.dds"
+}
+
+#维度军事应用
+Dimension_military_application = {
+    icon = "gfx/interface/icons/traits/leader_traits/Dimension_military_application.dds"
+}
+
+#平行宇宙理论
+tech_mtp_parallel_universe_theory = {
+    icon = "gfx/interface/icons/traits/leader_traits/Parallel_universe_theory.dds"
+}
+
+#时空相态
+spacetime_mutually = {
+    icon = "gfx/interface/icons/traits/leader_traits/spacetime_mutually.dds"
+}
+#凝聚态物理
+condensed_state = {
+    icon = "gfx/interface/icons/traits/leader_traits/condensed_state.dds"
+}
+#文明史学
+civilization_historiography = {
+    icon = "gfx/interface/icons/traits/leader_traits/civilization_historiography.dds"
+}
+#基础理论
+basic_theory = {
+    icon = "gfx/interface/icons/traits/leader_traits/basic_theory.dds"
+}
+#量子操纵
+quantum_manipulation = {
+    icon = "gfx/interface/icons/traits/leader_traits/quantum_manipulation.dds"
+}
+#结构迭代
+structural_iteration = {
+    icon = "gfx/interface/icons/traits/leader_traits/structural_iteration.dds"
+}
+
+

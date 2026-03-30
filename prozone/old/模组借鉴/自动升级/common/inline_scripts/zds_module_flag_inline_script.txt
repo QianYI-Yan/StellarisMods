@@ -1,0 +1,96 @@
+country_event = {
+    id = zds_module.1$slot$
+    title = zds_module.1$slot$.title
+    desc = {
+        trigger = {
+            always = yes
+        }
+        text = zds_module.1$slot$.desc
+    }
+    picture = GFX_evt_a_rift_in_space
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = zds_module.1$slot$.none
+        }
+        remove_country_flag = zds_module_flag_s$slot$_shipyard
+        remove_country_flag = zds_module_flag_s$slot$_anchorage
+        remove_country_flag = zds_module_flag_s$slot$_detection_array
+        remove_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        country_event = {
+            id = zds_module.1
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = zds_module.1$slot$.shipyard
+        }
+        remove_country_flag = zds_module_flag_s$slot$_anchorage
+        remove_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        remove_country_flag = zds_module_flag_s$slot$_detection_array
+        set_country_flag = zds_module_flag_s$slot$_shipyard
+        country_event = {
+            id = zds_module.1
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = zds_module.1$slot$.anchorage
+        }
+        remove_country_flag = zds_module_flag_s$slot$_shipyard
+        remove_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        remove_country_flag = zds_module_flag_s$slot$_detection_array
+        set_country_flag = zds_module_flag_s$slot$_anchorage
+        country_event = {
+            id = zds_module.1
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = zds_module.1$slot$.solar_panel_network
+        }
+        remove_country_flag = zds_module_flag_s$slot$_shipyard
+        remove_country_flag = zds_module_flag_s$slot$_anchorage
+        remove_country_flag = zds_module_flag_s$slot$_detection_array
+        set_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        country_event = {
+            id = zds_module.1
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = zds_module.1$slot$.detection_array
+        }
+        remove_country_flag = zds_module_flag_s$slot$_shipyard
+        remove_country_flag = zds_module_flag_s$slot$_anchorage
+        remove_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        set_country_flag = zds_module_flag_s$slot$_detection_array
+        country_event = {
+            id = zds_module.1
+        }
+    }
+}

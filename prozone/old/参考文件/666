@@ -1,0 +1,77 @@
+# 建筑定义：三级工程研究设施
+building_engineering_facility_3 = {
+    # 基础属性
+    can_build = no                      # 非基础可建建筑，需科技解锁
+    base_buildtime = @b3_time          # 基础建造时间（引用变量）
+    exempt_from_ai_planet_specialization = no  # AI行星 specialization 时会考虑此建筑
+    
+    category = research                 # 建筑类别：研究类
+    
+    # 适用的建筑组（影响建筑替换等机制）
+    building_sets = {
+        research
+        engineering
+    }
+    
+    # 建造条件：星球不能有以下修正
+    potential = {
+        NOR = {
+            has_modifier = resort_colony  # 非度假星球
+            has_modifier = slave_colony   # 非奴隶星球
+            has_modifier = penal_colony   # 非流放星球
+        }
+    }
+    
+    # 自动销毁条件（当以下任一条件满足时）
+    destroy_trigger = {
+        exists = owner  # 必须有所有者
+        OR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = penal_colony
+            owner = { is_wilderness_empire = yes }  # 所有者为原始帝国
+        }
+    }
+    
+    # 资源消耗
+    resources = {
+        category = planet_buildings      # 资源分类
+        cost = {
+            minerals = @b3_minerals      # 矿物成本（引用变量）
+            rare_crystals = @b3_rare_cost # 稀有水晶成本
+        }
+        upkeep = {                       # 月度维护费
+            energy = @b3_upkeep          # 能量维护
+            rare_crystals = @b3_rare_upkeep # 稀有水晶维护
+        }
+    }
+    
+    # 内联脚本：添加工程师工作岗位
+    inline_script = {
+        script = jobs/engineers_add     # 执行脚本
+        AMOUNT = @building_static_jobs  # 岗位数量（引用变量）
+    }
+    
+    # 星球修正效果
+    planet_modifier = {
+        engineer_jobs_bonus_workforce_mult = 0.15            # 工程师岗位产出+15%
+        planet_engineers_engineering_research_produces_add = 2 # 每个工程师+2工程研究
+        planet_engineers_rare_crystals_upkeep_add = 0.5      # 每个工程师+0.5稀有水晶维护
+    }
+    
+    # 科技前置要求
+    prerequisites = {
+        "tech_engineering_3"  # 需要三级工程科技
+    }
+    
+    # 内联脚本：影响AI决策权重
+    inline_script = {
+        script = districts/ai_research_engineering_extra_weighting
+        AMOUNT = 10  # 增加AI选择工程区划的权重
+    }
+    
+    # 科技界面显示条件
+    show_tech_unlock_if = {
+        is_wilderness_empire = no  # 非原始帝国时才在科技界面显示
+    }
+}

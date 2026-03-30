@@ -1,0 +1,50 @@
+namespace = cosmic_storm_tech_event
+
+country_event = {
+    id = cosmic_storm_tech_event.1
+	title = cosmic_storm_tech
+	desc = "cosmic_storm_tech_event.1.desc"
+	picture = GFX_evt_cosmic_storms_the_storm_speaks
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_storm_manipulation
+		add_research_option = tech_advanced_storm_manipulation
+		add_research_option = tech_industrial_storm_protection
+		add_research_option = tech_advanced_industrial_storm_protection
+		add_research_option = tech_storm_prediction_1
+		add_research_option = tech_storm_prediction_2
+		add_research_option = tech_ship_hull_storm_breaker_1
+		add_research_option = tech_ship_hull_storm_breaker_2
+		add_research_option = tech_ship_storm_weapons_1
+		add_research_option = tech_ship_storm_weapons_2
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_storm_manipulation message = no }
+		give_technology = { tech = tech_advanced_storm_manipulation message = no }
+		give_technology = { tech = tech_industrial_storm_protection message = no }
+		give_technology = { tech = tech_advanced_industrial_storm_protection message = no }
+		give_technology = { tech = tech_storm_prediction_1 message = no }
+		give_technology = { tech = tech_storm_prediction_2 message = no }
+		give_technology = { tech = tech_ship_hull_storm_breaker_1 message = no }
+		give_technology = { tech = tech_ship_hull_storm_breaker_2 message = no }
+		give_technology = { tech = tech_ship_storm_weapons_1 message = no }
+		give_technology = { tech = tech_ship_storm_weapons_2 message = no }
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

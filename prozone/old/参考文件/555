@@ -1,0 +1,81 @@
+# ====================================
+# 修正1：普通帝国（非堕落帝国）
+# ====================================
+triggered_planet_modifier = {
+    # 适用条件检查
+    potential = {
+        exists = owner                 # 行星有所有者
+        owner = {
+            is_regular_empire = yes    # 所有者是常规帝国
+            NOT = {
+                has_country_flag = fallen_empire_1  # 且不是唯物堕落帝国
+            }
+        }
+    }
+    
+    # 生效的修正效果：添加三类基础研究员岗位
+    modifier = {
+        job_physicist_add = $AMOUNT$   # 物理学家岗位
+        job_biologist_add = $AMOUNT$   # 生物学家岗位
+        job_engineer_add = $AMOUNT$    # 工程师岗位
+    }
+}
+
+# ====================================
+# 修正2：蜂巢思维帝国
+# ====================================
+triggered_planet_modifier = {
+    # 适用条件检查
+    potential = {
+        exists = owner                 # 行星有所有者
+        owner = {
+            is_hive_empire = yes       # 所有者是蜂巢思维帝国
+        }
+    }
+    
+    # 生效的修正效果：添加蜂巢专用的计算者岗位
+    # 注意：此处实际缺少modifier = {}包装，可能是原代码格式问题
+    # 假设这里应该是 modifier = { ... }
+    job_calculator_physicist_add = $AMOUNT$   # 物理计算者岗位（蜂巢专用）
+    job_calculator_biologist_add = $AMOUNT$   # 生物计算者岗位（蜂巢专用）
+    job_calculator_engineer_add = $AMOUNT$    # 工程计算者岗位（蜂巢专用）
+}
+
+# ====================================
+# 修正3：机械帝国
+# ====================================
+triggered_planet_modifier = {
+    # 适用条件检查
+    potential = {
+        exists = owner                 # 行星有所有者
+        owner = { 
+            is_machine_empire = yes    # 所有者是机械帝国
+        }
+    }
+    
+    # 生效的修正效果：添加机械专用的计算者岗位
+    # 注意：此处同样缺少modifier = {}包装
+    job_calculator_physicist_add = $AMOUNT$   # 物理计算者岗位（机械专用）
+    job_calculator_biologist_add = $AMOUNT$   # 生物计算者岗位（机械专用）
+    job_calculator_engineer_add = $AMOUNT$    # 工程计算者岗位（机械专用）
+}
+
+# ##############################
+# 特殊：唯物堕落帝国
+# ##############################
+triggered_planet_modifier = {
+    # 适用条件检查
+    potential = {
+        exists = owner                 # 行星有所有者
+        owner = {
+            has_country_flag = fallen_empire_1  # 所有者有唯物堕落帝国标志
+        }
+    }
+    
+    # 生效的修正效果：添加三种堕落帝国档案管理员岗位
+    # 注意：这里写了三次相同的效果，可能是为了达到3倍效果
+    # 但实际上应该用 job_fe_archivist_add = $AMOUNT*3$ 或类似方式
+    job_fe_archivist_add = $AMOUNT$    # 堕落帝国档案管理员岗位
+    job_fe_archivist_add = $AMOUNT$    # 重复第二遍
+    job_fe_archivist_add = $AMOUNT$    # 重复第三遍
+}

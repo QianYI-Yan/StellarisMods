@@ -1,0 +1,26 @@
+tech_touhou_psionic_conduit_zone = {
+	potential = {
+		always = no
+	}
+	tier = 0
+	area = society
+	category = { biology }
+}
+
+tech_pre_industrial_steel_construction = {
+	tier = 0
+	cost = @tier0cost1
+	area = engineering	
+	start_tech = yes
+	starting_potential = {
+		has_global_flag = ethic_civic_classic_active
+		NOT = {
+			# has_country_flag = bronze_age
+			# has_country_flag = iron_age
+			# has_country_flag = late_medieval_age
+			# has_country_flag = renaissance_age
+			# has_country_flag = steam_age
+			has_origin = origin_primitive_player_pre_industrial_age
+		}
+	}
+}

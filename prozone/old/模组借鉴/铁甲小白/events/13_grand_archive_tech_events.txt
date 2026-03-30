@@ -1,0 +1,139 @@
+namespace = grand_archive_tech_event
+
+country_event = {
+    id = grand_archive_tech_event.1
+	title = grand_archive_tech_event.1.name
+	desc = grand_archive_tech_event.1.desc
+	picture = GFX_evt_grand_archive
+	is_triggered_only = yes
+
+	option = {
+		name = grand_archive_tech_event.1.ga
+		add_research_option = tech_galactic_archivism
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = grand_archive_tech_event.1.bc
+		add_research_option = tech_boarding_cables
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = grand_archive_tech_event.1.gw
+		add_research_option = tech_gravity_wells
+		add_research_option = tech_gravity_snare_capacity_1
+		add_research_option = tech_gravity_snare_capacity_2
+		add_research_option = tech_gravity_snare_capacity_3
+		add_research_option = tech_containment_vessel
+		add_research_option = tech_voidworm_immunity
+		add_research_option = tech_asteroidal_carapace
+		add_research_option = tech_alien_cloning
+		add_research_option = tech_improved_incubators
+		add_research_option = tech_metabolic_gases
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = grand_archive_tech_event.1.cm
+		add_research_option = tech_controlled_mutations
+		add_research_option = tech_controlled_mutations_2
+		add_research_option = tech_unique_mutation_space_amoeba
+		add_research_option = tech_unique_mutation_tiyanki
+		add_research_option = tech_unique_mutation_voidworm
+		add_research_option = tech_unique_mutation_cutholoid
+		add_research_option = tech_unique_mutation_crystalline_entity
+		add_research_option = tech_unique_mutation_restorative_enzymes
+		add_research_option = tech_unique_mutation_starborne_biology
+		add_research_option = tech_thrusters_bio_integration
+		add_research_option = tech_hyper_drive_bio_integration
+		add_research_option = tech_sensors_bio_integration
+		add_research_option = tech_combat_computers_bio_integration
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+
+
+	option = {
+		name = grand_archive_tech_event.1.all
+		give_technology = { tech = tech_galactic_archivism } 			# 星系归档
+
+		give_technology = { tech = tech_gravity_wells } 				# 重力陷阱
+		give_technology = { tech = tech_gravity_snare_capacity_1 } 		# 微型奇点强化
+		give_technology = { tech = tech_gravity_snare_capacity_2 } 		# 重力操纵优化
+		give_technology = { tech = tech_gravity_snare_capacity_3 } 		# 收容系统改进
+		give_technology = { tech = tech_containment_vessel } 			# 策展人收容协议
+		give_technology = { tech = tech_voidworm_immunity } 			# 虚空虫免疫
+		give_technology = { tech = tech_asteroidal_carapace } 			# 小行星甲壳
+		give_technology = { tech = tech_alien_cloning } 				# 人工繁育
+		give_technology = { tech = tech_improved_incubators } 			# 改进孵化器
+		give_technology = { tech = tech_metabolic_gases } 				# 代谢气体
+
+		give_technology = { tech = tech_boarding_cables } 				# 跳帮缆索
+
+		give_technology = { tech = tech_controlled_mutations } 					# 可控变异
+		give_technology = { tech = tech_controlled_mutations_2 } 				# 先进可控变异
+		give_technology = { tech = tech_unique_mutation_space_amoeba } 			# 吸血鞭毛
+		give_technology = { tech = tech_unique_mutation_tiyanki } 				# 群兽合唱
+		give_technology = { tech = tech_unique_mutation_voidworm } 				# 剧毒囊肿
+		give_technology = { tech = tech_unique_mutation_cutholoid } 			# 胃袋喷泉
+		give_technology = { tech = tech_unique_mutation_crystalline_entity } 	# 分裂核心
+		give_technology = { tech = tech_unique_mutation_restorative_enzymes } 	# 自我再生酶
+		give_technology = { tech = tech_unique_mutation_starborne_biology } 	# 星养生理
+		give_technology = { tech = tech_thrusters_bio_integration } 			# 推进器生物整合
+		give_technology = { tech = tech_hyper_drive_bio_integration } 			# 超光速生物整合
+		give_technology = { tech = tech_sensors_bio_integration } 				# 传感器生物整合
+		give_technology = { tech = tech_combat_computers_bio_integration } 		# 战斗计算机生物整合
+		country_event = { id = ocd_tech_event.0 }
+	}
+	option = {
+		name = grand_archive_tech_event.1.ga
+		give_technology = { tech = tech_galactic_archivism }
+		country_event = { id = ocd_tech_event.0 }
+	}
+	option = {
+		name = grand_archive_tech_event.1.gw
+		give_technology = { tech = tech_gravity_wells }
+		give_technology = { tech = tech_gravity_snare_capacity_1 }
+		give_technology = { tech = tech_gravity_snare_capacity_2 }
+		give_technology = { tech = tech_gravity_snare_capacity_3 }
+		give_technology = { tech = tech_containment_vessel }
+		give_technology = { tech = tech_voidworm_immunity }
+		give_technology = { tech = tech_asteroidal_carapace }
+		give_technology = { tech = tech_alien_cloning }
+		give_technology = { tech = tech_improved_incubators }
+		give_technology = { tech = tech_metabolic_gases }
+		country_event = { id = ocd_tech_event.0 }
+	}
+	option = {
+		name = grand_archive_tech_event.1.bc
+		give_technology = { tech = tech_boarding_cables }
+		country_event = { id = ocd_tech_event.0 }
+	}
+	option = {
+		name = grand_archive_tech_event.1.cm
+		give_technology = { tech = tech_controlled_mutations }
+		give_technology = { tech = tech_controlled_mutations_2 }
+		give_technology = { tech = tech_unique_mutation_space_amoeba }
+		give_technology = { tech = tech_unique_mutation_tiyanki }
+		give_technology = { tech = tech_unique_mutation_voidworm }
+		give_technology = { tech = tech_unique_mutation_cutholoid }
+		give_technology = { tech = tech_unique_mutation_crystalline_entity }
+		give_technology = { tech = tech_unique_mutation_restorative_enzymes }
+		give_technology = { tech = tech_unique_mutation_starborne_biology }
+		give_technology = { tech = tech_thrusters_bio_integration }
+		give_technology = { tech = tech_hyper_drive_bio_integration }
+		give_technology = { tech = tech_sensors_bio_integration }
+		give_technology = { tech = tech_combat_computers_bio_integration }
+		country_event = { id = ocd_tech_event.0 }
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = { id = ocd_tech_event.0 }
+		default_hide_option = yes
+	}
+}

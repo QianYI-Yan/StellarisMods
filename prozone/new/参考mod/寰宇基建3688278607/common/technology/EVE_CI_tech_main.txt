@@ -1,0 +1,297 @@
+#能量循环回馈
+eve_tech_EnergyCycleFeedback = {
+    cost = 6000
+    area = society
+    tier = 2
+    category = { structural_iteration }
+    prerequisites = {  }
+    weight = @tier1weight3
+    is_rare = yes
+    # is_dangerous = yes
+    potential = {
+    }
+
+    modifier = {
+        planet_technician_produces_mult = 0.25
+
+    }
+
+    weight_modifier = {
+
+        modifier = {
+            factor = 1.25
+            has_tradition = tr_prosperity_adopt
+        }
+    }
+
+    ai_weight = {
+
+    }
+}
+
+#技术农业架构 高级生物学支持前置
+eve_ci_tech_agri_architecture = {
+    area = society
+    category = { structural_iteration }
+    tier = 3
+    cost = @tier3cost3
+    prerequisites = { "tech_society_1" }
+    weight = @tier3cost3
+    is_rare = yes
+
+    potential = {
+        is_wilderness_empire = no
+    }
+
+
+
+    modifier = {
+        society_tech_cost_mult = -0.05
+    }
+
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOR = {
+                has_technology = tech_mine_exotic_gases
+                has_technology = tech_exotic_gases
+                has_country_flag = has_market_access
+            }
+        }
+        modifier = {
+            factor = 2
+            years_passed > 5
+        }
+        modifier = {
+            factor = 2
+            years_passed > 10
+        }
+        modifier = {
+            factor = 2
+            years_passed > 15
+        }
+        modifier = {
+            factor = 2
+            years_passed > 20
+        }
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = { TYPE = scholarium }
+        }
+        modifier = {
+            factor = 2
+            has_relic = r_pox_sample
+        }
+    }
+
+    ai_weight = {
+        factor = @ai_society_tech_speed_factor
+        factor = @zone_clear_ai_tech_factor
+    }
+}
+
+#自适应生产架构 高级工程学支持的前置
+eve_ci_tech_self_evolving_production_system = {
+    area = engineering
+    category = { structural_iteration }
+    tier = 3
+    cost = @tier3cost3
+    prerequisites = { "tech_engineering_2" }
+    weight = @tier3cost3
+    is_rare = yes
+
+    potential = {
+        is_wilderness_empire = no
+    }
+
+
+
+    modifier = {
+        engineering_tech_cost_mult = -0.05
+    }
+
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOR = {
+                has_technology = tech_mine_rare_crystals
+                has_technology = tech_rare_crystals
+                has_country_flag = has_market_access
+            }
+        }
+        modifier = {
+            factor = 2
+            years_passed > 25
+        }
+        modifier = {
+            factor = 2
+            years_passed > 30
+        }
+        modifier = {
+            factor = 2
+            years_passed > 35
+        }
+        modifier = {
+            factor = 2
+            years_passed > 40
+        }
+
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = { TYPE = scholarium }
+        }
+    }
+
+    ai_weight = {
+        factor = @ai_engineering_tech_speed_factor
+        factor = @zone_clear_ai_tech_factor
+    }
+}
+
+#技能源科研机构 高级物理学支持前置
+eve_ci_tech_energy_research_institute = {
+    area = physics
+    category = { structural_iteration }
+    tier = 3
+    cost = @tier3cost3
+    prerequisites = { "tech_physics_2" }
+    weight = @tier3cost3
+    is_rare = yes
+
+    potential = {
+        is_wilderness_empire = no
+    }
+
+
+
+    modifier = {
+        physics_tech_cost_mult = -0.05
+    }
+
+    weight_modifier = {
+        modifier = {
+            factor = 0
+            NOR = {
+                has_technology = tech_mine_volatile_motes
+                has_technology = tech_volatile_motes
+                has_country_flag = has_market_access
+            }
+        }
+        modifier = {
+            factor = 2
+            years_passed > 25
+        }
+        modifier = {
+            factor = 2
+            years_passed > 30
+        }
+        modifier = {
+            factor = 2
+            years_passed > 35
+        }
+        modifier = {
+            factor = 2
+            years_passed > 40
+        }
+
+        modifier = {
+            factor = 1.5
+            is_specialist_subject_type = { TYPE = scholarium }
+        }
+    }
+
+    ai_weight = {
+        factor = @ai_physics_tech_speed_factor
+        factor = @zone_clear_ai_tech_factor
+    }
+}
+
+#模块化垂直耕种 高级食物支持特化前置
+eve_tech_modular_vertical_farming = {
+    cost = 9000
+    area = society
+    tier = 3
+    category = { structural_iteration }
+    prerequisites = { eve_ci_tech_agri_architecture }
+    weight = @tier1weight3
+    is_rare = yes
+    # is_dangerous = yes
+    potential = {
+    }
+
+    modifier = {
+        planet_district_farming_build_speed_mult = 0.25
+
+    }
+
+    weight_modifier = {
+
+        modifier = {
+
+        }
+    }
+
+    ai_weight = {
+
+    }
+}
+
+#深层全域勘探
+eve_tech_Deep_Full_Prospecting = {
+    cost = 9000
+    area = engineering
+    tier = 3
+    category = { structural_iteration }
+    prerequisites = { eve_ci_tech_self_evolving_production_system }
+    weight = @tier1weight3
+    is_rare = yes
+    # is_dangerous = yes
+    potential = {
+    }
+
+    modifier = {
+        planet_district_mining_build_speed_mult = 0.25
+
+    }
+
+    weight_modifier = {
+
+        modifier = {
+
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+#全域电网协同调控
+eve_tech_grid_coordination_control = {
+    cost = 9000
+    area = physics
+    tier = 3
+    category = { structural_iteration }
+    prerequisites = { eve_ci_tech_energy_research_institute }
+    weight = @tier1weight3
+    is_rare = yes
+    # is_dangerous = yes
+    potential = {
+    }
+
+    modifier = {
+        planet_district_generator_build_speed_mult = 0.25
+
+    }
+
+    weight_modifier = {
+
+        modifier = {
+
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}

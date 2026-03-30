@@ -1,0 +1,66 @@
+namespace = ancient_relics_tech_event
+
+country_event = {
+    id = ancient_relics_tech_event.1
+	title = ancient_relics_tech_event.1.name
+	desc = ancient_relics_tech_event.1.desc
+	picture = GFX_evt_ancient_records
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_secrets_cybrex 	# ancientrelics-赛博勒克斯采矿核心
+		add_research_option = tech_secrets_league 	# ancientrelics-第一联盟归档办公室
+		add_research_option = tech_secrets_irassian # ancientrelics-伊拉斯人海军船坞
+		add_research_option = tech_secrets_vultaum 	# ancientrelics-沃陶姆现实计算机
+		add_research_option = tech_secrets_yuht 	# ancientrelics-尤特天文干涉仪
+		add_research_option = tech_secrets_baol 	# ancientrelics-巴奥有机工厂
+		add_research_option = tech_secrets_zroni 	# ancientrelics-泽珞族风暴投射器
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ancient_relics_tech_event.1.c
+		give_technology = { tech = tech_arcane_deciphering message = no } # ancientrelics-奥术解密
+		give_technology = { tech = tech_archeology_lab_ancrel message = no } # ancientrelics-策展人考古实验室
+		give_technology = { tech = tech_archaeostudies message = no } # ancientrelics-远古学
+		give_technology = { tech = tech_archaeoshield message = no } # 远古延留力场
+		give_technology = { tech = tech_archaeoarmor message = no } # 远古脉冲装甲
+		give_technology = { tech = tech_archaeo_detection_scrambler message = no } # 远古目标扰频器
+		give_technology = { tech = tech_archaeo_titan_beam message = no } # 远古湮灭眩光
+		give_technology = { tech = tech_archaeo_pk_devolving_beam message = no } # 降智光束
+		give_technology = { tech = tech_archaeo_mass_drivers message = no } # 远古巨炮组
+		give_technology = { tech = tech_archaeo_lasers message = no } # 远古穴蚀坍缩器
+		give_technology = { tech = tech_archaeo_point_defence message = no } # 远古防御投网机
+		give_technology = { tech = tech_archaeo_missiles message = no } # 远古纳米导弹云发射器
+		give_technology = { tech = tech_archaeo_mass_accelerator message = no } # 远古饱和剂发射炮
+		give_technology = { tech = tech_archaeo_strike_crafts message = no } # 远古钻孔机无人机
+		give_technology = { tech = tech_archaeo_rampart message = no } # 远古壁垒
+		give_technology = { tech = tech_archaeo_overcharger message = no } # 远古护盾超频器
+		give_technology = { tech = tech_archaeo_refinery message = no } # 远古精炼厂
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ancient_relics_tech_event.1.d
+		give_technology = { tech = tech_secrets_cybrex message = no } # ancientrelics-赛博勒克斯采矿核心
+		give_technology = { tech = tech_secrets_league message = no } # ancientrelics-第一联盟归档办公室
+		give_technology = { tech = tech_secrets_irassian message = no } # ancientrelics-伊拉斯人海军船坞
+		give_technology = { tech = tech_secrets_vultaum message = no } # ancientrelics-沃陶姆现实计算机
+		give_technology = { tech = tech_secrets_yuht message = no } # ancientrelics-尤特天文干涉仪
+		give_technology = { tech = tech_secrets_baol message = no } # ancientrelics-巴奥有机工厂
+		give_technology = { tech = tech_secrets_zroni message = no } # ancientrelics-泽珞族风暴投射器
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

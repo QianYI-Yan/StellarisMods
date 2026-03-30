@@ -1,0 +1,548 @@
+﻿l_simp_chinese:
+
+
+ #####tech
+
+
+ tech_mtp_dimension_stride_research:0 "§W跨纬度研究§!£research£"
+ tech_mtp_dimension_stride_research_desc:0 "我们的技术很难再有本质突破了，科学家们只能开始想办法对维度展开研究，通过调整引力对应特殊的震幅，理论上可以削弱维度之间的屏障，如果我们能实现这项技术，打破屏障并保持跨纬度互动，那我们也许可以利用这个技术大大缩小舰船结构占据的空间，还能更好的保护重要的结构，毕竟，我们的敌人不太可能跨越维度去摧毁我们战舰的要害。（解锁跨纬度研究科技树）"
+ tech_mtp_dimension_4_material_transfer:0 "§B四维物质传送机"
+ tech_mtp_dimension_4_material_transfer_desc:0 "如今我们的科学家已经对跨纬度研究有不少进展，四维物质传送零号机已经完成设计，它可以打破我们与四维空间的隔阂，一旦建造完成，我们就可以将那些宝贵的资源储存在四维空间，那里绝对不会有小偷。这是我们对于跨纬度研究成果的首次应用。"
+ tech_mtp_gravitation_micro_dimension_field:0 "§L小型微势面褶皱力场"
+ tech_mtp_gravitation_micro_dimension_field_desc:0 "我们的科学已经完成了当初的构想，我们成功将维度跨越装置缩小到可以直接装载在舰船上的程度，同时还能保持维度那边的结构和我们保持互动，这样我们可以将飞船的大部分核心结构存放在四维空间了，这将节省大量的空间来让我们堆放装甲甚至新增大量功能区和武器。我们相信跨纬度技术还能得到更多的应用。"
+ tech_mtp_gravitation_space_compression:0 "运输船空间压缩"
+ tech_mtp_gravitation_space_compression_desc:0 "工程师们很快就把舰船四维压缩技术用在了运输船上，节省出的大量空间又可以装载更多士兵了，不过预算也得多不少，不过，战斗力才是第一指标。"
+ tech_mtp_dimension_material_extraction:0 "四维高价值物提取技术"
+ tech_mtp_dimension_material_extraction_desc:0 "正如我们所构想的一样，其他维度的空间也不是空无一物的，是时候想办法将那些奇妙的高维度物质转化成宝贵的资源了！"
+ tech_mtp_soulence_food_addition:0 "§H杜粹食品添加"
+ tech_mtp_soulence_food_addition_desc:0 "我们发现了一种来自四维空间的新物质，我们将其命名为‘杜粹’，这种物质如果摄入我们体内，能对我们的精神力量有很大增强，他还能影响机械结构，提升我们的量子计算机运算效率。我们暂时还不知道原理是什么，也不知道是否有副作用，但我们已经等不及将‘杜粹’加入我们的食物来强化我们了。"
+ tech_mtp_dimension_defensenet:0 "§B定向降维防御网络"
+ tech_mtp_dimension_defensenet_desc:0 "将维度技术应用到军事上是我们早就想做的事，如今我们构想了一种全新的防御网络系统，它并不是一个更高级的能量屏障，他是经过特殊设计的维度传送机，它将可以在小范围内将一个极小维度薄弱点投射到任何位置，虽然没办法大面积投射，但是配合我们先进的人工智能可以对对方的火力进行精确投射，从而将那些本该击中我们的火力倾泻到更底维度去。"
+ tech_mtp_dimension_2_manipulation:0 "二维时空操控"
+ tech_mtp_dimension_2_manipulation_desc:0 "如果我们可以操控二维时空，那我们就能将维度本身用于各种领域。"
+ tech_mtp_dimension_2_pacification:0 "§Y二向箔恒星杀手"
+ tech_mtp_dimension_2_pacification_desc:0 "这项研究将彻底扭转整个银河的战争，我们离神更进一步了，我们如今可以利用强磁约束一整块二维平面，从而将其用于战争，我们的巨像将其投射并完全穿过整个目标恒星，这将杀死恒星并释放出难以置信的能量，彻底摧毁整个恒星系。"
+ tech_mtp_soulence_metal_synthesis:0 "杜粹金属合成"
+ tech_mtp_soulence_metal_synthesis_desc:0 "杜粹物质的结构令人着迷，我们还不知道这种物质能有哪些作用，但其蕴含的能量异常强大，我们在从四维空间提取杜粹时，它在降维过程中产生了副产品，合金。"
+ tech_mtp_soulence_reinforced_armor:0 "杜粹强化装甲"
+ tech_mtp_soulence_reinforced_armor_desc:0 "我们在尝试用杜粹这种无形物质本身和降维它产生的副产品合金融合时，竟然创造了新的物质，我们暂且叫它‘杜粹合金’，这种合金的特性令人着迷，他能快速恢复自己被设定的形状，同时分子排列又密不可分，质地坚硬无比，很适合用来当作装甲。更意外的是，这种装甲还能持续释放能量。"
+ tech_mtp_reduced_dimension_reactor:0 "降维反应堆"
+ tech_mtp_reduced_dimension_reactor_desc:0 "这个反应堆构想是一个包裹在强磁约束下的降维力场，通过持续将高密度物质降维释放出难以置信的能量。"
+ tech_mtp_dimension_energy_application:0 "超能量应用"
+ tech_mtp_dimension_energy_application_desc:0 "尽管目前我们的反应堆已经能够生存源源不断的能量，但我们的科学家依旧提议尝试去利用那些来自其他维度的能量。"
+ tech_mtp_molecular_decomposition:0 "连锁分子分解力场"
+ tech_mtp_molecular_decomposition_desc:0 "来自维度外的能量被我们应用起来，我们还是将它做成了武器。这种能量力场能够引起连锁反应，轻松分解范围内有机生物的分子结构，并释放能量，最终留下来的只有带着等离子的尘土，这是文明的骨灰。"
+ mtp_tech_sublevel_focusing:0 "次能级聚焦"
+ mtp_tech_sublevel_focusing_desc:0 "提升降维武器所使用的能级能大大提高力场投射范围，提升打击效果。"
+ mtp_tech_module_cooling:0 "模块化散热"
+ mtp_tech_module_cooling_desc:0 "用于各种尺寸的维度武器的通用模块化散热组件已被研发出来，我们只需要强化和加装模块就能提升散热效率，加快武器攻击速度。"
+ mtp_tech_dimension_communication:0 "跨纬度通讯管理"
+ mtp_tech_dimension_communication_desc:0 "逐渐成熟的跨纬度通讯系统和方案能让我们越来越有效的指挥我们的强大舰队。"
+ mtp_tech_thought_stamp:0 "思想钢印"
+ mtp_tech_thought_stamp_desc:0 "思想钢印是由我们一位高级海军将领提出的，用于提高我们的效率，巩固军心，利用杜粹对有机体和智能机械的影响，给每一位战士植入服从于冷酷。听说这事一种不道德的精神控制，不过这又有什么关系呢？"
+
+
+ #####################
+ # 维度研究
+ #####################
+ tech_mtp_dimension_2_research:0 "二维空间研究"
+ tech_mtp_dimension_2_research_desc:0 "即使二维比我们低一维，但我们也有必要研究其中的价值。"
+ tech_mtp_dimension_4_research:0 "四维空间研究"
+ tech_mtp_dimension_4_research_desc:0 "四维空间的理论存在多年，是时候真正下手开始研究了。"
+ tech_mtp_dimension_5_research:0 "五维空间研究"
+ tech_mtp_dimension_5_research_desc:0 "五维空间对我们来说还深不可测。"
+ tech_mtp_dimension_6_research:0 "六维空间研究"
+ tech_mtp_dimension_6_research_desc:0 "六维空间似乎拥有奇怪的负曲率。"
+ tech_mtp_dimension_7_research:0 "七维空间研究"
+ tech_mtp_dimension_7_research_desc:0 "我们如今已经可以缓慢的理解七维空间的本质了。"
+ tech_mtp_dimension_8_research:0 "八维空间研究"
+ tech_mtp_dimension_8_research_desc:0 "八维空间研究已经在我们的日程表上。"
+ tech_mtp_dimension_9_research:0 "九维空间研究"
+ tech_mtp_dimension_9_research_desc:0 "九维空间的研究似乎有了突破。"
+ tech_mtp_dimension_10_research:0 "十维空间研究"
+ tech_mtp_dimension_10_research_desc:0 "十维空间研究对我们很重要。"
+ tech_mtp_dimension_11_research:0 "十一维空间研究"
+ tech_mtp_dimension_11_research_desc:0 "这是维度基础研究的终点，但不是我们进步的终点。"
+ tech_mtp_dimension_of_ascensions:0 "§H=升维="
+ tech_mtp_dimension_of_ascensions_desc:0 "随着我们的最后一个公民植入全新搭载维度穿梭模块的智能芯片，我们的种族，彻底成为了神，没有什么能够阻挡我们的力量。"
+ tech_mtp_dimension_parallel_universe_window:0 "§W窥视之窗"
+ tech_mtp_dimension_parallel_universe_window_desc:0 "首席科学家沃尔特·贝肖普研究出了一种能分离光子调节波长的窗户，这个窗户能让我们通过窗户看到平行世界，我们能够通过它学习平行世界的我们更加优秀的地方，剽窃他们的技术，研究他们的社会。"
+ tech_mtp_dimension_reduce_theory:0 "§G维度理论"
+ tech_mtp_dimension_reduce_theory_desc:0 "我们的科学家首次提出维度理论。"
+ tech_mtp_dimension_reduce_polymerization:0 "定向聚合集束降维力场"
+ tech_mtp_dimension_reduce_polymerization_desc:0 "继上次维度传送机被我们改造成防御网后，聪明的科学家又想出了一种让他变成武器的方法。通过高能力场配合我们的人工智能，我们能让一小束降维力场在稍微远距离的地方投射，从而达到作为武器的要求，这样的武器能够无比轻松的穿过敌人的能量护盾，对船体造成巨量的直接伤害，唯一需要改进的就是射程。"
+ tech_mtp_phasestate_framework_dissociation:0 "空间构架解离技术"
+ tech_mtp_phasestate_framework_dissociation_desc:0 "扭曲空间的形状不过是对时空技术的基础应用，我们需要的是对时空结构的直接塑造，但基态真空作为常规宇宙的能量最低点，它的稳定性强大而难以撼动，让我们望而却步。\n\n但在另一物理谱系中发现的一种奇异基本粒子改变了这一切，这种被我们命名为"尘子"的基本粒子能够切断引力场之间的自相互作用，将空间本身分割成一个个独立的基本单元，直到"尘子"扩散殆尽。\n\n有了它，真空将会如同橡皮泥一样可塑，只是再现这种物质的代价有些过于昂贵......"
+
+
+ ######tech_type
+
+
+ Multidimensional_Technology:0 "§Y维度技术"
+ Multidimensional_Technology_desc:0 "掌握维度，我们将超脱一切"
+ Heterotopic_materials:0 "§Y异谱系粒子学"
+ Heterotopic_materials_desc:0 "其他维度的价值远远不止维度本身。"
+ Dimension_Engineering:0 "§Y维度工程学"
+ Dimension_Engineering_desc:0 "维度技术会帮助我们创造不可能"
+ Dimension_military_application:0 "§Y维度军事应用"
+ Dimension_military_application_desc:0 "将维度应用在军事上有什么问题吗？"
+ tech_mtp_parallel_universe_theory:0 "§Y平行宇宙理论"
+ tech_mtp_parallel_universe_theory_desc:0 "研究另一个世界的我们非常有价值。"
+
+
+
+ ######shippart
+
+ Drop_maintenance_shield:0 "§B定向降维防御网"
+ Drop_maintenance_shield_DESC:0 "精准定位敌方火力的降维防御系统"
+ small_Drop_maintenance_shield:0 "§B小型定向降维防御网"
+ medium_Drop_maintenance_shield:0 "§B中型定向降维防御网"
+ large_Drop_maintenance_shield:0 "§B大型定向降维防御网"
+ TWO_DIMENSIONAL_FOIL_SET:0 "§M二向箔星系杀手"
+ TWO_DIMENSIONAL_FOIL_SET_DESC:0 "用整块二维平面彻底降维目标恒星（注意，彻底摧毁后的星系将失去所有产出并无法被纳入任何帝国的版图）。"
+ TWO_DIMENSIONAL_FOIL:0 "§M二向箔星系杀手"
+ TWO_DIMENSIONAL_FOIL_ACTION:0 "降维"
+ MESSAGE_DESC_FOR_TWO_DIMENSIONAL_FOIL:0 "被彻底摧毁了"
+ FLEETORDER_DESTROY_PLANET_WITH_TOW_DIMENSIONAL_FOIL:0 "用二维平面平定行星"
+ small_SOULENCE_REINFORCED_ARMOR:0 "小型杜粹强化装甲"
+ medium_SOULENCE_REINFORCED_ARMOR:0 "中型杜粹强化装甲"
+ large_SOULENCE_REINFORCED_ARMOR:0 "大型杜粹强化装甲"
+ SOULENCE_REINFORCED_ARMOR:0 "杜粹强化装甲"
+ SOULENCE_REINFORCED_ARMOR_DESC:0 "来自四维空间的神秘物质杜粹混合特殊合金制作的强力装甲"
+ DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM:0 "§B定向降维束"
+ DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM_DESC:0 "投射出聚合的降维力场束来高效打击敌人船体和装甲。"
+ small_DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM:0 "§B小型定向降维束"
+ medium_DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM:0 "§B中型定向降维束"
+ large_DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM:0 "§B大型定向降维束"
+ REDUCED_DIMENSION_REACTOR_M:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_W:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_Z:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_G:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_J:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_F:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_X:0 "§B降维反应堆"
+ REDUCED_DIMENSION_REACTOR_D:0 "§B降维反应堆"
+ LITTLE_DOCTOR_SET:0 "§E小医生"
+ LITTLE_DOCTOR_SET_DESC:0 "§E连锁分子分解光束将横扫整个行星。"
+ LITTLE_DOCTOR:0 "§E小医生"
+ LITTLE_DOCTOR_ACTION:0 "§E焚烧"
+ MESSAGE_DESC_FOR_LITTLE_DOCTOR:0 "被焚烧殆尽。"
+ #装甲
+ ARMOR_ZERODEGREE:"零度装甲"
+ ARMOR_ZERODEGREE_DESC:""
+ ARMOR_ZERODEGREE_SMALL:"小型$ARMOR_ZERODEGREE$"
+ ARMOR_ZERODEGREE_MEDIUM:"中型$ARMOR_ZERODEGREE$"
+ ARMOR_ZERODEGREE_LARGE:"大型$ARMOR_ZERODEGREE$"
+
+
+
+ ######weapon_tags
+ mtp_weapon_dimension_reduction:0 "§B降维武器"
+ arms_space:0 "§B空间武器"
+ arms_laser:0 "§B激光武器"
+ arms_particle:0 "§B粒子武器"
+ arms_gravitation:0 "§B引力武器"
+ mod_country_resource_max_alloys_add:0 "最大合金"
+ mod_country_resource_max_energy_add:0 "最大能量"
+ mod_country_resource_max_minerals_add:0 "最大矿物"
+ mod_country_resource_max_food_add:0 "最大矿物"
+ mod_country_base_alloys_produces_add:0 "合金产量"
+ only_star:0 "§R只能瞄准恒星"
+ requires_out_border:0 "§R目标不是一个敌对帝国的恒星"
+
+ ######飞升
+ ap_promotion_dimension:0 "§B维度跨越"
+ ap_promotion_dimension_desc:0 "如今，万事已经具备，维度已经在我们的掌控之下，在给每一位公民和战士发放维度控制器后，我们准备正式宣布，我们成为了可以随意跨越维度的超级支配者！整个宇宙将因为我们而战栗！"
+
+ #更新公告
+ mtp_newtab_1.name:0 "§B寰宇基建§R版本0.3§Y更新公告"
+ mtp_newtab_1.desc:0 "§E版本号：0.3\n§Y新增：§L\n1.\n§Y变更：\n§L1.因为一产支持等特化内容被独立成单独内容，因此替换为了更强的新版本。\n2.\n感谢你对我作品的支持，祝你玩得开心。"
+
+ #行星毁灭事件
+ mtp_systkill.001.name:0 "§R星系已被摧毁"
+ mtp_systkill.001.desc:0 "§R“请你告诉我，你们使用我的造物摧毁那个星系是迫不得已！”§E ———— 二向箔武器首席科学家 匿名。\n§L我们终究是使用了这个毁灭性的武器来彻底摧毁整个恒星系，随着恒星触碰二维平面的一瞬间，巨大的能量被释放，顷刻间恒星不再耀眼，消逝在了岁月长河中，而她死亡前释放出最后的余晖将这个曾经繁荣富饶的星系化为灰烬。\n§R但我们不后悔，战争从来没有怜悯可言！"
+
+ #行星毁灭事件2
+ mtp_systkill.002.name:0 "§Y星球已被焚烧"
+ mtp_systkill.002.desc:0 "§R分解力场§L在目标行星上散发着耀眼的光芒，这颗行星已经没有任何生物了，地表也被分解释放的能量烧的通红。\n这次袭击再一次证明了我们必胜的决心。"
+
+ ############################
+ # 本地化·中文·星球相关
+ ############################
+
+ ####################
+ # 星球建筑
+ ####################
+ building_mtp_mtp_elementenzyme_synthesis:"异质合成站"
+ building_mtp_mtp_elementenzyme_synthesis_desc:"复杂的工业站点不断的吞吐着大量的原料，用于合成及其珍惜的战略资源。"
+ building_mtp_cross_dimensional_mine:"跨维度矿井"
+ building_mtp_cross_dimensional_mine_desc:"长长的走廊，一个又一个的隔间中摆放着一个又一个活体安全规格的跨维度传送机，高额的赏金下招来了一个又一个专业的维度矿工，他们称自己为杜粹猎人。"
+ building_mtp_heart_of_the_end:"终末之心"
+ building_mtp_heart_of_the_end_desc:"散发着神秘红光的金字塔，由参杂杜粹的高强度合金包裹，我想我们最好不要向好奇的民众公布里面到底是些什么玩意儿。"
+ building_mtp_heart_of_the_end_effect_desc:"这个神秘的金字塔里利用空间技术囚禁着一个小型的人造黑洞，围绕在周围的装置源源不断的汲取着我们需要的£sr_dark_matter£ §R$sr_dark_matter$§!。"
+ building_mtp_planes_anchor:"子空间综合管理部"
+ building_mtp_planes_anchor_desc:"§Y解锁决策§!：星球子空间开辟\n\n用于管理各个高维子空间的部门，主要职能有§Y子空间状态监控§!、§Y次元锚系统维护§!、§Y高维通道调控§!等。"
+ ####################
+ # 星球地块
+ ####################
+ d_mtp_innerhorizon:"£district£内层视界"
+ d_mtp_innerhorizon_desc:"高速旋转的克尔黑洞具有两个事件视界，现在那里也可以成为我们的居住地。"
+ d_mtp_subspace:"£district£高维子空间"
+ d_mtp_subspace_desc:"人工开辟出来的子空间位面，并已经被独立的次元锚所稳定，现在已经成为了星球可用空间的拓展。"
+
+ ############################
+ # 本地化·中文·人口相关
+ ############################
+
+ ######################
+ # 人口职业
+ ######################
+ job_mtp_heterogeneity:"异质合成师"
+ job_mtp_heterogeneity_plural:"$job_mtp_heterogeneity$"
+ job_mtp_heterogeneity_desc:"合成$mtp_elementenzyme$的职业。"
+ job_mtp_heterogeneity_effect_desc:"£job_mtp_heterogeneity£ §Y$job_mtp_heterogeneity$§!将£sr_dark_matter£ §Y$sr_dark_matter$§!和 £exotic_gases£ §Y$exotic_gases$§!转化为£mtp_elementenzyme£ §Y$mtp_elementenzyme$§!"
+ mod_job_mtp_heterogeneity_add:"$job_mtp_heterogeneity$职位"
+ mod_job_mtp_heterogeneity_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_heterogeneity$职位$"
+ mod_job_mtp_heterogeneity_per_pop_short:"每$VALUE$个£pop£有§G+1§!$mod_job_mtp_heterogeneity_add$"
+
+ job_mtp_heterogeneity_drone:"异质合成子个体"
+ job_mtp_heterogeneity_drone_plural:"$job_mtp_heterogeneity_drone$"
+ job_mtp_heterogeneity_drone_desc:"合成$mtp_elementenzyme$的职业。"
+ job_mtp_heterogeneity_drone_effect_desc:"£job_mtp_heterogeneity_drone£ §Y$job_mtp_heterogeneity_drone$§!将£sr_dark_matter£ §Y$sr_dark_matter$§!和 £exotic_gases£ §Y$exotic_gases$§!转化为£mtp_elementenzyme£ §Y$mtp_elementenzyme$§!"
+ mod_job_mtp_heterogeneity_drone_add:"$job_mtp_heterogeneity_drone$职位"
+ mod_job_mtp_heterogeneity_drone_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_heterogeneity_drone$职位$"
+ mod_job_mtp_heterogeneity_drone_per_pop_short:"每$VALUE$个£pop£有§G+1§!$mod_job_mtp_heterogeneity_drone_add$"
+
+ job_mtp_cross_dimensional_miner:"跨维度矿工"
+ job_mtp_cross_dimensional_miner_plural:"$job_mtp_cross_dimensional_miner$"
+ job_mtp_cross_dimensional_miner_desc:"采集$mtp_soulence$的职业。"
+ job_mtp_cross_dimensional_miner_effect_desc:"£job_mtp_cross_dimensional_miner£ §Y$job_mtp_cross_dimensional_miner$§!将£energy£ §Y$energy$§!和 £sr_dark_matter£ §Y$sr_dark_matter$§!转化为£mtp_soulence£ §Y$mtp_soulence$§!"
+ mod_job_mtp_cross_dimensional_miner_add:"$job_mtp_cross_dimensional_miner$岗位"
+ mod_job_mtp_cross_dimensional_miner_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_cross_dimensional_miner$职位$"
+ mod_job_mtp_cross_dimensional_miner_per_pop_short:"每$VALUE$个£pop£有§G+1§!$mod_job_mtp_cross_dimensional_miner_add$"
+
+ job_mtp_cross_dimensional_individual:"跨维度采矿子个体"
+ job_mtp_cross_dimensional_individual_plural:"$job_mtp_cross_dimensional_individual$"
+ job_mtp_cross_dimensional_individual_desc:"采集$job_mtp_soulence$的职业。"
+ job_mtp_cross_dimensional_individual_effect_desc:"£job_mtp_cross_dimensional_individual£ §Y$job_mtp_cross_dimensional_individual$§!将£energy£ §Y$energy$§!和 £sr_dark_matter£ §Y$sr_dark_matter$§!转化为£mtp_soulence£ §Y$mtp_soulence$§!"
+ mod_job_mtp_cross_dimensional_individual_add:"$job_mtp_cross_dimensional_individual$岗位"
+ mod_job_mtp_cross_dimensional_individual_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_cross_dimensional_individual$职位$"
+ mod_job_mtp_cross_dimensional_individual_per_pop_short:"每$VALUE$个£pop£有§G+1§!$mod_mtp_cross_dimensional_individual_add$"
+
+ job_mtp_dispatcher:"调度员"
+ job_mtp_dispatcher_plural:"$job_mtp_dispatcher$"
+ job_mtp_dispatcher_desc:"负者宏观调控各个子空间通道，维护子空间通道管理AI，保证运输正常的技术人员。"
+ job_mtp_dispatcher_effect_desc:"£job_mtp_dispatcher£ §Y$job_mtp_dispatcher_plural$§!消耗£consumer_goods£ §Y$consumer_goods$§!产出£mod_trade_value_add£ §Y$TRADE_VALUE$§!"
+ mod_job_mtp_dispatcher_add:"$job_mtp_dispatcher$职位"
+ mod_job_mtp_dispatcher_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_dispatcher$职位$"
+ mod_job_mtp_dispatcher_per_pop_short:0 "每$VALUE$个£pop£有§G+1§!个£mod_job_mtp_dispatcher_add£"
+
+ job_mtp_dispatcher_drone:"调度子个体"
+ job_mtp_dispatcher_drone_plural:"$job_mtp_dispatcher_drone$"
+ job_mtp_dispatcher_drone_desc:"负者宏观调控各个子空间通道，维护子空间通道管理AI，保证运输正常的技术人员。"
+ job_mtp_dispatcher_drone_effect_desc:"£job_mtp_dispatcher_drone£ §Y$job_mtp_dispatcher_drone_plural$§!消耗£consumer_goods£ §Y$consumer_goods$§!产出£mod_trade_value_add£ §Y$TRADE_VALUE$§!"
+ mod_job_mtp_dispatcher_drone_add:"$job_mtp_dispatcher_drone$职位"
+ mod_job_mtp_dispatcher_drone_per_pop:"$每$VALUE$个人口有§G+1§!个$job_mtp_dispatcher_drone$职位$"
+ mod_job_mtp_dispatcher_drone_per_pop_short:0 "每$VALUE$个£pop£有§G+1§!个£mod_job_mtp_dispatcher_drone_add£"
+
+ #####################################
+ # 物理学
+ #####################################
+ ############基础理论################
+ tech_unified_field_theory:"统一场实践验证"
+ tech_unified_field_theory_desc:"从相互作用是由场（或场的量子）来传递的观念出发，统一地描述和揭示基本相互作用的共同本质和内在联系的物理理论。"
+ ####################################
+ # 科技树·其它科技
+ ####################################
+ tech_heavy_nuclear_fusion:"重核聚变"
+ tech_heavy_nuclear_fusion_desc:"重核聚变是直将轻元素聚变成原子序数更大的重元素，进而获取更多能量的手段。"
+ tech_heavy_nuclear_fusion_1:"重核聚变：氦、锂"
+ tech_heavy_nuclear_fusion_1_desc:"聚变元素的原子序数提升至3，可以从相对较轻的元素那获取更多的能量。"
+ tech_element_reorganization:"元素重组"
+ tech_element_reorganization_desc:"干涉强相互作用与弱相互作用力，令原子核的稳定性在短时间内降到最低，使其结构自行解离，并且在短时间内完成元素重组操作，改变元素的类型。"
+ tech_negativeson:"奇异粒子：负向子"
+ tech_negativeson_desc:"一种存在于另一物理谱系的基本粒子，它只会在规范传播子与物质粒子的相互作用中短暂出现，具有反转作用力标签的性质，列如，将负电荷反转为正电荷，虽然有些让人难以理解，但这确实是负向子的作用表现......"
+ tech_development_pc_molten:"熔岩星球"
+ tech_development_pc_molten_desc:"熔岩星球的表面环境十分恶劣，不可否认的是上面也蕴含着庞大的地热资源，纵使我们已经迈入了星际时代，我们所能掌控的能源在大自然面前也不值一提。"
+ tech_structure_routine:"常规星舰结构"
+ tech_structure_routine_desc:"作为星舰的骨架，星舰的结构对星舰本身的性能有着非同小可的影响，合理的结构能够让星舰具有更高的性能。"
+ tech_structure_chargedefense:"充能防御结构"
+ tech_structure_chargedefense_desc:"能量是物质的运动，能量的形式便是物质运动的形式，破坏的本质结构的变化，这个过程伴随着物质的运动。\n\n倘若我们能够遏制这些运动，便可以人为的阻止结构的损坏。"
+ tech_structure_neutrondegeneracy:"中子简并结构"
+ tech_structure_neutrondegeneracy_desc:"中子简并态物质具有超凡的强度，但也具有超凡的缺点，那就是质量甚至是太大了，采用这种结构打造的飞船移动速度会变得十分缓慢。"
+ tech_structure_chaoweidevelopment:"超维拓展结构"
+ tech_structure_chaoweidevelopment_desc:"宇宙中不存在高维空间，那么就在这片三维大宇宙中创造高维空间结构吧，不过是时空相态的重塑罢了。"
+ ####################################
+ # 科技树·负能科技
+ ####################################
+ tech_negative_energy_particle_model:"负能态粒子模型"
+ tech_negative_energy_particle_model_desc:"§R负能态并不指物质的能量为负数§!而是指物质携带的能量低于零点真空，相对于零点真空，物质所携带即为负数。"
+
+ tech_phagocytic_skeleton:"噬热骨架结构"
+ tech_phagocytic_skeleton_desc:"太空中，飞船的散热问题一直困扰着众多的星舰设计工程师，负能态粒子的发现让这个问题得以解决，噬热骨架可以将飞船运转产生的废热转移到零点真空之下，这一过程看起来就像是"吞噬"一样。"
+
+ tech_eroded_torpedo:"侵蚀鱼雷"
+ tech_eroded_torpedo_desc:""
+ tech_negative_energy_particle:"负能粒子流"
+ tech_negative_energy_particle_desc:""
+ ####################################
+ # 科技树·量子技术
+ ####################################
+ tech_quantum_system_manipulation:"量子系统操纵"
+ tech_quantum_system_manipulation_desc:"灵能的存在揭示了时间反演对称性破缺的结果，微观世界的大门从此向我们敞开，针对量子尺度的直接干涉也不再是不可能的事情。\n\n但这一机制所牵扯到的规律处在更深的层次，我们只知道这一过程和"§Y延迟选择§!"、"§Y信息熵§!"、"§Y超计算§!"、"§Y时间反演对称性§!"有着密切关系。\n\n或许，我们应该去验证"§Y邱奇图灵论题§!"了......"
+ tech_active_tensor_interference:"能动张量干涉"
+ tech_active_tensor_interference_desc:"物质告诉时空如何存在，时空告诉物质如何运动，能动张量的分布也就决定了时空的形态，通过干涉引力子的排布来干涉时空的形态，进而干涉时空中能量动量张量的分布。\n\n能量是物质的运动，能量的形式便是运动的形式，物质的运动又是由时空的形态决定的，亦可理解为物质的运动造就了时空，对时空的精细操作让我们得以更加精细的掌控能量。\n\n内能转移、动能赋值、惯性控制，乃至不同种能量之间的直接转化，一切能量变化皆在掌握之中。"
+ tech_thermal_energy_stripping:"热能剥离"
+ tech_thermal_energy_stripping_desc:"操纵时空变化剥离物质的热能，令得微观层面的原子失去热运动能力，使介观尺度的温度无限迫近绝对零度，，从而让原子被死死的钉在相对静止的位置。"
+ tech_wave_material:"波性材料"
+ tech_wave_material_desc:"波粒二象性揭示了微观层面的物质形态，物质同时具有波性和粒性，两种性质的占比取决于物质的能量大小，绝对零度，可以视作物质完全失去粒子性而以波性存在。\n\n波性材料便是波性占比极大的叠加态物质，具有很多常规物质都没有的性质，当受到外力打击时，波性材料就会因为吸收能量而导致粒子性占比变大，从而获得"实体"。"
+ tech_gravitation_locking:"暧昧态量子材料"
+ tech_gravitation_locking_desc:"常规波性材料的技术升级般，基本粒子的能级被降低到技术极限，原子解离、强子崩坏，夸克、轻子、光子胶子全都凝聚为一体，基本粒子之间的差别已经无法区分，量子系统达到了熵值最大的状态，亦是最为稳定的状态。"
+ tech_unifying_force_material:"统一力材料"
+ tech_unifying_force_material_desc:"所有基本粒子的能态被压至零点真空以下，物质场和时空场统合为一，运动失去了意义，一切重归为一......"
+
+ tech_quantum_jumprate:"量子跳速"
+ tech_quantum_jumprate_desc:"所谓的连续性只不过是大尺度下的幻觉，万物离散才是宇宙本来的面貌，时空是离散的、运动是离散的，基于运动的能量自然也是离散的，能量的变化并不一定需要是线性的，也可以是跳跃式的、不连续的。\n\n通过让飞船的所有物质粒子进入相干态来制造出宏观量子态，这种情况下飞船本身可以视作一个范围极大的量子系统，对这个量子系统的动能属性进行一次整体跃迁，我们便能越过加减速过程直接到达某一指定的速度。\n\n在理论上，这种不连续的速度变化甚至可以直接越过光速壁垒。"
+ tech_moto_lattice:"动子晶格"
+ tech_moto_lattice_desc:"量子跳速机制与一种被我们称之为"§E超动子§!"的基本粒子密切相关，而量子跳速引擎则是对§E超动子§!的一种较为基础的应用。\n\n与量子跳速引擎不同，动子晶格引擎不受质量限制，跳速场所覆盖之处皆可进行跳速。"
+ tech_inertial_field_division:"惯性场分割"
+ tech_inertial_field_division_desc:"分割飞船周边的惯性场，将飞船独立于常规宇宙的惯性参考系之外，从而使其飞船不参与常规宇宙的引力相互作用，飞船无法影响常规宇宙的同时也无法被常规宇宙所影响，这种情况下便可以安全的穿越黑洞的奇环，但需要一组特殊的时空坐标算法来进行导航。"
+
+ tech_holographic_coding:"信界转移"
+ tech_holographic_coding_desc:"§Y全息理论§!告诉我们宇宙只是一副二维的全息图像，我们生活的三维空间则是这个二维空间的投影，黑洞的事件视界与全息图像有着异曲同工之处，落入黑洞的物质会被编码在事件视界上面，而他们所感知到的则事件视界所对应的§Y反德西塔空间§!，与我们感知到的三维空间并没有什么区别。\n\n进入黑洞只需要保证自身不被引力场撕碎，想要离开事件视界，则需要将自身以§Y霍金辐射§!的形式蒸发出去，然后在三维大宇宙中重构身体。"
+ tech_buildings_oddring_oscillator:"奇环震荡"
+ tech_buildings_oddring_oscillator_desc:"奇环网络中的导航高度依赖奇环本身的量子态，只需要让其它文明无法正确获取某一奇环的量子态，就能阻止对方到达那一奇环网络节点。"
+ ####################################
+ # 科技树·纳米技术
+ ####################################
+ tech_emergence_algorithm:"涌现算法"
+ tech_emergence_algorithm_desc:"纳米技术并非单纯的纳米材料或者纳米尺度的造物，而是微观向宏观的过渡，§Y涌现性§!，这一宇宙中最奇妙的性质将会为我们打开时代的大门。"
+ tech_chaotic_topological_network:"混沌拓扑网络"
+ tech_chaotic_topological_network_desc:"如何在纳米机器人这种微小单元上加装程序一直都是技术部门所面对的一个巨大的难题，单个纳米机械的存储能力实在是太弱，只拥有十几个字节的内存，而混沌拓扑网络结构便是解决这个问题的方法。\n\n任何一个纳米机械都可以和任意几百个纳米机械组成整体，共同运作，这个整体可以视作凝聚态物理学中的"§Y振子§!"，这个过程中"§Y振子§!"随生随灭，用多组"§Y振子§!"进行信息传输来规避信息失真，利用"大数定理"的概率收束欢迎失真信息，保证网络的正常运转。\n\n一个混沌的、非线性的，没有节点的网络系统便产生了。\n\n当一个集群的规模足够庞大，这个集群就会涌现出个体所不具备的功能，基于涌现算法，我们可以将基本操作系统安装纳米机械集群的当中，而不是单个纳米机械之上。"
+ tech_phagocytic_lattice:"声子晶格"
+ tech_phagocytic_lattice_desc:"熔岩星球的高温环境会破坏纳米机械的微观结构，导致纳米机械的瞬间损毁。\n\n基于$tech_active_tensor_interference$科技的声子晶格技术能够让纳米微机结成名为"声子晶格"的自相似微观仪器，声子晶格能够稳定自身的热能分布，即使是在超高温或者超低温环境也不会受到太大的影响，从而保证纳米微机集群的正常运作。\n\n当然，也可以反向运用来夺取周围环境的热量为己用，作为纳米微机自我复制的能源。\n\n§R声子晶格的存在似乎揭示热力学在量子力学中的特殊机制，或许量子热力学的研究也应该提上日程了......§!"
+ tech_nanometer_crystal_precipitation:"纳米结晶析出"
+ tech_nanometer_crystal_precipitation_desc:"海洋星球复杂的水文环境让纳米微机难以稳定的复制，使得纳米微机无法应用到海洋星球当中。\n\n最新的结晶算法可以让纳米微机快速析出成大块结晶，形成稳定集群的同时汲取周边海水的中的元素完成自我复制。"
+ tech_nanometer_construction_structure:"纳米构装舰体"
+ tech_nanometer_construction_structure_desc:"在化学键强化技术的辅助下，即使是由纳米机械相互连接所形成的骨架也能具有非凡的强度，最重要的是，它还兼具了强大的自我修复能力，纵使是在战斗中也能正常工作。"
+
+ tech_universal_configuration:"万应构型"
+ tech_universal_configuration_desc:"纳米机械的潜力无可限量，为了最大限度的发挥纳米机械的潜力，我们需要设计出一种可以构造出"任何理论上存在的仪器"的纳米机械构型。"
+ tech_nanocomputer_structure:"纳米构装军团"
+ tech_nanocomputer_structure_desc:"独立能源核心，分布式量子计算元件，再加上复杂的构装算法。\n\n一支可以切换多种形态，具有强大适应能力及修复能力，能够适应多种战场的纳米变形军团便诞生了。"
+ tech_genetic_computer:"基因计算机"
+ tech_genetic_computer_desc:"遗传因子是记录生命工程蓝图的载体，它记录生命的结构、记录了生命的构造过程，指挥生命体的运转。\n\n但时代变了，天然的基因早已经无法更上技术的发展，是时候更新我们身体的硬件了。"
+ ####################################
+ # 科技树·引力科技
+ ####################################
+ tech_gravitational_manipulation:"引力操控"
+ tech_gravitational_manipulation_desc:"§Y二维共形场§!上的每一个量子过程都会对应一个§Y反德西塔空间§!中的§Y引力事件§!，换而言之我们可以通过干涉电磁力来影响§Y共形场§!上的§Y量子过程§!，进而影响§Y共形场§!投影到来§Y反德西塔空间§!中的§Y引力事件§!来直接干涉引力变化。\n\n时至今日，我们早已经清除时空是物质的、是一种场，星体的§Y引力场§!可以视作§Y时空场§!的§Y激发态§!，但§Y引力子§!不仅是引力的载体，更是对§Y时空场§!或§Y引力场§!的离散化描述，就像光子之于电磁场那样，不过是一体两面。\n\n通过干涉§Y引力子§!来操控时空，其便利性要远胜于通过干涉§Y能动张量§!来操控时空。"
+ tech_sr_tanatnim_design:"奇异粒子：塔纳特尼姆"
+ tech_sr_tanatnim_design_desc:"引力是这个宇宙中最为微弱的作用力，如果在小范围获取足强度足够的引力一直都是普及引力技术所绕不过去的一个难点，毕竟，我们总不可能在飞船上携带一些中子简并态物质。\n\n物理谱系的开阔让足够问题得意解决，某一物理谱系中存在这一种被我们命名为"塔纳特尼姆"的基本的粒子，本身所含能量极高，并且可以通过粒子衰变以引力子的形式释放出来。\n\n现在，我们的任务是在当前物理谱系再现"塔纳特尼姆"粒子，并且把它对外的影响降到最低。"
+
+ tech_directional_gravitation:"高频引力波"
+ tech_directional_gravitation_desc:"精确干涉引力子排布来向目标发射高频率定向引力波，进而扭曲物质结构以达到毁灭目标的效果。"
+ tech_graviton_aggregation_0:"引力聚焦"
+ tech_graviton_aggregation_0_desc:"当引力子获得的能量越来越多，时空也会慢慢从以波性为主转化成以粒性为主，在这一过程中时空发生了我们尚不理解的变化，我们需要更加有力的模型来描述这一过程。\n\n但这并不妨碍我们将大量高能引力子聚集起来并发射出去，扭曲的时空会摧毁路径上的一切物质结构，毫无疑问这是一种强大的武器。"
+ tech_graviton_aggregation_1:"强引力焦聚设计"
+ tech_graviton_aggregation_1_desc:"工程学上的设计更新让我们可以发射波长更短、粒子性占比更大的引力子，这种状态下时空发生了难以描述的变化，临界点或许就快到了。"
+ tech_graviton_aggregation_2:"引力子高能跃迁"
+ tech_graviton_aggregation_2_desc:"最新的引力焦聚系统可以让我们把引力子的能级跃迁到几乎只剩下粒子性的地步，引力的属性发生不可思议的改变，与其说我们发射的高频率引力波，不如说是一块块将离未离的时空碎片。"
+
+ tech_klein_force_field:"克莱因场"
+ tech_klein_force_field_desc:"修改飞船附近时空相态，构造出形似"§Y克莱因瓶§!"的时空结构，在遭受攻击时，通过利用力场偏转、诱导攻击的能量，使这部分攻击的能量困在§Y克莱平面§!那"无限延展"的时空结构当中，因此§Y克莱平面§!本质上是维度防御而非单纯的能量防御。\n\n时空中的能动张量分布决定了时空的形态，在§Y克莱平面§!结构被破坏或力场主动放弃维持之前，那些攻击能量仍将在§Y克莱平面§!结构无边界的特性下持续徘徊在看似“无限延伸”的§Y克莱平面§!当中，因此，长时间积蓄能量将会导致§Y克莱平面§!结构因能动张量的失衡而遭到破坏，必须释放出这些能量才能继续承载攻击。\n\n但即使能量积聚到达临界值仍然能够在相当长的时间内维持当前状态，只是无法再继续承受外来能量。"
+ ####################################
+ # 科技树·空间科技
+ ####################################
+ tech_space_frame_model:"空间架模型"
+ tech_space_frame_model_desc:"时空是物质的，这点毋庸置疑，然而我们日常生活中所感知到的时空却不完全是"物质的"，更准确的说是"构成时空的物质"的一种状态、一种结构、一种§Y相§!正如同常规物质具有§Y固相、液相、气相§!三个状态一样，构成时空的物质也不只有一个§Y相态§!。\n\n同时，我们可以通过§Y空间架§!这一抽象工具来描绘时空的相态，或者说时空的结构，正如同我们利用磁感线来描绘磁场的形态一样，§Y空间架§!将会成为一种十分实用的工具，有了§Y空间架§!这一工具将会大大加快我们在时空维度相关领域的研究速度。\n\n并且，§Y空间架§!可以轻松描述时空各个§Y相态§!的属性以及演化模型，我们可以在§Y空间架§!模型的引导下通过干涉引力子的相态来精确的塑造时空的结构。"
+ tech_sr_spatialdissociationenzyme:"空间构架解离酶"
+ tech_sr_spatialdissociationenzyme_desc:"真空的稳定性过高常让工程人员头疼，为此我们特意从其它物理谱系中找出了这种能够削弱真空稳定性的奇异粒子，只需一点点，就能让真空的稳定性大幅度降低，变得如同橡皮泥一样可塑。"
+
+ tech_vacuum_polarization:"真空极化"
+ tech_vacuum_polarization_desc:"用微观尺度的极限操作精确劈开§Y量子涨落§!，改变§Y时空度规§!进而让§Y对称性自发破缺§!，这个过程中质量凭空产生，§Y希格斯粒子§!显现出来为场注入"§Y质量§!"，§Y费米子§!与§Y玻色子§!各自生成，四大基本力从§Y量子场§!中涌现，对应的粒子也会自发出现。\n\n一次虚空造物就这么完成了。"
+ tech_material_creation_1:"物质创生Ⅰ"
+ tech_material_creation_1_desc:"对真空极化效应的民用化进阶应用，我们可以直接创造各种基本粒子，并组合成常用的物质供我们使用。"
+ tech_material_creation_2:"物质创生Ⅱ"
+ tech_material_creation_2_desc:"塔纳特尼姆削弱真空稳定性，放大量子效应，延迟选择锚定世界线，定向选择量子态的状态，现在我们可以让复杂的物质直接从量子场中涨落出来了，而不是生成基本粒子再从头组装。"
+ tech_material_creation_3:"物质创生Ⅲ"
+ tech_material_creation_3_desc:"修正时空模型过后，我们可以涨落出更加复杂的物质。"
+ tech_material_creation_4:"物质创生Ⅳ"
+ tech_material_creation_4_desc:"在统一场论的指导下，我们可以再现其它物理谱系中的特殊物质。"
+
+ tech_arms_space_lacerate:"空间割裂仪"
+ tech_arms_space_lacerate_desc:"所谓的的空间裂缝，其实是时空的§Y裂隙相§!，对于生活在§Y三维相§!的我们来说§Y裂隙相§!正好与认知中的"裂缝"等价，任何跌入§Y裂隙相§!的物质都会因为§Y真空能态§!的改变而毁灭。"
+ tech_gravitation_coupling:"引力联结"
+ tech_gravitation_coupling_desc:"时空本身可以视作共形场中粒子的投影，通过追踪在物质间传递的引力子，我们可以确定量子共形场中所对应物质。\n只需要斩断共形场粒子间的纠缠，就能崩坏范围路径上的空间架结构。"
+ tech_space_annihilation:"时空解离"
+ tech_space_annihilation_desc:"在我们的全息宇宙中，广义相对论支配着反德西塔空间的引力运转、时空变化，量子力学则控制着共形场中的的粒子排布、作用形式，这便是Ads/CTF对偶。\n\n反德西塔空间内展开的引力事件可以对应共形场中的量子过程，后者就像前者投射到墙壁上的影子一样，如果逐渐削弱共形场中粒子之间的纠缠，反德西塔空间的时空结构也会开始退相干。"
+
+ tech_dimension_shield:"二维护盾"
+ tech_dimension_shield_desc:"§Y二维相§!是时空的另一个相态，通过重塑局部范围的引力子相态，我们得到了有别于三维空间的二维空间，利用二维空间不同于三维空间的属性我们可以做到可攻可守，以及其它一些有趣的事情。\n\n值得注意的是，§Y二维相§!能级高于§Y三维相§!(§Y三维相的能级是所有时空相态中最低的，否则宇宙也不会是这个样子§!)，这意味着二维空间会自发的升维成三维空间，这导致了二维空间无法稳定存在，一旦有大量能量注入二维空间就会令相态恢复正常。"
+
+ tech_subspace_manufacture:"子空间开辟"
+ tech_subspace_manufacture_desc:"和许多人想象中的不同，智慧生命认知中的三维时空是一个整体，§R空间维度是不可分的整体，三维空间之外并不存在一个四维空间，三维空间的内部也不存在一个二维空间§!，虽然与常人认知相悖，但这就是事实。\n\n如果把二维空间比作水、三维空间比作液体、四维空间比作气体，那么我们这个宇宙便是一个由液体构成的世界，我们可以改变局部时空的相态，把液体变成气体，在三维空间的内部制造出一个四维空间，但我们无法直接从三维空间跳到并不存在的四维空间当中，创造一个四维空间跳进去则是毫无意义的行为。\n\n§Y维度是描述对象所需的独立参数，空间维度便是描述空间坐标所需要的独立参数§!，我们宇宙的空间坐标需要x、y、z三个独立参数描述，所以它是三维的，有三个自由度，现在我们找到了一个全新的维度，全新的自由度——§Y外尔自由度§!。\n\n这是一个编码在全息宇宙上的额外维度，我们可以在§Y空间维度坐标相同但外尔维度坐标不同§!的位置开辟子空间，这与在所谓的第四维度开辟子空间是等价的。"
+
+ tech_curvature_deflection:"次元空间曲率变位"
+ tech_curvature_deflection_desc:"令空间架产生扭曲，干涉能量在时空中的位置分布，从而将能量导入超平面网络当中，进而减小飞船受到的能量伤害。"
+
+ tech_gravitational_radiation:"动能转移"
+ tech_gravitational_radiation_desc:"将物质的相对动能以引力波辐射出去，从而减少飞船受到的伤害。"
+
+ tech_spatiotemporalarray_megastructure:"时空阵列"
+ tech_spatiotemporalarray_megastructure_desc:"当空间架模型应用到实际生活中以后，我们可以借助恒星的引力场来高强度的干涉空间，做到恒星系级别的质量投送。\n\n时空阵列可以让我们的舰队瞬间出现在银河系的任何一个角落，我们舰队的脚步无人可以阻止。\n\n§Remmmm......不知为啥科技无法作为巨构的前置，但是并不影响，研究完这个科技依然可以解锁对应的巨构。§!"
+ ############凝聚态物理##############
+ tech_strange_matter_design:"奇异物质设计"
+ tech_strange_matter_design_desc:"力场技术的突破让我们的文明可以在飞米尺度上摆弄物质，由夸克构成的奇异物质将会成为未来材料学的中流砥柱,我们不再拘泥于自然界的材料属性，而是能够自定义材料的属性，这是材料学的新纪元。"
+ ############力场操控################
+ ############计算技术################
+ tech_cooperative_transition:"协同跃迁算法"
+ tech_cooperative_transition_desc:"舰队的所有飞船根据离散时空坐标算法整齐划一的对时空施加影响，在超级计算机的精确调控完成离散时空中的长距离时空跃迁。"
+
+ ######################################
+ # 社会学
+ ######################################
+ ######生命科学######
+ tech_trace_rarelement_compound:"微量元素化合"
+ tech_trace_rarelement_compound_desc:"研究表白，农作物在生长发育过程中掺杂适量的稀有物质可以增加其产量。"
+ tech_developmental_environment_playback:"发育环境优化再现"
+ tech_developmental_environment_playback_desc:"最初的生命源于自然的演化，但自然的演化永远都只会是一个满意解而非最优解，用科学的手段找出最理想的幼体发育环境，并通过技术手段再现这个理想环境，我们便可以打造出一个真正的"生命摇篮"。"
+ tech_organic_assembly:"有机体组装"
+ tech_organic_assembly_desc:"生命是什么？它的模型是负熵系统，它的表现是复杂的天然机械，亿万年的进化赋予了生命一条能够进行自我复制的生产线，或许它的效率不是那么高，但它绝对是适合当时环境的,但是————\n\n时代变了！文明的法则已经取代了自然的法则，文明的选择代替了自然的选着，自然赋予我们的东西早已跟不上时代，现在，是时候做出改变了，用科学的方法展开自然的迷雾，选择隐藏在规律当中的最优解，我们敬畏自然，但也在超越自然。\n\n生命亦是机械，现在我们将要设计生命的生产线。"
+ tech_biological_hibernation:"生命体冬眠"
+ tech_biological_hibernation_desc:"利用冬眠技术可以让生命直接度过漫长的时间，既可以减少飞船人口的维护费用又可以变相延长寿命，我们的殖民船也因此能够携带更多的人口。"
+ tech_nano_computer:"有机纳米微机"
+ tech_nano_computer_desc:"生命本身就是由复杂的分子机械堆砌而成的，掌握基因涌现算法之后我们就可以自行设计各种有机机械零件，根据需求设计出各种超越自然的有机微型机械。"
+ ######军事理论######
+ tech_the_world_canopy:"寰球天幕系统"
+ tech_the_world_canopy_desc:"寰球天幕系统并非一个集中的系统，而是又分散在星球各处的子节点构成，除了在战争期间生成覆盖星球的强力护盾，还具有星球地质信息、生态信息、社会信息收集处理功能，是一个功能繁多的复合设施，同时也能提供大量的工作岗位。"
+ ######################################
+ # 工程学
+ ######################################
+ ###########未分类##########
+ tech_magnetic_metal:"磁流金属云"
+ tech_magnetic_metal_desc:"金属微粒可以严重散射高能激光，削弱激光武器的伤害，定向聚集的金属云也可以在一定程度上阻碍动能弹头的运动，削弱弹头动能，或令其弹道偏转。\n\n这可以为我们的舰队提供不小的防护，只是金属云系统的维护会有些过于麻烦。"
+ tech_supermagnetic_material:"超磁材料"
+ tech_supermagnetic_material_desc:"人工合成的常温超导体，具有极其巨大的磁通量，现在广泛应用于各种地方，在军事上的体现尤为明显。"
+ tech_Proton_confinement:"质子约束"
+ tech_Proton_confinement_desc:"通过强磁场约束高能质子，重排列其微观结构后定向射出，通过将质子并入原子核中诱发核聚变。"
+ ##########事件科技###################
+ tech_placement_algorithm:"高效建筑布局算法"
+ tech_placement_algorithm_desc:"这个算法允许我们最大化利用有限的空间，做出最合理的建筑布局，可以让我们更加有效的使用星球那有效的地块。"
+ tech_civilization_historiography:"文明史学"
+ tech_civilization_historiography_desc:"文明史学是研究文明的发展及演变的学科，通过计算文明所处的环境、构成文明生物个体的基因、构成文明生命个体的模因，进而计算出影响文明发展的一系列必然节点，从而达成预知文明发展的目的。"
+ ######工程迭代######
+ ######宇航技术######
+ tech_planet_splitting:"行星裂解装置"
+ tech_planet_splitting_desc:"这个巨大的装置会将行星包裹起来，通过改变行星周边的能动张量分布来星体的时空排布，进而通过衍生的引力效应撕碎行星，令其成为方便开采的原料。"
+ tech_huifengmujian_jiexi:"灰风母舰解析"
+ tech_huifengmujian_jiexi_desc:"在灰风总督的帮助下，我们成功解明了"铸门者"的纳米微机源代码，这使得我们可以对灰风总督的舰体进行，摆脱一些已经过时了的零件。"
+ ######材料科学######
+ tech_quark_confinement_armor:"夸克禁闭材料"
+ tech_quark_confinement_armor_desc:"奇异物质的进阶应用，通过削弱强相互作用力强度、放大强相互作用力作用范围，将夸克禁闭效应的规模放大的宏观层次从而构造出的性能极其优越的材料，这种的材料的熵值是所有已知材料最大、能量是所有已知材料中最低，这意味着该材料的惰性极大、稳定性极高，也意味着非同一般的坚固，同时还具有极小的质量。"
+ ######工业技术######
+ tech_efficient_automation:"自修复工业体系"
+ tech_efficient_automation_desc:"演算所有微观态并收敛成一个极其复杂的函数，再用涌现算法逆向求解稳定负熵状态下的基层物质结构，最终铸就了这个极其稳定，还具有自动校正、修复能力的自动化的工业体系。\n\n这种稳定和纠错能力并不依赖某个特定的程序，而是从整个结构当中涌现出来，也就是说这种结构的会自发趋向稳定状态，自发的往稳定状态演化，只有不是过度破坏，这个体系几乎可以"永远"运作下去。\n\n因此我们可以省下很多的维护费用。"
+ tech_tower_city_0:"塔式分布城市群"
+ tech_tower_city_0_desc:"引力操控技术允许我们突破行星引力场的限制，将城市群的分布往空中延伸，相比起二维的地表，三维的天空有着更多的可利用空间。"
+
+
+ ##############################
+ # 本地化·中文·修正标签
+ ##############################
+
+ ########################
+ # 标签·职业
+ ########################
+ planet_mtp_finance:"调度职业"
+ planet_mtp_heterogeneity:"异质合成职业"
+ planet_mtp_dimensionminer:"维度矿工职业"
+ #######################
+ # 标签·科技
+ #######################
+ #科技类型
+ condensed_state:"§Y凝聚态物理§!"
+ condensed_state_desc:"研究大规模物质粒子在聚集状态下表现的学科。"
+ spacetime_mutually:"§Y时空相态§!"
+ spacetime_mutually_desc:"研究时空维度、时空结构、时空相态，及其相关应用的学科。"
+ quantum_manipulation:"§Y量子操纵§!"
+ quantum_manipulation_desc:"研究量子系统性质、属性，以及如何操纵量子系统的学科。"
+ civilization_historiography:"§Y文明史学§!"
+ civilization_historiography_desc:"将整个文明数学模型化，并研究其演变的学科。"
+ basic_theory:"§Y基础理论§!"
+ basic_theory_desc:"基础理论是一门学科的基本概念、范畴、判断与推理。"
+
+ ########################
+ # 标签·行星
+ ########################
+ #建筑
+ planet_buildings_mtp_subspace:"子空间设施"
+ ########################
+ # 标签·星舰
+ ########################
+
+ ########################
+ # 标签·国家
+ ########################
+ #星球决策
+ decisions_mtp_subspace:"子空间开辟决策"
+ ########################
+ # 修正
+ ########################
+ #建筑修正
+
+ mod_planet_buildings_mtp_subspace_energy_upkeep_add:"$building_mtp_planes_anchor$维护所需$energy$"
+ #######################
+ # 其它修正
+ #######################
+ all_technology_research_speed:"§Y全科技研究速度§!£research£"
+ mtp_requires_ascension_perks_7:"你必须拥有其他七个飞升"
+ mtp_promotion_dimension_desc:"你的军队和人们将会获得无边伟力，你的帝国与政府穿梭于维度之间。"
+ #物种特质点
+ BIOLOGICAL_species_max_traits_add:"生物特质点上限"
+ #武器伤害
+ mod_mtp_weapon_dimension_reduction_weapon_damage_mult:"维度武器伤害"
+ mod_mtp_weapon_dimension_reduction_weapon_fire_rate_mult:"维度武器攻击速度"
+ mod_arms_laser_weapon_damage_mult:"激光武器伤害"
+ mod_arms_space_weapon_damage_mult:"空间武器伤害"
+ mod_arms_gravitation_weapon_damage_mult:"引力武器伤害"
+ #行星宜居性
+ mod_pc_black_hole_faithcircle_habitability:"信界黑洞宜居性"
+ mod_pc_black_hole_habitability:"黑洞宜居性"
+ #建筑特殊修正
+ mod_building_resource_maintain_sr_tanatnim_produces_mult:"建筑的$sr_tanatnim$转化率"
+ #科技研究速度
+ mod_category_spacetime_mutually_research_speed_mult:"£physics_research£时空相态科技研究速度"
+ mod_category_quantum_manipulation_research_speed_mult:"£physics_research£量子操纵科技研究速度"
+ mod_category_condensed_state_research_speed_mult:"£physics_research£凝聚态物理科技研究速度"
+ #资源
+ mtp_elementenzyme:"空间构架解离酶"
+ mtp_elementenzyme_desc:"空间构架解离酶能够削弱量子共形场中粒子的相干性，进而削弱常规空间中空间架构的稳定性，只需要一点点，就可以让真空变得如同橡皮泥一样可塑。"
+ mtp_soulence:"杜粹"
+ mtp_soulence_desc:"杜粹的结构始终令人着迷，这种来自高维度空间的物质在结构上保留了高维度的奇妙特效，似乎杜粹在与任何其他结构相结合后都会产生不同的效果，它的用途还有待我们去发现。"
+ mtp_tanatnim:"塔纳特尼姆"
+ mtp_tanatnim_desc:"塔纳特尼姆"
+
+ #############################
+ # 本地化·中文·提示文本
+ #############################
+
+ ########################
+ # 星球决策提示提示
+ ########################
+ TXT_ALLOW_DECISION_MTP_TECH_SPACE_OPENUP:"§R行星可用的外尔维度容量不足！§!"
+ ########################
+ # 歼星武器提示
+ ########################
+ TXT_LIMIT_ARMS_MTP_BLACK_HOLE_GUN_0:"§R不能攻击自己的行星！§!"
+ TXT_LIMIT_ARMS_MTP_BLACK_HOLE_GUN_1:"§R歼星模式正处于冷却状态，剩余时间：§R[from.$HDP_LQ$]§!"
+ TXT_LIMIT_ARMS_MTP_BLACK_HOLE_GUN_2:"§R无法坍缩$pc_black_hole$。§!"
+ ######################
+ # 星球决策
+ ######################
+ decision_mtp_tech_space_openup:"星球子空间开辟"
+ decision_mtp_tech_space_openup_desc:"通过技术手段在星球附近的外尔自由度不同的位置开辟子空间，扩展星球最大可用区划。"
+ decision_mtp_tech_space_openup_effects_short:"在星球上添加£district£§Y高维子空间§!地块，获得以下效果:\n星球最大区划:§G+4§!"
+ decision_mtp_tech_black_hole_colonize:"部署信界转移系统"
+ decision_mtp_tech_black_hole_colonize_effect:"开启"信界转移系统部署项目"，完成后该黑洞变为我们文明的殖民地。"
+ decision_mtp_tech_black_hole_colonize_desc:"全名：§Y全息视界信息编码转移系统§!\n\n一种构造在量子共型场中的超级造物，主要的职能便是干涉霍金辐射的变化来完成"§Y反德西塔空间§!"到三维大宇宙之间的物质转移。"

@@ -1,0 +1,87 @@
+# 设定事件的命名空间
+namespace = yin_mod_menu
+# 指定事件的类型
+country_event = {
+	# 事件的唯一 ID，必须与 namespace 参数匹配
+	id = yin_mod_menu.0
+	# 指定事件标题（头部）的本地化字符串
+	title = yin_mod_menu.0.title
+	# 指定事件文本的本地化字符串，用于描述发生的情况
+	# 可以有多个，随机显示其中一个
+	desc = yin_mod_menu.0.desc
+	# 显示的图片名称。图片定义在 "interface/xxx.gfx"
+	picture = GFX_evt_exploding_ship
+	# 即使玩家屏蔽弹窗也会强制弹出
+	auto_opens = yes
+	# 此事件不会自行触发，必须由其他事件或 on_action 调用
+	is_triggered_only = yes
+	# trigger 块包含条件。事件只有在满足条件时才会开始
+	trigger = {
+		is_ai = no
+	}
+	# 事件下方的按钮，允许玩家选择反应
+	# 非隐藏事件至少需要一个选项，可指定多个
+	option = {
+		# 关闭菜单
+		# 本地化字符串，显示选项文本
+		name = mod_menu.exit
+		# 如果条件不满足，此选项将被禁用并隐藏
+		trigger = {
+			is_ai = no
+		}
+		# 如果条件不满足，此选项会被禁用但仍显示
+		allow = {
+		}
+		# 可在此描述事件效果，会生成鼠标悬停时的提示信息
+		custom_tooltip = mod_menu.exit.tooltip
+		# 特殊效果：阻止游戏生成基于效果的提示信息
+		hidden_effect = {
+		}
+	}
+	option = {
+		# 关闭六期开发区
+		# 本地化字符串，显示选项文本
+		name = ETDZ6.off
+		# 如果条件不满足，此选项将被禁用并隐藏
+		trigger = {
+			owner = {
+				has_country_flag = ZTDZ6_true
+			}
+		}
+		# 可在此描述事件效果，会生成鼠标悬停时的提示信息
+		custom_tooltip = ETDZ6.change.tooltip
+		# 特殊效果：阻止游戏生成基于效果的提示信息
+		hidden_effect = {
+			remove_country_flag = ZTDZ6_true
+			# 返回菜单
+			country_event = {
+				id = yin_mod_menu.0
+			}
+		}
+	}
+	option = {
+		# 开启六期开发区
+		# 本地化字符串，显示选项文本
+		name = ETDZ6.on
+		# 如果条件不满足，此选项将被禁用并隐藏
+		trigger = {
+			owner = {
+				NOT = {
+					has_country_flag = ZTDZ6_true
+				}
+			}
+		}
+		# 可在此描述事件效果，会生成鼠标悬停时的提示信息
+		custom_tooltip = ETDZ6.change.tooltip
+		# 特殊效果：阻止游戏生成基于效果的提示信息
+		hidden_effect = {
+			set_country_flag = ZTDZ6_true
+			# 返回菜单
+			country_event = {
+				id = yin_mod_menu.0
+			}
+		}
+	}
+	after = {
+	}
+}

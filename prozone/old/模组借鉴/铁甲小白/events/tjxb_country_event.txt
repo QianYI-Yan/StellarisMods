@@ -1,0 +1,776 @@
+namespace = tjxb_country_event
+
+#开局事件
+country_event = {
+	id = tjxb_country_event.0
+	title = "tjxb_country_event.0.name"
+	desc = "tjxb_country_event.0.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	option = {
+		name = tjxb_country_event.0.z
+		default_hide_option = yes
+		country_event = {
+			id = tjxb_country_event.1
+		}
+		country_event = {
+			id = tjxb_country_event.200
+		}
+	}
+}
+
+#创建国家和通讯
+country_event = {
+	id = tjxb_country_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		create_country = {
+			name = "NAME_tjxb"
+			type = tjxb
+			flag = {
+				icon = {
+					category = "paradox"
+					file = "paradox_logo.dds"
+				}
+				background = {
+					category = "backgrounds"
+					file = "00_solid.dds"
+				}
+				colors = {
+					"blue"
+					"black"
+					"null"
+					"null"
+				}
+			}
+		}
+		last_created_country = {
+			establish_communications_no_message = root
+			create_leader = {
+				class = official
+				species = root
+				name = "NAME_tjxb"
+				custom_catch_phrase = "NAME_tjxb_custom_catch_phrase"
+				event_leader = yes
+				skill = 10
+				immortal = yes
+				set_age = 100
+				traits = {
+				}
+				effect = {
+					change_leader_portrait = NAME_TJXB
+				}
+			}
+			set_leader = last_created_leader
+		}
+		save_global_event_target_as = et_tjxb_owner
+		set_country_flag = tjxb_owner_cf
+	}
+}
+
+################################################
+#用于触发
+country_event = {
+	id = tjxb_country_event.10
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+		has_country_flag = tjxb_owner_cf
+		from = {
+			is_country_type = tjxb
+		}
+		NOT = {
+			has_active_event = {
+				tjxb_country_event.10
+				tjxb_country_event.11
+			}
+		}
+	}
+	immediate = {
+		country_event = {
+			id = tjxb_country_event.11
+		}	
+	}
+}
+#外交界面
+country_event = {
+	id = tjxb_country_event.11
+	title = "tjxb_country_event.11.name"
+	desc = "tjxb_country_event.11.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+		# has_country_flag = tjxb_owner_cf
+		# from = {
+		# 	is_country_type = tjxb
+		# }
+		# NOT = {
+		# 	has_active_event = {
+		# 		tjxb_country_event.10
+		# 		tjxb_country_event.11
+		# 	}
+		# }
+	}
+
+	option = {
+		name = tjxb_country_event.11.b
+		country_event = {
+			id = tjxb_country_event.13
+		}
+	}
+	#领袖
+	option = {
+		name = tjxb_country_event.11.paragon
+		allow = {
+			has_paragon_dlc = yes
+		}
+		country_event = { id = OCD_paragon_event.1 }
+	}
+	#科技
+	option = {
+		name = tjxb_country_event.11.d
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	#开局设置
+	option = {
+		name = tjxb_country_event.11.e
+		country_event = {
+			id = tjxb_country_event.200
+		}
+	}
+	option = {
+		name = tjxb_country_event.11.f
+		country_event = {
+			id = tjxb_country_event.101
+		}
+	}
+	# option = {
+	# 	name = tjxb_country_event.11.g
+	# 	every_country = {
+	# 		limit = {
+	# 			is_ai = yes
+	# 		}
+	# 		save_event_target_as = ocd_steal_victim
+	# 	}
+	# 	steal_relic = {
+	# 		target = event_target:ocd_steal_victim
+	# 		relic = all
+	# 	}
+	# 	steal_specimens = {
+	# 		who = event_target:ocd_steal_victim
+	# 		category = all
+	# 		count = 1000
+	# 		show_notification = yes
+	# 	}
+	# 	# country_event = {
+	# 	# 	id = tjxb_country_event.27
+	# 	# }
+	# }
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+####################################################
+
+country_event = {
+	id = tjxb_country_event.13
+	title = "tjxb_country_event.13.name"
+	desc = "tjxb_country_event.13.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = tjxb_country_event.13.a
+		is_dialog_only = yes
+		response_text = tjxb_country_event.13.a.response
+	}
+	option = {
+		name = tjxb_country_event.13.b
+		is_dialog_only = yes
+		response_text = tjxb_country_event.13.b.response
+	}
+	option = {
+		name = tjxb_country_event.13.c
+		is_dialog_only = yes
+		response_text = tjxb_country_event.13.c.response
+	}
+	option = {
+		name = tjxb_country_event.13.d
+		is_dialog_only = yes
+		response_text = tjxb_country_event.13.d.response
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = tjxb_country_event.27
+	title = "tjxb_country_event.27.name"
+	desc = "tjxb_country_event.27.desc"
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_ai = yes
+			}
+			save_event_target_as = ocd_steal_victim
+		}
+	}
+	option = {
+		name = tjxb_country_event.27.a
+		steal_relic = {
+			target = event_target:ocd_steal_victim
+			relic = all
+		}
+		steal_specimens = {
+			who = event_target:ocd_steal_victim
+			category = all
+			count = 1000
+			show_notification = yes
+		}
+	}
+	option = {
+		name = tjxb_country_event.27.b
+		steal_relic = {
+			target = event_target:ocd_steal_victim
+			relic = all
+		}
+	}
+	option = {
+		name = tjxb_country_event.27.c
+		steal_specimens = {
+			who = event_target:ocd_steal_victim
+			category = all
+			count = 1000
+			show_notification = yes
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+################################################
+
+country_event = {
+	id = tjxb_country_event.200
+	title = "tjxb_country_event.200.name"
+	desc = "tjxb_country_event.200.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = tjxb_country_event.200.b
+		country_event = {
+			id = tjxb_country_event.202
+		}
+	}
+	option = {
+		name = tjxb_country_event.200.d
+		country_event = {
+			id = tjxb_country_event.204
+		}
+	}
+	option = {
+		name = tjxb_country_event.200.i
+		country_event = {
+			id = tjxb_country_event.209
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = tjxb_country_event.202
+	title = "tjxb_country_event.202.name"
+	desc = "tjxb_country_event.202.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		name = tjxb_country_event.202.a #设置为好爹
+		if = {
+			limit = { 
+				any_country = {
+					has_country_flag = fallen_machine_empire_awaken_2
+				}
+			}
+			remove_country_flag = fallen_machine_empire_awaken_2
+			set_country_flag = fallen_machine_empire_awaken_1
+		}
+	}
+	option = {
+		name = tjxb_country_event.202.b #设置为疯爹
+		if = {
+			limit = { 
+				any_country = {
+					has_country_flag = fallen_machine_empire_awaken_1
+				}
+			}
+			remove_country_flag = fallen_machine_empire_awaken_1
+			set_country_flag = fallen_machine_empire_awaken_2
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.200
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = tjxb_country_event.204
+	title = "tjxb_country_event.204.name"
+	desc = "tjxb_country_event.204.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = tjxb_country_event.204.a #灰蛊风暴
+		set_global_flag = gray_goo_crisis_set
+		set_global_flag = active_gray_goo
+		remove_global_flag = dragon_season
+		remove_global_flag = gray_goo_empire_set
+	}
+	option = {
+		name = tjxb_country_event.204.b #L星龙
+		remove_global_flag = gray_goo_crisis_set
+		remove_global_flag = active_gray_goo
+		set_global_flag = dragon_season
+		remove_global_flag = gray_goo_empire_set
+	}
+	option = {
+		name = tjxb_country_event.204.c #德萨努协和国
+		remove_global_flag = gray_goo_crisis_set
+		remove_global_flag = active_gray_goo
+		remove_global_flag = dragon_season
+		set_global_flag = gray_goo_empire_set
+	}
+	option = {
+		name = tjxb_country_event.204.d #诡异的宁静
+		remove_global_flag = gray_goo_crisis_set
+		remove_global_flag = active_gray_goo
+		remove_global_flag = dragon_season
+		remove_global_flag = gray_goo_empire_set
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.200
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = tjxb_country_event.209
+	title = "tjxb_country_event.209.name"
+	desc = "tjxb_country_event.209.warm"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		name = tjxb_country_event.209.a
+		is_dialog_only = yes
+		response_text = tjxb_country_event.209.warm
+	}
+	option = {
+		name = tjxb_country_event.209.b
+		is_dialog_only = yes
+		response_text = tjxb_country_event.209.b.response
+	}
+	option = {
+		name = tjxb_country_event.209.c
+		is_dialog_only = yes
+		response_text = tjxb_country_event.209.c.response
+	}
+	# option = {
+	# 	name = tjxb_country_event.209.d
+	# 	is_dialog_only = yes
+	# 	response_text = tjxb_country_event.209.d.response
+	# }
+	# option = {
+	# 	name = tjxb_country_event.209.e
+	# 	is_dialog_only = yes
+	# 	response_text = tjxb_country_event.209.e.response
+	# }
+
+	option = {
+		name = tjxb_country_event.209.y
+		set_global_flag = use_ocd_precursor_event
+		is_dialog_only = yes
+		response_text = tjxb_country_event.209.y.response
+	}
+	option = {
+		name = tjxb_country_event.2099.name
+		country_event = {
+			id = tjxb_country_event.2099
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.200
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+country_event = {
+	id = tjxb_country_event.2099
+	title = "tjxb_country_event.2099.name"
+	desc = "tjxb_country_event.2099.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = tjxb_country_event.2099.all
+		every_system = {
+			set_star_flag = precursor_1
+			set_star_flag = precursor_2
+			set_star_flag = precursor_3
+			set_star_flag = precursor_4
+			set_star_flag = precursor_5
+			set_star_flag = precursor_zroni_1
+			set_star_flag = precursor_baol_1
+			set_star_flag = precursor_inetian
+			set_star_flag = precursor_adakkaria
+		}
+	}
+	option = {
+		name = vultaum_chain_title
+		every_system = {
+			set_star_flag = precursor_1
+		}
+	}
+	option = {
+		name = yuht_chain_title
+		every_system = {
+			set_star_flag = precursor_2
+		}
+	}
+	option = {
+		name = first_league_chain_title
+		every_system = {
+			set_star_flag = precursor_3
+		}
+	}
+	option = {
+		name = irassian_chain_title
+		every_system = {
+			set_star_flag = precursor_4
+		}
+	}
+	option = {
+		name = cybrex_chain_title
+		every_system = {
+			set_star_flag = precursor_5
+		}
+	}
+	option = {
+		name = NAME_Zroni
+		every_system = {
+			set_star_flag = precursor_zroni_1
+		}
+	}
+	option = {
+		name = baol_chain_title
+		every_system = {
+			set_star_flag = precursor_baol_1
+		}
+	}
+	option = {
+		name = cs_inetian_chain_title
+		every_system = {
+			set_star_flag = precursor_inetian
+		}
+	}
+	option = {
+		name = cs_adAkkaria_chain_title
+		every_system = {
+			set_star_flag = precursor_adakkaria
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.209
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+
+
+country_event = {
+	id = tjxb_country_event.101
+	title = "tjxb_country_event.101.name"
+	desc = "tjxb_country_event.101.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = tjxb_country_event.101.gray
+		country_event = {
+			id = graygoo.401 #灰风
+		}
+	}
+	option = {
+		name = tjxb_country_event.101.b
+		country_event = {
+			id = story.107 #安抚变形虫
+		}
+		country_event = {
+			id = story.207 #安抚晶体
+		}
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_country_event.101.c
+		random_owned_ship = {
+			limit = {
+				is_ship_size = science
+			}
+			ship_event = {
+				id = distar.50 			#泡泡
+			}
+		}
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_country_event.101.cr
+		country_event = {
+			id = tjxb_country_event.104
+		}
+	}
+	# option = {
+	# 	name = tjxb_country_event.101.d
+	# 	random_owned_ship = {
+	# 		limit = {
+	# 			is_ship_size = science
+	# 		}
+	# 		ship_event = {
+	# 			id = tjxb_country_event.151
+	# 		}
+	# 	}
+	# }
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+country_event = {
+	id = tjxb_country_event.104
+	title = "tjxb_country_event.104.name"
+	desc = "tjxb_country_event.104.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = CRISIS_TYPE_PRETHORYN 	#危机种类：虫群天灾
+		allow = {
+			NOT = {
+				has_global_flag = prethoryn_invasion_happened
+			}
+		}
+		country_event = { id = crisis.10 }
+		set_global_flag = galactic_crisis_happened
+	}
+	option = {
+		name = CRISIS_TYPE_UNBIDDEN 	#危机种类：异次元入侵者
+		allow = {
+			NOT = {
+				has_global_flag = extradimensional_invasion_happened
+			}
+		}
+		country_event = { id = crisis.1000 }
+		set_global_flag = galactic_crisis_happened
+	}
+	option = {
+		name = CRISIS_TYPE_CONTINGENCY 	#危机种类：肃正协议
+		allow = {
+			NOT = {
+				has_global_flag = ai_invasion_happened
+			}
+		}
+		country_event = { id = crisis.2005 }
+		set_global_flag = galactic_crisis_happened
+	}
+	option = {
+		name = CRISIS_TYPE_SYNTH_QUEEN 	#危机种类：合成女王
+		allow = {
+			NOT = {
+				has_global_flag = synth_queen_happened
+			}
+		}
+		country_event = { id = crisis.8005 }
+		set_global_flag = galactic_crisis_happened
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+ship_event = {
+	id = tjxb_country_event.151
+	title = "tjxb_country_event.151.name"
+	desc = "tjxb_country_event.151.desc"
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = {
+		name = tjxb_country_event.151.a
+		ship_event = {
+			id = distar.50 #迷路变形虫 泡泡
+		}
+	}
+	option = {
+		name = tjxb_country_event.151.b #星门
+		ship_event = {
+			id = apoc.1
+		}
+		ship_event = {
+			id = apoc.3
+		}
+		ship_event = {
+			id = apoc.5
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+

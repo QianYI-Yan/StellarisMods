@@ -1,0 +1,57 @@
+
+building_research_lab_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = research
+
+	building_sets = {
+		research
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_wilderness_empire = no # see 'building_brain_node_3'
+		}
+		is_special_colony_type = no
+	}
+
+	allow = {
+	}
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = @b2_upkeep
+			exotic_gases = @b2_rare_upkeep
+		}
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = @building_static_jobs_high_3
+	}
+
+	prerequisites = {
+		"tech_basic_science_lab_2"
+	}
+
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
+	}
+	upgrades = {
+		"building_research_lab_3"
+	}
+}

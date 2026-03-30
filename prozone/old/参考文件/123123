@@ -1,0 +1,181 @@
+# 指定事件的类型
+country_event = {
+    # 事件的唯一 ID，必须与 namespace 参数匹配
+    id = example.1
+
+    # 指定事件标题（头部）的本地化字符串
+    title = example.1.name
+
+    # 指定事件文本的本地化字符串，用于描述发生的情况
+    # 可以有多个，随机显示其中一个
+    desc = example.1.desc
+    # 描述可以是条件性的
+    desc = {
+        text = example.1.desc.conditional   # 本地化字符串
+        trigger = {
+            # 满足条件时才会显示
+            # 例如：has_authory = auth_machine_intelligence
+            # 类似 custom_tooltip，可以使用一些子命令（也支持 switch trigger）
+            text = example.1.desc.conditional   # 显示自定义文本
+            success_text = 1# 当条件满足时显示的文本（可多个，会合并）
+            fail_text = 1# 当条件不满足时显示的文本
+        }
+        # 如果有效，则禁用其他 desc（2.1 版本新增）
+        exclusive_trigger = {
+            # 条件语句
+        }
+    }
+
+    # 显示的图片名称。图片定义在 "interface/xxx.gfx"
+    picture = GFX_evt_exploding_ship
+    # 图片也可以是条件性的
+    picture = {
+        picture = 1# 图片名称
+        trigger = { # 条件语句 }
+        exclusive_trigger = {
+            # 条件语句 – 如果有多个
+        }
+    }
+
+    # 事件相关的对象范围，玩家可以跳转到。例如事件发生的星球
+    location = from
+
+    # 事件显示时播放的音效。音效定义在 "sound/xxx.asset"
+    show_sound = event_ship_explosion
+
+    # 如果事件不需要显示或没有人看到，则无需标题和描述
+    # 用于服务类事件，执行某些例程或为其他事件做准备
+    hide_window = yes
+
+    # 使事件看起来像外交通讯。首次接触事件使用此项
+    diplomatic = yes
+
+    # 可选设置：当 "diplomatic = yes" 时改变事件窗口外观
+    custom_gui = "enclave_caravaneer_window"
+
+    # 可选设置：当 "diplomatic = yes" 时改变事件选项按钮的外观
+    custom_gui_option = "enclave_caravaneer_option"
+
+    # 指定外交事件的图片。大多数选项是可选的
+    picture_event_data = {
+        # 动态肖像。接受国家、领袖或种族范围作为输入
+        portrait = event_target:contact_empire
+        # 星球背景，如果图片有窗口
+        planet_background = event_target:contact_empire
+        # 窗口中的城市图形类型
+        graphical_culture = event_target:contact_empire
+        # 城市规模。可用于让背景星球看起来像首都
+        city_level = event_target:contact_empire
+        # 静态背景。可使用静态图片或范围作为输入
+        room = event_target:contact_empire.ruler
+    }
+
+    # 可能在 v3.8 中移除：如果设置为 yes，其他国家也会显示此事件。可通过 major_trigger 限制
+    major = yes
+
+    auto_select = yes
+
+    # 强制外交事件被查看
+    force_open = yes
+
+    # 即使玩家屏蔽弹窗也会强制弹出
+    auto_opens = yes
+
+    # 事件在游戏中只会发生一次
+    fire_only_once = yes
+
+    # 启用事件顶部的自动跟踪按钮（需要 location）
+    trackable = yes
+
+    # 此事件不会自行触发，必须由其他事件或 on_action 调用
+    # 大多数事件都会使用此项
+    is_triggered_only = yes
+
+    # 事件触发的平均时间概率计算，指定平均发生时间
+    mean_time_to_happen = {
+        # 指定事件触发的平均时间。也可使用 "months" 或 "days"
+        years = 100
+
+        # 平均触发时间可以条件性修改
+        modifier = {
+            # 将 MTTH 乘以指定数值。这里会让事件平均在 10 年触发
+            factor = 0.1
+            # 条件语句
+        }
+    }
+
+    # 如果既没有 is_triggered_only 也没有 MTTH，则事件每天都会触发，只要条件满足
+    # 不要忘记，否则可能影响整个银河系或事件无限触发
+
+    # trigger 块包含条件。事件只有在满足条件时才会开始
+    # 用于 MTTH 事件，或由 on_action 调用的事件，或延迟事件可能被其他事件阻止
+    trigger = {
+        # 条件语句
+    }
+
+    # 事件触发时立即执行的效果。用于不能延迟的效果
+    # （例如设置标志防止其他事件，或杀死科研船船长）
+    # 隐藏事件只需要此块
+    immediate = {
+        # 效果语句
+    }
+
+    # 事件下方的按钮，允许玩家选择反应
+    # 非隐藏事件至少需要一个选项，可指定多个
+    option = {
+        # 本地化字符串，显示选项文本
+        name = example.1.a
+
+        # 可选设置：当 "diplomatic = yes" 时改变此选项窗口外观，覆盖 custom_gui_option
+        custom_gui = "enclave_curator_option"
+
+        # 如果条件不满足，此选项将被禁用并隐藏
+        trigger = {
+            # 条件语句
+        }
+
+        # 如果条件满足，则禁用其他选项（2.0 版本新增）
+        exclusive_trigger = {
+            # 条件语句
+        }
+
+        # 如果条件不满足，此选项会被禁用但仍显示
+        allow = {
+            # 条件语句
+        }
+
+        # 可在此描述事件效果，会生成鼠标悬停时的提示信息
+
+        # 特殊效果：仅显示自定义提示，不执行实际效果
+        # 可使用静态字符串，但推荐使用本地化键
+        custom_tooltip = example.1.a.tooltip
+
+        # 特殊效果：生成基于效果的提示信息，但不执行实际效果
+        tooltip = {
+            # 效果语句
+        }
+
+        # 特殊效果：阻止游戏生成基于效果的提示信息
+        hidden_effect = {
+            # 效果语句
+        }
+    }
+
+    # 可能在 v3.8 中移除：其他国家是否显示重大事件的触发条件
+    major_trigger = {
+        # 条件语句
+    }
+    # 如果这些条件返回 true，事件会取消（消失且不执行任何效果）。暂停时不评估
+    abort_trigger = {
+        # 条件语句
+    }
+    # 当 abort_trigger 返回 true 时执行的效果
+    abort_effect = {
+        # 效果语句
+    }
+
+    after = {
+        # 在选项被选择后执行的效果
+        # 会生成额外的提示信息，除非使用 hidden_effect
+    }
+}

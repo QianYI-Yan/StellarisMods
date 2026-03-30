@@ -1,0 +1,51 @@
+namespace = strategic_resources_tech_event
+
+country_event = {
+    id = strategic_resources_tech_event.1
+	title = strategic_resources_tech_event.1.name
+	desc = strategic_resources_tech_event.1.desc
+	picture = GFX_evt_strategic_resources
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_mine_living_metal 		# 活体金属
+		add_research_option = tech_mine_betharian 			# 贝塞里安精炼
+		add_research_option = tech_mine_volatile_motes 		# 微粒稳定化
+		add_research_option = tech_volatile_motes 			# 易爆材料生产厂
+		add_research_option = tech_mine_exotic_gases 		# 异星天然气开采
+		add_research_option = tech_exotic_gases 			#异星天然气精炼
+		add_research_option = tech_mine_rare_crystals 		# 稀有水晶开采
+		add_research_option = tech_rare_crystals 			# 稀有水晶生产
+		add_research_option = tech_mine_zro 				# 蒸馏泽珞
+		add_research_option = tech_mine_dark_matter 		# 暗物质收集
+		add_research_option = tech_nanite_transmutation 	# 纳米变形
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_mine_living_metal } 	# 活体金属
+		give_technology = { tech = tech_mine_betharian } 		# 贝塞里安精炼
+		give_technology = { tech = tech_mine_volatile_motes } 	# 微粒稳定化
+		give_technology = { tech = tech_volatile_motes } 		# 易爆材料生产厂
+		give_technology = { tech = tech_mine_exotic_gases } 	# 异星天然气开采
+		give_technology = { tech = tech_exotic_gases } 			#异星天然气精炼
+		give_technology = { tech = tech_mine_rare_crystals } 	# 稀有水晶开采
+		give_technology = { tech = tech_rare_crystals } 		# 稀有水晶生产
+		give_technology = { tech = tech_mine_zro } 				# 蒸馏泽珞
+		give_technology = { tech = tech_mine_dark_matter } 		# 暗物质收集
+		give_technology = { tech = tech_nanite_transmutation } 	# 纳米变形
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

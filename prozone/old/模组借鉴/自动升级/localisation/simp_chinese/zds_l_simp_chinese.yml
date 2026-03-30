@@ -1,0 +1,108 @@
+﻿l_simp_chinese:
+ edict_zds_edict: "§Y自动升级恒星基地（全部）§!"
+ edict_zds_edict_desc: "§Y开启§!此法令后，每月将你§Y全部§!的恒星基地§G升级§!到你已经研究的§Y最高§!级别。"
+
+ edict_zds_edict_starport: "§Y自动升级恒星基地（星港及以上）§!"
+ edict_zds_edict_starport_desc: "§Y开启§!此法令后，每月将你§Y全部§!的等级大于哨站的恒星基地§G升级§!到你已经研究的§Y最高§!级别。"
+
+ edict_zds_edict_board: "§R测试§!：§Y自动升级恒星基地（边境）§!"
+ edict_zds_edict_board_desc: "§Y开启§!此法令后，每月将你§Y边境§!的恒星基地§G升级§!到你已经研究的§Y最高§!级别。"
+
+ zds_module.1.desc: "在这里你可以设定一个恒星基地模块部分的§Y模板§!，§Y每月§!将§Y所有§!恒星基地的模块统一建设为此模板。\n说明：\n1.对应的格子点进去可以选择你需要且支持的模块，如设置为无则代表§G跳过§!建设此格。\n2.当前仅支持§Y船坞§!和§Y锚地§!两种模块的设置。\n3.此语法为if地狱，很可能有较大的§R性能开销§!，建议每月一次生效后§R不要连续保持开启§!。\n4.有任何问题或建议可向§G电子邮箱§!反馈后投稿，详见模组详情页"
+
+ zds_module.1.s1.anchorage: "第1格：锚地"
+ zds_module.1.s2.anchorage: "第2格：锚地"
+ zds_module.1.s3.anchorage: "第3格：锚地"
+ zds_module.1.s4.anchorage: "第4格：锚地"
+ zds_module.1.s5.anchorage: "第5格：锚地"
+ zds_module.1.s6.anchorage: "第6格：锚地"
+
+ zds_module.1.s1.none: "第1格：无"
+ zds_module.1.s2.none: "第2格：无"
+ zds_module.1.s3.none: "第3格：无"
+ zds_module.1.s4.none: "第4格：无"
+ zds_module.1.s5.none: "第5格：无"
+ zds_module.1.s6.none: "第6格：无"
+
+ zds_module.1.s1.shipyard: "第1格：船坞"
+ zds_module.1.s2.shipyard: "第2格：船坞"
+ zds_module.1.s3.shipyard: "第3格：船坞"
+ zds_module.1.s4.shipyard: "第4格：船坞"
+ zds_module.1.s5.shipyard: "第5格：船坞"
+ zds_module.1.s6.shipyard: "第6格：船坞"
+
+ zds_module.1.s1.solar_panel_network: "第1格：太阳能电池板"
+ zds_module.1.s2.solar_panel_network: "第2格：太阳能电池板"
+ zds_module.1.s3.solar_panel_network: "第3格：太阳能电池板"
+ zds_module.1.s4.solar_panel_network: "第4格：太阳能电池板"
+ zds_module.1.s5.solar_panel_network: "第5格：太阳能电池板"
+ zds_module.1.s6.solar_panel_network: "第6格：太阳能电池板"
+
+ zds_module.1.s1.detection_array: "第1格：探测阵列"
+ zds_module.1.s2.detection_array: "第2格：探测阵列"
+ zds_module.1.s3.detection_array: "第3格：探测阵列"
+ zds_module.1.s4.detection_array: "第4格：探测阵列"
+ zds_module.1.s5.detection_array: "第5格：探测阵列"
+ zds_module.1.s6.detection_array: "第6格：探测阵列"
+
+ zds_module.1.title: "恒星基地模块模板设定"
+
+ zds_module.11.anchorage: "锚地"
+ zds_module.12.anchorage: "锚地"
+ zds_module.13.anchorage: "锚地"
+ zds_module.14.anchorage: "锚地"
+ zds_module.15.anchorage: "锚地"
+ zds_module.16.anchorage: "锚地"
+
+ zds_module.11.desc: "你想要把此格建设为什么模块？"
+ zds_module.12.desc: "你想要把此格建设为什么模块？"
+ zds_module.13.desc: "你想要把此格建设为什么模块？"
+ zds_module.14.desc: "你想要把此格建设为什么模块？"
+ zds_module.15.desc: "你想要把此格建设为什么模块？"
+ zds_module.16.desc: "你想要把此格建设为什么模块？"
+
+ zds_module.11.none: "不设置"
+ zds_module.12.none: "不设置"
+ zds_module.13.none: "不设置"
+ zds_module.14.none: "不设置"
+ zds_module.15.none: "不设置"
+ zds_module.16.none: "不设置"
+
+ zds_module.11.shipyard: "船坞"
+ zds_module.12.shipyard: "船坞"
+ zds_module.13.shipyard: "船坞"
+ zds_module.14.shipyard: "船坞"
+ zds_module.15.shipyard: "船坞"
+ zds_module.16.shipyard: "船坞"
+
+ zds_module.11.solar_panel_network: "太阳能电池板"
+ zds_module.12.solar_panel_network: "太阳能电池板"
+ zds_module.13.solar_panel_network: "太阳能电池板"
+ zds_module.14.solar_panel_network: "太阳能电池板"
+ zds_module.15.solar_panel_network: "太阳能电池板"
+ zds_module.16.solar_panel_network: "太阳能电池板"
+
+ zds_module.11.detection_array: "探测阵列"
+ zds_module.12.detection_array: "探测阵列"
+ zds_module.13.detection_array: "探测阵列"
+ zds_module.14.detection_array: "探测阵列"
+ zds_module.15.detection_array: "探测阵列"
+ zds_module.16.detection_array: "探测阵列"
+
+ zds_module.11.title: "第1格模块选择"
+ zds_module.12.title: "第2格模块选择"
+ zds_module.13.title: "第3格模块选择"
+ zds_module.14.title: "第4格模块选择"
+ zds_module.15.title: "第5格模块选择"
+ zds_module.16.title: "第6格模块选择"
+
+ edict_zds_module: "§R测试§!：§R设定恒星基地模块模板§!"
+ edict_zds_module_desc: "你可以设定一个恒星基地§Y模块§!的§Y模板§!，§Y每月§!将§Y所有§!恒星基地的§Y模块§!统一建设为此模板。\n§R测试功能，性能占用较大，谨慎按需使用§!\n有任何问题或建议可向§G电子邮箱§!反馈后投稿，详见模组详情页"
+
+ zds_module_exclude: "§R排除§!恒星基地模块自动建设"
+ zds_module_exclude_desc: "使用此决议将本星系的恒星基地排除在模块模板自动建设之中。"
+ zds_module_include: "§G纳入§!恒星基地模块自动建设"
+ zds_module_include_desc: "使用此决议将本星系的恒星基地纳入在模块模板自动建设之中。"
+
+ zds_module_exclude_modifier: "§R恒星基地模块自动建设排除§!"
+ zds_module_exclude_modifier_desc: "本星系§R不参与§!恒星基地模块模板自动建设。"

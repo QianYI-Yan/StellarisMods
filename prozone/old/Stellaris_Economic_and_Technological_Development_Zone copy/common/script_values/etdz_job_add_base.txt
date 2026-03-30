@@ -1,0 +1,90 @@
+# -------------------------------
+# 劳工类岗位（技工、矿工、农夫）
+# 等级：lv1
+# 公式：etdz_job_add_base × 1.2
+# -------------------------------
+etdz_job_lv1_add_base = {
+    multiply = {
+        value = etdz_job_add_base
+        value = 1.2
+    }
+}
+
+# -------------------------------
+# 一级稀有岗位（微粒、水晶、气体）
+# 等级：lv2
+# 公式：etdz_job_expo_add_base × 1.0
+# -------------------------------
+etdz_job_lv2_add_base = etdz_job_expo_add_base
+
+# -------------------------------
+# 二级稀有岗位（工匠、冶金师）
+# 等级：lv3
+# 公式：etdz_job_expo_add_base × 0.8
+# -------------------------------
+etdz_job_lv3_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.8
+    }
+}
+
+# -------------------------------
+# 三级稀有岗位（演艺人员、商贩）
+# 等级：lv4
+# 公式：etdz_job_expo_add_base × 0.6
+# -------------------------------
+etdz_job_lv4_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.6
+    }
+}
+
+# -------------------------------
+# 四级稀有岗位（三科学：物理、生物、工程）
+# 等级：lv5
+# 公式：etdz_job_expo_add_base × 0.4
+# -------------------------------
+etdz_job_lv5_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.4
+    }
+}
+
+# -------------------------------
+# 五级稀有岗位（教育家、执法者）
+# 等级：lv6
+# 公式：etdz_job_expo_add_base × 0.3
+# -------------------------------
+etdz_job_lv6_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.3
+    }
+}
+
+# -------------------------------
+# 六级稀有岗位（医务工作者、士兵）
+# 等级：lv7
+# 公式：etdz_job_expo_add_base × 0.2
+# -------------------------------
+etdz_job_lv7_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.2
+    }
+}
+
+# -------------------------------
+# 七级稀有岗位（官僚）
+# 等级：lv8
+# 公式：etdz_job_expo_add_base × 0.1
+# -------------------------------
+etdz_job_lv8_add_base = {
+    multiply = {
+        value = etdz_job_expo_add_base
+        value = 0.1
+    }
+}

@@ -1,0 +1,51 @@
+# 定义
+ETDZ_Phase1 = {
+	# 基础建造时间（秒），180秒完成建造
+	base_buildtime = 240
+	icon = ETDZ_Phase1  # 建筑图标资源引用
+	can_build = yes	# 默认允许建造该建筑
+	can_demolish = yes	# 允许拆除该建筑
+	position_priority = 100000000	# 建筑优先级（用于建筑排序显示）
+	#    base_cap_amount = 1  # 单球建筑上限
+	# 建筑分类
+	category = government
+	# 允许区域
+	building_sets = {
+		# 你妈的怎么不让造啊
+	}
+	# 建造允许条件（核心逻辑）
+	allow = {
+		exists = owner		# 必须存在星球所有者
+		owner = {
+			is_ai = no
+		}
+		# 仅玩家控制时允许建造
+	}
+	# 行星属性修正
+	inline_script = {
+		script = etdz_modifier
+		etdz_phase_level = 1
+	}
+	inline_script = {
+		script = etdz_job_add
+		etdz_phase_level = 1
+	}
+	# 资源消耗与维护成本
+	resources = {
+		category = planet_buildings		# 属于行星建筑类资源消耗
+		cost = {
+			minerals = 2000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	# 科技前置条件（必须先研发基础工业科技）
+	prerequisites = {
+		"tech_basic_industry"		# 基础工业科技（解锁基础建造能力）
+	}
+	# 建筑升级路径
+	upgrades = {
+		ETDZ_Phase2
+	}
+}

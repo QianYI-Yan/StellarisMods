@@ -1,0 +1,185 @@
+namespace = zds
+
+country_event = {
+    id = zds.1
+    hide_window = yes
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+        has_edict = zds_edict
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_technology = tech_starbase_5
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_citadel
+                }
+                set_starbase_size = starbase_citadel
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_4
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starfortress
+                }
+                set_starbase_size = starbase_starfortress
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_3
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starhold
+                }
+                set_starbase_size = starbase_starhold
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_2
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starport
+                }
+                set_starbase_size = starbase_starport
+            }
+        }
+    }
+}
+
+country_event = {
+    id = zds.2
+    hide_window = yes
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+        has_edict = zds_edict_starport
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_technology = tech_starbase_5
+            }
+            every_owned_starbase = {
+                limit = {
+                    not = {
+                        has_starbase_size = starbase_outpost
+                    }
+                    has_starbase_size < starbase_citadel
+                }
+                set_starbase_size = starbase_citadel
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_4
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starfortress
+                    not = {
+                        has_starbase_size = starbase_outpost
+                    }
+                }
+                set_starbase_size = starbase_starfortress
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_3
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starhold
+                    not = {
+                        has_starbase_size = starbase_outpost
+                    }
+                }
+                set_starbase_size = starbase_starhold
+            }
+        }
+    }
+}
+
+country_event = {
+    id = zds.3
+    hide_window = yes
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+        has_edict = zds_edict_board
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                has_technology = tech_starbase_5
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_citadel
+                    solar_system = {
+                        is_on_border = yes
+                    }
+                }
+                set_starbase_size = starbase_citadel
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_4
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starfortress
+                    solar_system = {
+                        is_on_border = yes
+                    }
+                }
+                set_starbase_size = starbase_starfortress
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_3
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starhold
+                    solar_system = {
+                        is_on_border = yes
+                    }
+                }
+                set_starbase_size = starbase_starhold
+            }
+        }
+        if = {
+            limit = {
+                has_technology = tech_starbase_2
+            }
+            every_owned_starbase = {
+                limit = {
+                    has_starbase_size < starbase_starport
+                    solar_system = {
+                        is_on_border = yes
+                    }
+                }
+                set_starbase_size = starbase_starport
+            }
+        }
+    }
+}

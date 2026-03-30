@@ -1,0 +1,78 @@
+
+building_research_lab_1 = {
+	can_build = yes
+	base_buildtime = @b1_time
+	exempt_from_ai_planet_specialization = no
+
+	category = research
+
+	building_sets = {
+		research
+	}
+
+	potential = {
+		NOR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+		exists = owner
+		owner = {
+			is_wilderness_empire = no
+		}
+		is_special_colony_type = no
+
+		OR = {
+			has_planet_flag = ignore_ai_building_limitations
+			owner = {
+				is_ai = no
+			}
+
+			# AI is allowed to build one of these.
+			AND = {
+				has_any_research_zone = yes
+				NOR = {
+					has_building = building_research_lab_1
+					has_building = building_research_lab_2
+					has_building = building_research_lab_3
+				}
+			}
+		}
+	}
+
+	allow = {
+	}
+
+	ai_weight_coefficient = 0
+
+	destroy_trigger = {
+		OR = {
+			has_modifier = resort_colony
+			has_modifier = slave_colony
+			has_modifier = penal_colony
+		}
+	}
+
+	inline_script = {
+		script = jobs/researchers_add
+		AMOUNT = @building_static_jobs_3
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b1_minerals
+		}
+		upkeep = {
+			energy = @b1_upkeep
+		}
+	}
+
+	prerequisites = {
+		"tech_basic_science_lab_1"
+	}
+
+	upgrades = {
+		"building_research_lab_2"
+	}
+}

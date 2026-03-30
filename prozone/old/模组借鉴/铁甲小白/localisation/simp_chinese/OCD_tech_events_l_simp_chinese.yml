@@ -1,0 +1,87 @@
+﻿l_simp_chinese:
+ ancient_relics_tech: "上古之遗科技"
+ cosmic_storm_tech: "风起云涌科技"
+ distant_stars_tech: "遥远繁星科技"
+ fallen_empire_tech: "堕落帝国科技"
+ first_contact_tech: "第一次接触科技"
+ grand_archive_tech: "博物天枢科技"
+ leviathans_tech: "利维坦科技"
+ machine_age_tech: "机械时代科技"
+ shroud_tech: "虚境幽影科技和乌托邦灵能科技"
+ strategic_resources_tech: "战略资源科技"
+ 
+ ocd_tech_event_add_research_option: "获得研究选项"
+ ocd_tech_event_give_technology: "获得科技"
+ tjxb_event_back: "返回"
+ tjxb_event_close: "结束通讯"
+
+ ocd_tech_event.0.name: "强迫症系列：特殊科技"
+ ocd_tech_event.0.desc: "你可以在这里挑选各种特殊科技，这些科技一般受制于事件链或者飞升而不会出现在科技池。\n本列表根据游戏本体文件进行分类，获得方式分为“获得研究选项”和“获得科技”。"
+ ocd_tech_event.0.other: "未分类科技"
+ ocd_tech_event.0.z: "结束"
+ 
+ ocd_tech_event.10.name: "未分类科技"
+ ocd_tech_event.10.desc: "这里是未分类的各种事件科技，包括太空生物、天灾、行商等。"
+ 
+ ancient_relics_tech_event.1.name: "上古之遗科技"
+ ancient_relics_tech_event.1.desc: "00_ancient_relics_tech文件中的所有科技。\n考虑到远古学科技对于部分玩家来说是污染科技池，这里只提供先驱者秘密研究选项。"
+ ancient_relics_tech_event.1.c: "获得科技 远古学全家桶"
+ ancient_relics_tech_event.1.d: "获得科技 先驱者的秘密"
+
+
+ cosmic_storm_tech_event.1.desc: "00_cosmic_storm_tech文件中的所有科技。\n"
+ 
+ distant_stars_tech_event.1.name: "遥远繁星科技"
+ distant_stars_tech_event.1.desc: "00_distant_stars_tech文件中的所有科技。\n核心是L星门相关和纳米三件套。由于L星门的代码问题，为了避免事件链卡死导致玩家无法打开L星门，这里不提供L星门相关科技，如需手动触发L星门事件链，请前往“部分事件”。"
+ 
+
+ fallen_empire_tech_event.1.name: "堕落帝国科技"
+ fallen_empire_tech_event.1.desc: "00_fallen_empire_tech文件中的所有科技。\n老逼登爆科技啦。"
+ fallen_empire_tech_event.1.a: "暗物质三件套 获得研究选项"
+ fallen_empire_tech_event.1.b: "堕落建筑 获得研究选项"
+ fallen_empire_tech_event.1.c: "暗物质三件套 获得科技"
+ fallen_empire_tech_event.1.d: "堕落建筑 获得科技"
+ 
+ first_contact_tech_event.1.name: "第一次接触科技"
+ first_contact_tech_event.1.desc: "00_first_contact_tech文件中的所有科技。\n隐形科技、土著科技。"
+ first_contact_tech_event.1.a: "隐形和反隐科技 获得研究选项"
+ first_contact_tech_event.1.b: "全部土著科技 获得研究选项"
+ first_contact_tech_event.1.e: "隐形和反隐 获得科技"
+ first_contact_tech_event.1.f: "全部土著科技 获得科技"
+
+ grand_archive_tech_event.1.name: "博物天枢科技"
+ grand_archive_tech_event.1.desc: "00_grand_archive_tech文件中的所有科技。\n大部分是生物船科技"
+ grand_archive_tech_event.1.all: "全部00_grand_archive_tech里面的科技"
+ grand_archive_tech_event.1.ga: "星系归档"
+ grand_archive_tech_event.1.gw: "太空生物捕获、养育"
+ grand_archive_tech_event.1.bc: "跳帮缆索"
+ grand_archive_tech_event.1.cm: "生物船配件"
+ grand_archive_tech_event.1.ga: "星系归档"
+ grand_archive_tech_event.1.gw: "太空生物捕获、养育"
+ grand_archive_tech_event.1.bc: "跳帮缆索"
+ grand_archive_tech_event.1.cm: "生物船配件"
+ 
+
+ leviathans_tech_event.1.name: "利维坦科技"
+ leviathans_tech_event.1.desc: "00_leviathans_tech文件中的所有科技。\n人造龙鳞装甲、神秘编码器、神秘解码器，不用去找以太巨龙和神秘堡垒了。"
+ 
+ machine_age_tech_event.1.name: "部分机械时代科技"
+ machine_age_tech_event.1.desc: "00_machine_age_tech文件中的部分科技。\n考虑到糟糕的事件链问题，这里不提供宇宙创生等级、应用无限课题、塞塔娜之思。\n本来就会出现的两种新巨构科技这里也不提供。"
+ machine_age_tech_event.1.all: "全部科技"
+ machine_age_tech_event.1.cs: "宇宙创生专属战舰 研究选项"
+ machine_age_tech_event.1.cw: "突触凝练机 研究选项"
+
+
+ shroud_tech_event.1.name: "虚境幽影科技"
+ shroud_tech_event.1.desc: "00_shroud_tech文件中的所有科技。\n此外，部分属于乌托邦DLC的灵能科技由于均含在社会学的文件里面，暂时移动到这里。"
+ psionics_tech_event.1.a: "基础灵能科技"
+ psionics_tech_event.1.b: "超主刻印"
+
+
+ strategic_resources_tech_event.1.name: "战略资源科技"
+ strategic_resources_tech_event.1.desc: "00_strategic_resources_tech文件中的所有科技。\n战略资源开采和生产科技"
+ strategic_resources_tech_event.1.a: "获得研究选项"
+ strategic_resources_tech_event.1.b: "获得科技"
+ 
+ 
+

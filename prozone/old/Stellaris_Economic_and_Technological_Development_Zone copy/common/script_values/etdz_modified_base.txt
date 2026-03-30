@@ -1,0 +1,99 @@
+# 这是一个十分神经病的指数增长公式
+# 工作基础值
+# job_add_base = 100 × (1.4 + 0.1 × level)^level
+etdz_job_add_base = {
+	round = yes
+	value = {
+		# 乘法运算模块：最终结果 = 100 × (内部幂运算结果)
+		multiply = {
+			# 第一个乘数：
+			value = 100
+			# 第二个乘数：嵌套的幂运算模块
+			value = {
+				# 幂运算模块：结果 = (加法结果)^(经济特区阶段等级)
+				pow = {
+					# 幂运算的底数：嵌套的加法运算模块
+					value = {
+						# 加法运算模块：结果 = 1.4 + (乘法结果)
+						add = {
+							# 第一个加数：固定基础系数1.4
+							value = 1.4
+							# 第二个加数：嵌套的乘法运算模块
+							value = {
+								# 乘法运算模块：结果 = 0.1 × (经济特区阶段等级)
+								multiply = {
+									# 第一个乘数：阶段系数0.1（用于将阶段等级转换为百分比形式）
+									value = 0.1
+									# 第二个乘数：动态变量$etdz_phase_level$
+									value = $etdz_phase_level$
+								}
+							}
+						}
+					}
+					# 幂运算的指数：动态变量$etdz_phase_level$（与底数中的变量相同，形成指数级增长关系）
+					value = $etdz_phase_level$
+				}
+			}
+		}
+	}
+}
+
+# 稀有资源工作基础值 (expo base)
+# job_expo_add_base = job_add_base × (0.5 × (1 - 1/level))
+etdz_job_expo_add_base = {
+	round = yes
+	value = {
+		# 乘法运算模块：最终结果 = job_add_base × (修正系数)
+		multiply = {
+			# 第一个乘数：job_add_base
+			# 说明：引用同文件定义的 job_add_base 变量
+			value = job_add_base
+			# 第二个乘数：修正系数 = 0.5 × (1 - 1/阶段参数)
+			value = {
+				multiply = {
+					# 第一个乘数：固定系数 0.5
+					value = 0.5
+					# 第二个乘数：括号部分 (1 - 1/阶段参数)
+					value = {
+						subtract = {
+							# 第一个减数：常数 1
+							value = 1
+							# 第二个减数：1 ÷ 阶段参数
+							value = {
+								divide = {
+									# 分子：常数 1
+									value = 1
+									# 分母：动态变量 etdz_phase_level
+									# 说明：代表经济特区/开发区的当前发展阶段等级（通常为整数，如 1–10）
+									value = $etdz_phase_level$
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# 住房加成基础值
+etdz_housing_bonus_base = {
+	round = yes
+	value = {
+		multiply = {
+			value = 2000			# 基础住房加成
+			value = $etdz_phase_level$			# 阶段参数
+		}
+	}
+}
+
+# 舒适度加成基础值
+etdz_amenities_bonus_base = {
+	round = yes
+	value = {
+		multiply = {
+			value = 2000			# 基础舒适度加成
+			value = $etdz_phase_level$			# 阶段参数
+		}
+	}
+}

@@ -1,0 +1,10 @@
+#定向降维束
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM"
+
+		texturefile = "gfx/interface/icons/ship_parts/DIRECTIONAL_DIMENSIONALITY_REDUCTION_BEAM.dds"
+	}
+}

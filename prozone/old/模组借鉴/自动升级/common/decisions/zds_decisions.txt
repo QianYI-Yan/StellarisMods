@@ -1,0 +1,45 @@
+zds_module_exclude = {
+    icon = default
+    potential = {
+        from = {
+            is_ai = no
+        }
+        is_star = yes
+        not = {
+            has_modifier = zds_module_exclude_modifier
+        }
+    }
+    effect = {
+        solar_system = {
+            every_system_planet = {
+                limit = {
+                    is_star = yes
+                }
+                add_modifier = {
+                    modifier = zds_module_exclude_modifier
+                }
+            }
+        }
+    }
+}
+
+zds_module_include = {
+    icon = default
+    potential = {
+        from = {
+            is_ai = no
+        }
+        is_star = yes
+        has_modifier = zds_module_exclude_modifier
+    }
+    effect = {
+        solar_system = {
+            every_system_planet = {
+                limit = {
+                    is_star = yes
+                }
+                remove_modifier = zds_module_exclude_modifier
+            }
+        }
+    }
+}

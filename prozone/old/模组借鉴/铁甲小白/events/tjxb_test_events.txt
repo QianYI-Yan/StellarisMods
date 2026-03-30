@@ -1,0 +1,91 @@
+namespace = tjxb_test
+
+country_event = {
+	id = tjxb_test.1
+	is_triggered_only = yes
+
+	option = {
+		name = tjxb_test.1.a
+		random_system = {
+			spawn_system = {
+				min_distance >= 5
+				max_distance <= 30
+				initializer = legendary_leader_start_site
+				hyperlane = yes
+			}
+		}
+	}
+	option = {
+		name = tjxb_test.1.b
+		set_spawn_system_batch = begin
+		random_system = {
+			spawn_system = {
+				min_distance >= 5
+				max_distance <= 30
+				initializer = legendary_leader_start_site
+				hyperlane = yes
+			}
+		}
+		set_spawn_system_batch = end
+	}
+	option = {
+		name = tjxb_test.1.c
+		set_spawn_system_batch = begin
+		no_scope = {
+			spawn_system = {
+				initializer = legendary_leader_start_site
+				max_distance = 500
+				min_distance = 400
+			}
+		}
+		set_spawn_system_batch = end
+	}
+	option = {
+		name = tjxb_test.1.d
+		set_spawn_system_batch = begin
+		random_system = {
+			system_event = { id = tjxb_test.2 }
+		}
+		set_spawn_system_batch = end
+	}
+}
+
+event = {
+	id = tjxb_test.3
+	hide_window = yes
+	is_triggered_only = yes
+	immediate = {
+		set_spawn_system_batch = begin
+		#凯德斯初始星系
+		random_system = {
+			limit = {
+				NOR = {
+					is_fe_cluster = yes
+					has_star_flag = empire_cluster
+					has_star_flag = lcluster
+					has_star_flag = sealed_system
+					has_star_flag = chosen_system
+					has_star_flag = surveillance_supercomputer_system
+					has_star_flag = crisis_spawn_exclude
+				}
+			}
+			system_event = { id = tjxb_test.2 }
+		}
+		set_spawn_system_batch = end
+	}
+}
+
+system_event = {
+	id = tjxb_test.2
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		spawn_system = {
+			min_distance >= 5
+			max_distance <= 30
+			initializer = legendary_leader_start_site
+			hyperlane = yes
+		}
+	}
+}

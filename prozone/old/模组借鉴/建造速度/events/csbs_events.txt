@@ -1,0 +1,82 @@
+namespace = csbs
+
+country_event = {
+    id = csbs.1
+    picture = GFX_evt_a_rift_in_space
+    title = csbs.1.title
+    desc = {
+        trigger = {
+            always = yes
+        }
+        text = csbs.1.desc
+    }
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+    immediate = {
+        if = {
+            limit = {
+                not = {
+                    is_variable_set = csbs_now
+                }
+            }
+            set_variable = {
+                which = csbs_now
+                value = 0
+            }
+        }
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = csbs.1.a
+        }
+        custom_tooltip = csbs.1.a.tt
+    }
+
+    option = {
+        name = {
+            trigger = {
+                always = yes
+            }
+            text = csbs.1.b
+        }
+        allow = {
+            fail_text = {
+                text = csbs_no_modifier
+                has_modifier = csbs_ms
+            }
+        }
+        remove_modifier = csbs_ms
+    }
+
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = 10
+    }
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = 50
+    }
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = 100
+    }
+
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = -10
+    }
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = -50
+    }
+    inline_script = {
+        script = csbs_inline_scrpts
+        value = -100
+    }
+}

@@ -1,0 +1,20 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_district_specialization_society_eve"
+        textureFile = "gfx/interface/icons/faction_icons/district_specialization_biology_eve.dds"
+        noOfFrames = 1
+    }
+
+    spriteType = {
+        name = "GFX_district_specialization_engineer_eve"
+        textureFile = "gfx/interface/icons/faction_icons/district_specialization_engineer_eve.dds"
+        noOfFrames = 1
+    }
+
+    spriteType = {
+        name = "GFX_district_specialization_physics_eve"
+        textureFile = "gfx/interface/icons/faction_icons/district_specialization_physics_eve.dds"
+        noOfFrames = 1
+    }
+}

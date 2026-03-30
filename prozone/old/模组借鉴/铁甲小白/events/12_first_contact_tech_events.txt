@@ -1,0 +1,86 @@
+namespace = first_contact_tech_event
+
+country_event = {
+    id = first_contact_tech_event.1
+	title = first_contact_tech_event.1.name
+	desc = first_contact_tech_event.1.desc
+	picture = GFX_evt_medieval_alien_civilization
+	is_triggered_only = yes
+
+	option = {
+		name = first_contact_tech_event.1.a
+		add_research_option = tech_cloaking_1
+		add_research_option = tech_cloaking_2
+		add_research_option = tech_cloaking_3
+		add_research_option = tech_cloaking_dark_matter
+		add_research_option = tech_cloaking_psi
+		add_research_option = tech_detection_array
+		add_research_option = tech_dark_matter_detection
+		add_research_option = tech_assisted_detection
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = first_contact_tech_event.1.b
+
+		add_research_option = tech_unusual_senses 					#异常传感
+		add_research_option = tech_new_numbers 						#新数字
+		add_research_option = tech_trinary_computing 				#三元计算技术
+		add_research_option = tech_atmospheric_orbital_mechanics 	#大气轨道力学
+
+		add_research_option = tech_predatory_tactics 				#掠食策略
+		add_research_option = tech_satisfying_insults 				#令人满意的侮辱技巧
+		add_research_option = tech_compact_living 					#蜗居
+		add_research_option = tech_alien_topography 				#外星测绘学
+		add_research_option = tech_xeno_aesthetics 					#异星美学
+
+		add_research_option = tech_lost_building_methods 			#失落建筑模式
+		add_research_option = tech_supreme_alloy 					#终极合金
+		add_research_option = tech_ordered_retreat					#有序撤退
+		add_research_option = tech_temple_of_transportation 		#交通神殿
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = first_contact_tech_event.1.e
+		give_technology = { tech = tech_cloaking_1 } 				# 基础隐形场
+		give_technology = { tech = tech_cloaking_2 } 				# 高级隐形场
+		give_technology = { tech = tech_cloaking_3 } 				# 精英隐形场
+		give_technology = { tech = tech_cloaking_dark_matter } 		# 暗物质隐形场
+		give_technology = { tech = tech_cloaking_psi } 				# 灵能相位场发生器
+		give_technology = { tech = tech_detection_array } 			# 探测阵列
+		give_technology = { tech = tech_dark_matter_detection } 	# 暗物质探测
+		give_technology = { tech = tech_assisted_detection } 		# 先进探测算法
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = first_contact_tech_event.1.f
+		give_technology = { tech = tech_unusual_senses }				#异常传感
+		give_technology = { tech = tech_new_numbers }					#新数字
+		give_technology = { tech = tech_trinary_computing }				#三元计算技术
+		give_technology = { tech = tech_atmospheric_orbital_mechanics }	#大气轨道力学
+		give_technology = { tech = tech_predatory_tactics }				#掠食策略
+		give_technology = { tech = tech_satisfying_insults }			#令人满意的侮辱技巧
+		give_technology = { tech = tech_compact_living }				#蜗居
+		give_technology = { tech = tech_alien_topography }				#外星测绘学
+		give_technology = { tech = tech_xeno_aesthetics }				#异星美学
+		give_technology = { tech = tech_lost_building_methods }			#失落建筑模式
+		give_technology = { tech = tech_supreme_alloy }					#终极合金
+		give_technology = { tech = tech_ordered_retreat }				#有序撤退
+		give_technology = { tech = tech_temple_of_transportation }		#交通神殿
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

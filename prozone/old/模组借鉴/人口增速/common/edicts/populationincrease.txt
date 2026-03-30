@@ -1,0 +1,44 @@
+人口增速 = {
+	length = -1
+	potential = {
+		is_ai = no
+	}
+	modifier = {
+		logistic_growth_mult = 0.5	}
+}
+人口增速2 = {
+	length = -1
+	potential = {
+		is_ai = no
+	}
+	modifier = {
+		logistic_growth_mult = 1
+	}
+}
+人口增速3 = {
+	length = -1
+	potential = {
+		is_ai = no
+	}
+	modifier = {
+		logistic_growth_mult = 2
+	}
+}
+人口增速4 = {
+	length = -1
+	potential = {
+		is_ai = no
+	}
+	modifier = {
+		logistic_growth_mult = 5
+	}
+}
+人口增速5= {
+	length = -1
+	potential = {
+		is_ai = no
+	}
+	modifier = {
+		logistic_growth_mult = 10
+	}
+}

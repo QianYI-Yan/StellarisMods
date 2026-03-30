@@ -1,0 +1,149 @@
+namespace = zds_module
+
+country_event = {
+    id = zds_module.1
+    title = zds_module.1.title
+    desc = {
+        trigger = { always = yes }
+        text = zds_module.1.desc
+    }
+    picture = GFX_evt_a_rift_in_space
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+
+    option = {
+        name = OK
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 1
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 2
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 3
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 4
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 5
+    }
+
+    inline_script = {
+        script = zds_module_inline_scripts
+        slot = 6
+    }
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 1
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 2
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 3
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 4
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 5
+}
+
+inline_script = {
+    script = zds_module_flag_inline_script
+    slot = 6
+}
+
+country_event = {
+    id = zds_module.100
+    hide_window = yes
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+        has_edict = zds_module
+    }
+
+    immediate = {
+        every_owned_starbase = {
+            limit = {
+                has_starbase_size > starbase_outpost
+                star = {
+                    not = {
+                        has_modifier = zds_module_exclude_modifier
+                    }
+                }
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 1
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 2
+            }
+        }
+        every_owned_starbase = {
+            limit = {
+                has_starbase_size > starbase_starport
+                star = {
+                    not = {
+                        has_modifier = zds_module_exclude_modifier
+                    }
+                }
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 3
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 4
+            }
+        }
+
+        every_owned_starbase = {
+            limit = {
+                has_starbase_size > starbase_starhold
+                star = {
+                    not = {
+                        has_modifier = zds_module_exclude_modifier
+                    }
+                }
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 5
+            }
+            inline_script = {
+                script = zds_module_if_inline_script
+                slot = 6
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+utility_component_template = {
+    key = "PLAY_system_ship"
+    size = medium
+    icon = "GFX_ship_part_aura_snare"
+    icon_frame = 1
+    power = 0
+
+    class_restriction = { shipclass_starbase }
+
+    hostile_aura = {
+        name = "FY_starbase_communications_jammer"
+        system_wide = yes
+
+        stack_info = {
+            id = hostile_communications_jammer_FY
+            priority = 10
+        }
+
+        modifier = {
+            ship_speed_mult = -0.9
+            ship_speed_reduction = 0.9
+            ship_disengage_chance_mult = -0.20
+            ship_weapon_damage = -0.9
+            ship_weapon_range_mult = -0.9
+            ship_engagement_range_mult = -0.9
+        }
+
+        graphics = {
+            ship_effect = {
+                entity = ""
+                dynamic_scale = no
+            }
+        }
+    }
+    friendly_aura = {
+        name = FY_ship_self_buff
+        limit = {
+            is_ship_size = play_axis_starbase_01
+        }
+        system_wide = yes
+        radius = 300 #神秘的范围，不知道什么用
+        apply_on = fleets
+        stack_info = {
+            id = ww_ship_self_buff
+            priority = 1
+        }
+        modifier = {
+            ship_armor_hardening_add = 1
+            ship_shield_hardening_add = 1
+            ship_damage_reduction_add = 100
+            ship_damage_reduction_mult = 1
+        }
+        graphics = {
+            area_effect = {
+                entity = "circle_area_entity"
+                dynamic_scale = yes
+            }
+            # ship_effect = {
+            #     entity = "ww_ship_fazhen_effect"
+            #     dynamic_scale = yes
+            # }
+            ship_effect = {
+                entity = "EX_ship_rainbow_effect"
+                dynamic_scale = yes
+            }
+        }
+    }
+
+    triggered_ship_modifier = {
+
+    }
+}

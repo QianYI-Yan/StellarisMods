@@ -1,0 +1,41 @@
+zds_edict = {
+    icon = GFX_edict_type_policy
+    length = -1
+    potential = {
+        is_ai = no
+    }
+    allow = {
+        nor = {
+            has_edict = zds_edict_starport
+            has_edict = zds_edict_board
+        }
+    }
+}
+
+zds_edict_starport = {
+    icon = GFX_edict_type_policy
+    length = -1
+    potential = {
+        is_ai = no
+    }
+    allow = {
+        nor = {
+            has_edict = zds_edict
+            has_edict = zds_edict_board
+        }
+    }
+}
+
+zds_edict_board = {
+    icon = GFX_edict_type_policy
+    length = -1
+    potential = {
+        is_ai = no
+    }
+    allow = {
+        nor = {
+            has_edict = zds_edict
+            has_edict = zds_edict_starport
+        }
+    }
+}

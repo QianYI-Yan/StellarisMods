@@ -1,0 +1,59 @@
+# id，你的 zone 在程序里面的名称
+zone_research_unity = {
+	# 区划特化的图标
+	icon = GFX_job_bureaucrat
+	# 该特化的基础建造时间，引用 `@zone_buildtime = 360`
+	base_buildtime = 240
+	# 限制语句。不符合此条件时无法在 UI 内被显示
+	potential = {
+	}
+	# 允许的判断，比 `potential` 的优先级要低，当不满足时显示为黑白图
+	unlock = {
+		# planet scope
+		owner = {
+			is_ai = no
+		}
+	}
+	# 建造该区划特化所需资源
+	resources = {
+		category = planet_zones
+		cost = {
+			# 引用 `@zone_cost = 1000`
+			minerals = @zone_cost
+		}
+	}
+	# 该区划特化内的建筑槽位可以建的建筑 sets
+	included_building_sets = {
+		research		# 研究
+		unity		# 凝聚力
+		automation		# 自动化建築
+		origin		# 起源建築（如远古克隆仓）
+	}
+	# 内联代码，详见教程的内联代码部分
+	inline_script = {
+		# 引用 jobs 下的 `zone_researchers_add.txt`
+		script = jobs/zone_researchers_add
+		AMOUNT = @scaling_district_researchers_4_jobs
+		LARGE_AMOUNT = @scaling_district_researchers_2_jobs
+	}
+	inline_script = {
+		# 引用 jobs 下的 `zone_unity_jobs_add.txt`
+		script = jobs/zone_unity_jobs_add
+		AMOUNT = @scaling_district_unity_4_jobs
+	}
+	# 修正
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+	# 引用 zones 下的 `shared_city_non_urban_zone_modifiers.txt`，减少住房
+	inline_script = {
+		script = zones/shared_city_non_urban_zone_modifiers
+	}
+	# 添加一段带条件判断的描述
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zone_research_unity_triggered_desc
+	}
+}

@@ -1,0 +1,11 @@
+namespace = cinew
+
+country_event = {
+	id = cipnew.0001
+	title = mtp_newtab_1.name
+	desc = mtp_newtab_1.desc
+	picture = GFX_mtp_newteb
+	show_sound = event_super_explosion
+	location = from
+	fire_only_once = yes
+}

@@ -1,0 +1,55 @@
+#定向降维防御网
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_Directional_dimension_down_defense"
+
+		texturefile = "gfx/interface/icons/ship_parts/Directional_dimension_down_defense.dds"
+	}
+}
+
+
+#二向箔
+
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_TWO_DIMENSIONAL_FOIL"
+
+		texturefile = "gfx/interface/icons/ship_parts/TWO_DIMENSIONAL_FOIL.dds"
+	}
+}
+
+#杜粹强化装甲
+
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_SOULENCE_REINFORCED_ARMOR"
+
+		texturefile = "gfx/interface/icons/ship_parts/SOULENCE_REINFORCED_ARMOR.dds"
+	}
+}
+
+#小医生
+
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_LITTLE_DOCTOR"
+
+		texturefile = "gfx/interface/icons/ship_parts/LITTLE_DOCTOR.dds"
+	}
+}
+
+#零度装甲
+spriteTypes = {
+	spriteType = {
+		name = "零度装甲"
+		texturefile = "gfx/interface/icons/ship_parts/零度装甲.dds"
+	}
+}

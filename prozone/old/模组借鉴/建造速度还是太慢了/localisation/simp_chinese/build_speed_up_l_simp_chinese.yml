@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ edict_build_speed_up: "一键加速！"
+ edict_build_speed_up_desc: "LET'S GO!"
+
+ edict_bsu_terraform_speed_mult_edict: "§S环境改造速度§!修正"
+ edict_bsu_terraform_speed_mult_edict_desc: "在这里你可以为帝国§S环境改造速度§!添加一个自定义修正值。"
+ bsu_terraform_speed_mult_edict_ft: "§R当前已经开启了一个设定窗口，请§G确认§!后再次使用此法令§!"
+ bsu_terraform_speed_mult_edict_tt: "§Y开启一个数值设定窗口§!"
+
+ bsu_terraform_speed_mult_static_modifier: "§S环境改造速度§!"
+
+ bsu_terraform_speed_mult_event.1.title: "环境改造速度修正"
+ bsu_terraform_speed_mult_event.1.desc: "当前设定的修正值为[root.bsu_terraform_speed_mult_variable]%，你可以按需将数值设定为§Y0§!、§G正数§!或§R负数§!均可。"
+
+ bsu_terraform_speed_mult_event.1.variable_add_100: "增加100%"
+ bsu_terraform_speed_mult_event.1.variable_add_10: "增加10%"
+ bsu_terraform_speed_mult_event.1.variable_minus_10: "减少10%"
+ bsu_terraform_speed_mult_event.1.variable_minus_100: "减少100%"
+
+ bsu_terraform_speed_mult_event.1.ok: "§G确认§!"

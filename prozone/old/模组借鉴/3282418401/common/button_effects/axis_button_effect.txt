@@ -1,0 +1,593 @@
+# 作用域类型根据选择的对象而变化
+# This = 选中的对象（如果是星球、舰船、舰队、星系、环境对象、巨型结构、联邦、间谍行动、考古遗址或第一次接触）或玩家国家
+# From = 玩家国家
+# 注意：建议在allow触发器中检查is_scope_type = planet/或其他类型，因为如果同时打开多个界面，可能会混淆作用域
+
+# 在.gui文件中的使用示例：
+#	effectbuttonType = {
+#		name = button_effect_test                    # 按钮名称
+#		quadTextureSprite = GFX_fleetview_destroy_fleet  # 按钮纹理图片
+#		position = { x = 283 y = 0 }                # 按钮位置坐标
+#		scale = 1                                   # 缩放比例
+#		orientation = UPPER_LEFT                    # 对齐方向：左上
+#		effect = example_button_effect              # 按钮点击时执行的效果
+#	}
+
+axis_button_effect = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+
+    effect = {
+        add_monthly_resource_mult = {
+            resource = minerals
+            value = 5
+            min = 5
+            max = 500
+        }
+    }
+}
+axis_button_back_effect = {
+    potential = {
+        always = no
+    }
+    allow = {
+        always = no
+    }
+
+    effect = {
+        hidden_effect = {
+            country_event = { id = ammunition.100 }
+            event_target:play_axis_country = {
+                every_owned_fleet = {
+                    remove_fleet_flag = come_ship_1
+                    remove_fleet_flag = come_ship_2
+                    remove_fleet_flag = come_ship_3
+                    remove_fleet_flag = come_ship_4
+                    remove_fleet_flag = come_ship_5
+                    remove_fleet_flag = come_ship_6
+                }
+            }
+            #clear_global_event_target = come_ship_1
+            #clear_global_event_target = come_ship_2
+            #clear_global_event_target = come_ship_3
+            #clear_global_event_target = come_ship_4
+            #clear_global_event_target = come_ship_5
+            #clear_global_event_target = come_ship_6
+        }
+    }
+}
+
+show_fleet_effect = {
+    allow = {
+        hidden_trigger = {
+            always = yes
+        }
+    }
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    effect = {
+    }
+}
+#查看舰船详情
+axis_fleet_effect_1 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            not = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            not = {
+                is_owned_by = from
+            }
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        event_target:caozuo_fleet_ing = {
+            give_fleet = {
+                controller = from
+                days = 10
+            }
+            set_timed_fleet_flag = {
+                flag = fleet_is_concontroller
+                days = 10
+            }
+        }
+    }
+}
+#提供舰船
+axis_fleet_effect_2 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        # if = {
+        #     limit = {
+        #         has_country_flag = axis_fleet_1
+        #     }
+        #     NOT = { has_global_flag = has_axis_fleet_1 }
+        # }
+        this = {
+            is_scope_type = fleet
+            is_owned_by = from
+            NOT = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            NOR = {
+                has_fleet_flag = axis_fleet_1
+                has_fleet_flag = axis_fleet_2
+                has_fleet_flag = axis_fleet_3
+                has_fleet_flag = axis_fleet_4
+                has_fleet_flag = axis_fleet_5
+                has_fleet_flag = axis_fleet_6
+            }
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_1 }
+                not = {
+                    has_global_flag = has_axis_fleet_1
+                }
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_2 }
+                not = {
+                    has_global_flag = has_axis_fleet_2
+                }
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_3 }
+                not = {
+                    has_global_flag = has_axis_fleet_3
+                }
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_4 }
+                not = {
+                    has_global_flag = has_axis_fleet_4
+                }
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_5 }
+                not = {
+                    has_global_flag = has_axis_fleet_5
+                }
+            }
+            if = {
+                limit = { has_country_flag = axis_fleet_6 }
+                not = {
+                    has_global_flag = has_axis_fleet_6
+                }
+            }
+        }
+        #忘了这个是干什么的了
+        # NOT = {
+        #     has_global_flag = go_ship_1
+        # }
+    }
+    effect = {
+        this = {
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_1
+                    }
+                }
+                save_global_event_target_as = axis_fleet_1
+                #舰船标记第一位置
+                set_fleet_flag = axis_fleet_1
+                #全局标记位置已经被占用
+                set_global_flag = has_axis_fleet_1
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_2
+                    }
+                }
+                save_global_event_target_as = axis_fleet_2
+                set_fleet_flag = axis_fleet_2
+                #标记位置已经被占用
+                set_global_flag = has_axis_fleet_2
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_3
+                    }
+                }
+                save_global_event_target_as = axis_fleet_3
+                set_fleet_flag = axis_fleet_3
+                #标记位置已经被占用
+                set_global_flag = has_axis_fleet_3
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_4
+                    }
+                }
+                save_global_event_target_as = axis_fleet_4
+                set_fleet_flag = axis_fleet_4
+                #标记位置已经被占用
+                set_global_flag = has_axis_fleet_4
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_5
+                    }
+                }
+                save_global_event_target_as = axis_fleet_5
+                set_fleet_flag = axis_fleet_5
+                #标记位置已经被占用
+                set_global_flag = has_axis_fleet_5
+            }
+            if = {
+                limit = {
+                    from = {
+                        has_country_flag = axis_fleet_6
+                    }
+                }
+                save_global_event_target_as = axis_fleet_6
+                set_fleet_flag = axis_fleet_6
+                #标记位置已经被占用
+                set_global_flag = has_axis_fleet_6
+            }
+        }
+    }
+}
+#清理位置OR收回舰船
+axis_fleet_effect_3 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            is_owned_by = from
+        }
+
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        from = {
+            #没有出租就清理位置
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_1
+                }
+                event_target:axis_fleet_1 = {
+                    remove_fleet_flag = axis_fleet_1
+                }
+                clear_global_event_target = axis_fleet_1
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_1
+            }
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_2
+                }
+                event_target:axis_fleet_2 = {
+                    remove_fleet_flag = axis_fleet_2
+                }
+                clear_global_event_target = axis_fleet_2
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_2
+            }
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_3
+                }
+                event_target:axis_fleet_3 = {
+                    remove_fleet_flag = axis_fleet_3
+                }
+                clear_global_event_target = axis_fleet_3
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_3
+            }
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_4
+                }
+                event_target:axis_fleet_4 = {
+                    remove_fleet_flag = axis_fleet_4
+                }
+                clear_global_event_target = axis_fleet_4
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_4
+            }
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_5
+                }
+                event_target:axis_fleet_5 = {
+                    remove_fleet_flag = axis_fleet_5
+                }
+                clear_global_event_target = axis_fleet_5
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_5
+            }
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        not = {
+                            has_fleet_flag = fleet_is_concontroller
+                        }
+                    }
+                    has_country_flag = axis_fleet_6
+                }
+                event_target:axis_fleet_6 = {
+                    remove_fleet_flag = axis_fleet_6
+                }
+                clear_global_event_target = axis_fleet_6
+                clear_global_event_target = caozuo_fleet_ing
+                remove_global_flag = has_axis_fleet_6
+            }
+            #在出租就回收
+            if = {
+                limit = {
+                    event_target:caozuo_fleet_ing = {
+                        has_fleet_flag = fleet_is_concontroller
+                    }
+                }
+                event_target:caozuo_fleet_ing = {
+                    end_fleet_contract = {
+                        initiator = from
+                        reason = broken
+                    }
+                    remove_fleet_flag = fleet_is_concontroller
+                }
+            }
+            # country_event = { id = ammunition.103 }
+        }
+    }
+}
+#租用舰队
+axis_fleet_effect_4 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            not = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            not = {
+                is_owned_by = from
+            }
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        event_target:caozuo_fleet_ing = {
+            give_fleet = {
+                controller = from
+                days = 3600
+            }
+            #标记正在出租
+            set_timed_fleet_flag = {
+                flag = fleet_is_concontroller
+                days = 3600
+            }
+        }
+        from = {
+            add_resource = {
+                # 添加资源
+                energy = -1
+                mult = value:axis_fleet_concontroller  # 乘以50%战斗力
+                # mult = 100
+            }
+            country_event = { id = ammunition.103 }
+        }
+    }
+}
+#购买舰队
+axis_fleet_effect_5 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            not = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            not = {
+                is_owned_by = from
+            }
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        event_target:caozuo_fleet_ing = {
+            set_owner = from
+        }
+        from = {
+            add_resource = {
+                # 添加资源
+                energy = -1
+                mult = value:axis_fleet_concontroller  # 乘以50%战斗力
+            }
+            country_event = { id = ammunition.103 }
+        }
+    }
+}
+#直接将选中的舰船租借给选中的国家
+axis_fleet_effect_6 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            not = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            not = {
+                is_owned_by = root
+            }
+            is_owned_by = from
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        event_target:caozuo_fleet_ing = {
+            give_fleet = {
+                controller = root
+                days = 3600
+            }
+            #标记正在出租
+            set_timed_fleet_flag = {
+                flag = fleet_is_concontroller
+                days = 3600
+            }
+        }
+        root = {
+            add_resource = {
+                # 添加资源
+                energy = -1
+                mult = value:axis_fleet_concontroller  # 乘以50%战斗力
+            }
+            country_event = { id = ammunition.103 }
+        }
+    }
+}
+#直接出售
+axis_fleet_effect_7 = {
+    #显示条件
+    potential = {
+        show_axis_fleet = yes
+    }
+    allow = {
+        event_target:caozuo_fleet_ing = {
+            not = {
+                has_fleet_flag = fleet_is_concontroller
+            }
+            not = {
+                is_owned_by = root
+            }
+            is_owned_by = from
+        }
+        from = {
+            OR = {
+                has_country_flag = axis_fleet_1
+                has_country_flag = axis_fleet_2
+                has_country_flag = axis_fleet_3
+                has_country_flag = axis_fleet_4
+                has_country_flag = axis_fleet_5
+                has_country_flag = axis_fleet_6
+            }
+        }
+    }
+    effect = {
+        event_target:caozuo_fleet_ing = {
+            set_owner = root
+        }
+        root = {
+            add_resource = {
+                # 添加资源
+                energy = -1
+                mult = value:axis_fleet_concontroller  # 乘以50%战斗力
+            }
+        }
+        from = {
+            add_resource = {
+                # 添加资源
+                energy = 1
+                mult = value:axis_fleet_concontroller  # 乘以50%战斗力
+            }
+            #清除当前位置
+            clear_axis_fleet = yes
+        }
+    }
+}

@@ -1,0 +1,46 @@
+# =========================================================
+# inline_scripts：岗位等级组定义
+# script_values\etdz_job_add_base.txt
+# =========================================================
+# -------------------------------
+# lv1 劳工类岗位组（技工、矿工、农夫）
+# -------------------------------
+job_technician_add = value:etdz_job_lv1_add_base
+job_miner_add = value:etdz_job_lv1_add_base
+job_farmer_add = value:etdz_job_lv1_add_base
+# -------------------------------
+# lv2 一级稀有岗位组（微粒、水晶、气体）
+# -------------------------------
+job_mote_harvester_add = value:etdz_job_lv2_add_base
+job_crystal_miner_add = value:etdz_job_lv2_add_base
+job_gas_extractor_add = value:etdz_job_lv2_add_base
+# -------------------------------
+# lv3 二级稀有岗位组（工匠、冶金师）
+# -------------------------------
+job_artisan_add = value:etdz_job_lv3_add_base
+job_foundry_add = value:etdz_job_lv3_add_base
+# -------------------------------
+# lv4 三级稀有岗位组（演艺人员、商贩）
+# -------------------------------
+job_entertainer_add = value:etdz_job_lv4_add_base
+job_trader_add = value:etdz_job_lv4_add_base
+# -------------------------------
+# lv5 四级稀有岗位组（三科学：物理、生物、工程）
+# -------------------------------
+job_physicist_add = value:etdz_job_lv5_add_base
+job_biologist_add = value:etdz_job_lv5_add_base
+job_engineer_add = value:etdz_job_lv5_add_base
+# -------------------------------
+# lv6 五级稀有岗位组（教育家、执法者）
+# -------------------------------
+job_educator_add = value:etdz_job_lv6_add_base
+job_enforcer_add = value:etdz_job_lv6_add_base
+# -------------------------------
+# lv7 六级稀有岗位组（医务工作者、士兵）
+# -------------------------------
+job_healthcare_add = value:etdz_job_lv7_add_base
+job_soldier_add = value:etdz_job_lv7_add_base
+# -------------------------------
+# lv8 七级稀有岗位组（官僚）
+# -------------------------------
+job_bureaucrat_add = value:etdz_job_lv8_add_base

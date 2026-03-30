@@ -1,0 +1,62 @@
+ap_cosmic_infrastructure = {
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_cosmic_infrastructure
+		}
+	}
+
+	on_enabled = {
+		hidden_effect = {
+		
+		}
+	}
+
+	possible = {
+        has_ascension_perk = ap_master_builders
+		custom_tooltip = {
+			fail_text = "mtp_requires_ascension_perks_7"
+			num_ascension_perks > 6
+		}
+	}
+	
+	modifier = {
+		#description = mtp_promotion_dimension_desc
+        planet_building_build_speed_mult = 0.5
+        megastructure_build_speed_mult = 0.5
+        megastructures_cost_mult = -0.3
+        country_megastructure_build_cap_add = 2
+        starbase_building_build_speed_mult = 0.5
+        starbase_module_build_speed_mult = 0.5
+        country_starbase_capacity_add = 25
+        empire_size_colonies_mult = -0.25
+        empire_size_districts_mult = -0.25
+        empire_size_mult = -0.2
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 10
+			OR = {
+				has_valid_civic = civic_fanatic_purifiers
+				has_valid_civic = civic_machine_terminator
+			}
+		}
+		modifier = {
+			factor = 0.1
+			is_xenophile = yes
+		}
+		modifier = {
+			factor = 0.25
+			is_ethics_aligned = { ARG1 = pacifist }
+		}
+		modifier = {
+			factor = 2
+			is_xenophobe = yes
+		}
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+	}
+}

@@ -1,0 +1,39 @@
+# Tooltips 会在规则失败时生成，推荐使用 custom_tooltip
+# 注意：除了这里的规则外，游戏还有一些硬编码的限制
+# 如果这里的规则返回 true，行动仍可能不可用
+# 如果这里的规则返回 false，行动必然不可用
+
+# Root = 目标国家（被选为宿敌的对象）
+# This = 当前国家（发起方）
+is_valid_rival = {
+
+    # 邻近规则：宿敌必须是邻国或满足特殊条件
+    custom_tooltip = {
+        fail_text = BFP_INVALID_RIVAL_NEIGHBOURING_DESC   # 条件失败时的提示文本（邻近条件不满足）
+        root = {
+            OR = {
+                prev = { NOT = { is_country_type = default } }   # 如果目标不是默认国家类型 → 条件通过
+                
+                prev = { has_valid_civic = civic_borderless_ambitions } # 如果目标拥有“无疆野心”国策 → 条件通过
+                is_neighbor_of = prev                           # 如果目标是邻国 → 条件通过
+                is_rival = prev.owner                           # 如果目标已经是某个宿敌的宿敌 → 条件通过
+            }
+        }
+    }
+    
+    # 相对实力规则：宿敌必须在合理的实力范围内或满足特殊条件
+    custom_tooltip = {
+        fail_text = BFP_INVALID_RIVAL_RELATIVE_POWER_DESC # 条件失败时的提示文本（实力条件不满足）
+        root = {
+            OR = {
+                prev = { NOT = { is_country_type = default } }   # 如果目标不是默认国家类型 → 条件通过
+                
+                prev = { has_ascension_perk = ap_galactic_force_projection } # 如果目标拥有“银河力量投射”飞升天赋 → 条件通过
+                AND = {                 
+                    relative_power = { who = prev value >= inferior } # 双方实力至少达到“劣势”水平
+                    relative_power = { who = prev value <= superior } # 双方实力不超过“优势”水平
+                }
+            }
+        }
+    }
+}

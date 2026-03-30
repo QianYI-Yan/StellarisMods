@@ -1,0 +1,109 @@
+namespace = machine_age_tech_event
+
+country_event = {
+    id = machine_age_tech_event.1
+	title = machine_age_tech_event.1.name
+	desc = machine_age_tech_event.1.desc
+	picture = GFX_evt_cosmogenesis_crisis
+	is_triggered_only = yes
+
+	# option = {
+	# 	name = machine_age_tech_event.1.all
+	# 	#虚拟
+	# 	add_research_option = tech_identity_copy 			# 复制人格
+	# 	add_research_option = tech_identity_fusion 			# 人格融合
+	# 	add_research_option = tech_identity_initialization 	# 人格初始化
+
+	# 	add_research_option = tech_synth_queen_knowledge 	# 塞塔娜之思
+
+	# 	add_research_option = tech_cosmogenesis_crisis_1 	# 指数学习理论
+	# 	add_research_option = tech_cosmogenesis_crisis_2 	# 重力笔刷
+	# 	add_research_option = tech_cosmogenesis_crisis_3 	# 无限理论课题
+	# 	add_research_option = tech_cosmogenesis_crisis_4 	# 现实法则
+	# 	add_research_option = tech_cosmogenesis_crisis_5 	# 新生宇宙
+
+	# 	add_research_option = tech_cosmogenesis_escort 			# 密语护航舰
+	# 	add_research_option = tech_cosmogenesis_battlecruiser 	# 神秘战巡舰
+	# 	add_research_option = tech_cosmogenesis_FE_titan 		# 悖论泰坦舰
+	# 	add_research_option = tech_cosmogenesis_weaver 			# 困境织蛛
+	# 	add_research_option = tech_cosmogenesis_mauler 			# 密文颚蚁
+	# 	add_research_option = tech_cosmogenesis_harbinger 		# 迷宫孵后
+	# 	add_research_option = tech_cosmogenesis_stinger 		# 神秘刺蜂
+
+	# 	add_research_option = tech_cosmogenesis_world 			# 可缩放储备池计算
+
+	# 	add_research_option = tech_cosmogenesis_thesis 			# 应用无限课题
+
+	# 	add_research_option = tech_lathe_resonator 				# 突触共振器
+	# 	add_research_option = tech_lathe_overclocker 			# 突触超频器
+	# 	add_research_option = tech_lathe_preserver 				# 突触保存器
+	# 	add_research_option = tech_lathe_life_support 			# 突触维持器
+	# 	add_research_option = tech_lathe_cogitator 				# 突触沉思器
+	# 	add_research_option = tech_lathe_validator 				# 突触验证器
+
+	# 	add_research_option = tech_orbital_arc_furnace 		# 电弧熔炉
+	# 	add_research_option = tech_dyson_swarm 				# 戴森云
+
+	# 	add_research_option = tech_nanite_repair_system_synth_queen 	# 塞塔娜纳米机器人
+	# 	country_event = {
+	# 		id = ocd_tech_event.0
+	# 	}
+	# }
+	option = {
+		name = machine_age_tech_event.1.cs
+		add_research_option = tech_cosmogenesis_escort 			# 密语护航舰
+		add_research_option = tech_cosmogenesis_battlecruiser 	# 神秘战巡舰
+		add_research_option = tech_cosmogenesis_FE_titan 		# 悖论泰坦舰
+		add_research_option = tech_cosmogenesis_weaver 			# 困境织蛛
+		add_research_option = tech_cosmogenesis_mauler 			# 密文颚蚁
+		add_research_option = tech_cosmogenesis_harbinger 		# 迷宫孵后
+		add_research_option = tech_cosmogenesis_stinger 		# 神秘刺蜂
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = machine_age_tech_event.1.cw
+		add_research_option = tech_cosmogenesis_world 			# 可缩放储备池计算
+		add_research_option = tech_lathe_resonator 				# 突触共振器
+		add_research_option = tech_lathe_overclocker 			# 突触超频器
+		add_research_option = tech_lathe_preserver 				# 突触保存器
+		add_research_option = tech_lathe_life_support 			# 突触维持器
+		add_research_option = tech_lathe_cogitator 				# 突触沉思器
+		add_research_option = tech_lathe_validator 				# 突触验证器
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+
+		give_technology = { tech = tech_cosmogenesis_escort }
+		give_technology = { tech = tech_cosmogenesis_battlecruiser }
+		give_technology = { tech = tech_cosmogenesis_FE_titan }
+		give_technology = { tech = tech_cosmogenesis_weaver }
+		give_technology = { tech = tech_cosmogenesis_mauler }
+		give_technology = { tech = tech_cosmogenesis_harbinger }
+		give_technology = { tech = tech_cosmogenesis_stinger }
+
+		give_technology = { tech = tech_cosmogenesis_world }
+		give_technology = { tech = tech_lathe_resonator }
+		give_technology = { tech = tech_lathe_overclocker }
+		give_technology = { tech = tech_lathe_preserver }
+		give_technology = { tech = tech_lathe_life_support }
+		give_technology = { tech = tech_lathe_cogitator }
+		give_technology = { tech = tech_lathe_validator }
+		give_technology = { tech = tech_nanite_repair_system_synth_queen }
+
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

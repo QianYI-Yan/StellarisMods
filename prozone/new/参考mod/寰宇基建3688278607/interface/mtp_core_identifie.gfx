@@ -1,0 +1,10 @@
+#降维核心
+spriteTypes = {
+
+	spriteType = {
+
+		name = "GFX_REDUCED_DIMENSION_REACTOR"
+
+		texturefile = "gfx/interface/icons/ship_parts/REDUCED_DIMENSION_REACTOR.dds"
+	}
+}

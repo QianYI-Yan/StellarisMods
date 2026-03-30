@@ -1,0 +1,49 @@
+can_destroy_planet_with_PLAY_KILLER_STAR_CRACKER = {
+    custom_tooltip = {
+        fail_text = is_your_megastructure_system
+        NOT = {
+            solar_system = {
+                has_star_flag = crisis_sphere_system@from.owner
+                any_system_megastructure = { has_megastructure_flag = crisis_sphere }
+            }
+        }
+    }
+    custom_tooltip = {
+        fail_text = is_not_star
+        is_star = yes
+    }
+    custom_tooltip = {
+        fail_text = is_black_hole
+        NOT = { is_planet_class = pc_black_hole }
+    }
+    custom_tooltip = {
+        fail_text = star_owner_is_not_hostile
+        OR = {
+            NOT = { exists = space_owner }
+            space_owner = { is_hostile = from.owner }
+            space_owner = { is_same_value = from.owner }
+        }
+    }
+}
+
+show_axis_fleet = {
+    hidden_trigger = {
+        # NOT = {
+        #     is_scope_type = starbase
+        #     is_scope_type = galactic_object
+        #     is_scope_type = ship
+        #     is_scope_type = megastructure
+        #     is_scope_type = fleet
+        #     is_scope_type = ambient_object
+        #     has_global_flag = on_pre_pre_ftl_generating
+        #     has_global_flag = on_celestial_generating
+        #     has_global_flag = celestial_moon_info
+        #     has_planet_flag = celestial_moon_info_planet
+        #     has_global_flag = can_planet_reset
+        #     has_planet_flag = celestial_info_more_planet
+        #     has_global_flag = on_archaeological_site_edit
+        # }
+        # has_global_flag = show_ship
+    }
+    always = yes
+}

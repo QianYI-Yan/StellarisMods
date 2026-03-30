@@ -1,0 +1,132 @@
+namespace = special_technology_event
+
+country_event = {
+	id = special_technology_event.1
+	title = special_technology_event.1.name
+	desc = special_technology_event.1.desc
+	picture = GFX_evt_analyzing_artifacts
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = special_technology_event.1.c
+		add_research_option = tech_psionic_theory # 灵能理论
+		add_research_option = tech_telepathy # 心灵感应
+		add_research_option = tech_precognition_interface # 预知接口
+		add_research_option = tech_thought_enforcement # 思想钢印
+		add_research_option = tech_psi_jump_drive_1	# 灵能跃迁引擎
+		add_research_option = tech_psionic_barrier # 灵能屏障
+		add_research_option = tech_psionic_shield # 灵能护盾
+		add_research_option = tech_covenant_composer # 织缕刻印
+		add_research_option = tech_covenant_eater # 喰煞刻印
+		add_research_option = tech_covenant_instrument # 器具刻印
+		add_research_option = tech_covenant_whisperers # 低语刻印
+	}
+	option = {
+		name = special_technology_event.1.f
+		add_research_option = tech_extradimensional_weapon_1 # 太虚光束
+		add_research_option = tech_mining_drone_weapon_1			# 采矿无人机激光
+		add_research_option = tech_space_cloud_weapon_1				# 雷云导线
+		add_research_option = tech_space_whale_weapon_1				# 频率调谐
+		add_research_option = tech_amoeba_strike_craft_1			# 变形虫育种计划
+		add_research_option = tech_regenerative_hull_tissue			# 再生舰体组织
+		add_research_option = tech_crystal_armor_1					# 水晶复合镀层
+		add_research_option = tech_crystal_armor_2					# 水晶锻造镀层
+		add_research_option = tech_dragon_armor						# leviathans-人造龙鳞装甲
+		add_research_option = tech_enigmatic_encoder				# leviathans-神秘编码器
+		add_research_option = tech_enigmatic_decoder				# leviathans-神秘解码器
+		add_research_option = tech_gargantuan_evolution				# distantstars-超体进化
+		add_research_option = tech_neuroregeneration				# distantstars-神经组织工程
+		add_research_option = tech_nanite_repair_system				# distantstars-纳米修复系统
+		add_research_option = tech_nanite_autocannon				# distantstars-纳米机关炮
+		add_research_option = tech_nanite_flak_batteries			# distantstars-纳米高射炮
+		add_research_option = tech_extradimensional_weapon_1		# 高维武器
+		add_research_option = tech_scourge_missile_1				# 天灾导弹
+		add_research_option = tech_swarm_strike_craft_1				# 虫群产卵池
+	}
+	option = {
+		name = special_technology_event.1.g
+		add_research_option = tech_orbital_trash_dispersal			# 轨道垃圾散布
+		add_research_option = tech_prescient_data_modeling			# 拜金教数据建模
+	}
+	option = {
+		name = special_technology_event.1.h
+	}
+	option = {
+		name = special_technology_event.1.i
+		add_research_option = tech_strike_craft_skrand				# 斯卡拉维德舰载机
+	}
+	option = {
+		name = special_technology_event.1.j
+	}
+}
+
+
+country_event = {
+	id = special_technology_event.2
+	title = special_technology_event.2.name
+	desc = special_technology_event.2.desc
+	picture = GFX_evt_analyzing_artifacts
+	is_triggered_only = yes
+	trigger = {
+		is_ai = no
+	}
+
+	option = {
+		name = special_technology_event.2.c
+		give_technology = { tech = tech_psionic_theory message = no } # 灵能理论
+		give_technology = { tech = tech_telepathy message = no } # 心灵感应
+		give_technology = { tech = tech_precognition_interface message = no } # 预知接口
+		give_technology = { tech = tech_thought_enforcement message = no } # 思想钢印
+		give_technology = { tech = tech_psi_jump_drive_1 message = no }	# 灵能跃迁引擎
+		give_technology = { tech = tech_psionic_barrier message = no } # 灵能屏障
+		give_technology = { tech = tech_psionic_shield message = no } # 灵能护盾
+		give_technology = { tech = tech_covenant_composer message = no } # 织缕刻印
+		give_technology = { tech = tech_covenant_eater message = no } # 喰煞刻印
+		give_technology = { tech = tech_covenant_instrument message = no } # 器具刻印
+		give_technology = { tech = tech_covenant_whisperers message = no } # 低语刻印
+	}
+	option = {
+		name = special_technology_event.2.f
+		give_technology = { tech = tech_extradimensional_weapon_1 message = no }		# 太虚光束
+		give_technology = { tech = tech_mining_drone_weapon_1 message = no }			# 采矿无人机激光
+		give_technology = { tech = tech_space_cloud_weapon_1 message = no }				# 雷云导线
+		give_technology = { tech = tech_space_whale_weapon_1 message = no }				# 频率调谐
+		give_technology = { tech = tech_amoeba_strike_craft_1 message = no }			# 变形虫育种计划
+		give_technology = { tech = tech_regenerative_hull_tissue message = no }			# 再生舰体组织
+		give_technology = { tech = tech_crystal_armor_1 message = no }					# 水晶复合镀层
+		give_technology = { tech = tech_crystal_armor_2 message = no }					# 水晶锻造镀层
+		give_technology = { tech = tech_dragon_armor message = no }						# leviathans-人造龙鳞装甲
+		give_technology = { tech = tech_enigmatic_encoder message = no }				# leviathans-神秘编码器
+		give_technology = { tech = tech_enigmatic_decoder message = no }				# leviathans-神秘解码器
+		give_technology = { tech = tech_gargantuan_evolution message = no }				# distantstars-超体进化
+		give_technology = { tech = tech_neuroregeneration message = no }				# distantstars-神经组织工程
+		give_technology = { tech = tech_nanite_repair_system message = no }				# distantstars-纳米修复系统
+		give_technology = { tech = tech_nanite_autocannon message = no }				# distantstars-纳米机关炮
+		give_technology = { tech = tech_nanite_flak_batteries message = no }			# distantstars-纳米高射炮
+		give_technology = { tech = tech_extradimensional_weapon_1 message = no }		# 高维武器
+		give_technology = { tech = tech_scourge_missile_1 message = no }				# 天灾导弹
+		give_technology = { tech = tech_swarm_strike_craft_1 message = no }				# 虫群产卵池
+	}
+	option = {
+		name = special_technology_event.2.g
+		give_technology = { tech = tech_orbital_trash_dispersal message = no }			# 轨道垃圾散布
+		give_technology = { tech = tech_prescient_data_modeling message = no }			# 拜金教数据建模
+
+	}
+	option = {
+		name = special_technology_event.2.h
+	}
+	option = {
+		name = special_technology_event.2.i
+		give_technology = { tech = tech_strike_craft_skrand message = no }				# 斯卡拉维德舰载机
+	}
+	option = {
+		name = special_technology_event.2.j
+	}
+}
+
+
+

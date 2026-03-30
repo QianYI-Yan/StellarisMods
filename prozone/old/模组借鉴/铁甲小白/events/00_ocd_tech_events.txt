@@ -1,0 +1,146 @@
+namespace = ocd_tech_event
+
+country_event = {
+	id = ocd_tech_event.0
+	title = ocd_tech_event.0.name
+	desc = ocd_tech_event.0.desc
+	picture = GFX_evt_rare_tech_cache
+	is_triggered_only = yes
+
+	option = {
+		name = ancient_relics_tech
+		country_event = {
+			id = ancient_relics_tech_event.1
+		}
+	}
+	option = {
+		name = cosmic_storm_tech
+		country_event = {
+			id = cosmic_storm_tech_event.1
+		}
+	}
+	option = {
+		name = distant_stars_tech
+		country_event = {
+			id = distant_stars_tech_event.1
+		}
+	}
+	option = {
+		name = fallen_empire_tech
+		country_event = {
+			id = fallen_empire_tech_event.1
+		}
+	}
+	option = {
+		name = first_contact_tech
+		country_event = {
+			id = first_contact_tech_event.1
+		}
+	}
+	option = {
+		name = grand_archive_tech
+		country_event = {
+			id = grand_archive_tech_event.1
+		}
+	}
+	option = {
+		name = leviathans_tech
+		country_event = {
+			id = leviathans_tech_event.1
+		}
+	}
+	option = {
+		name = machine_age_tech
+		country_event = {
+			id = machine_age_tech_event.1
+		}
+	}
+	option = {
+		name = shroud_tech
+		country_event = {
+			id = shroud_tech_event.1
+		}
+	}
+	option = {
+		name = strategic_resources_tech
+		country_event = {
+			id = strategic_resources_tech_event.1
+		}
+	}
+	option = {
+		name = ocd_tech_event.0.other
+		country_event = {
+			id = ocd_tech_event.10
+		}
+	}
+	# option = {
+	# 	name = ocd_tech_event.0.
+	# 	country_event = {
+	# 		id = 
+	# 	}
+	# }
+	option = {
+		name = tjxb_event_back
+		default_hide_option = yes
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+}
+
+
+country_event = {
+	id = ocd_tech_event.10
+	title = ocd_tech_event.10.name
+	desc = ocd_tech_event.10.desc
+	picture = GFX_evt_rare_tech_cache
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_extradimensional_weapon_1 		# 太虚光束
+		add_research_option = tech_mining_drone_weapon_1			# 采矿无人机激光
+		add_research_option = tech_space_cloud_weapon_1				# 雷云导线
+		add_research_option = tech_space_whale_weapon_1				# 频率调谐
+		add_research_option = tech_amoeba_strike_craft_1			# 变形虫育种计划
+		add_research_option = tech_regenerative_hull_tissue			# 再生舰体组织
+		add_research_option = tech_crystal_armor_1					# 水晶复合镀层
+		add_research_option = tech_crystal_armor_2					# 水晶锻造镀层
+		add_research_option = tech_extradimensional_weapon_1		# 高维武器
+		add_research_option = tech_scourge_missile_1				# 天灾导弹
+		add_research_option = tech_swarm_strike_craft_1				# 虫群产卵池
+		add_research_option = tech_orbital_trash_dispersal			# 轨道垃圾散布
+		add_research_option = tech_prescient_data_modeling			# 拜金教数据建模
+		add_research_option = tech_strike_craft_skrand				# 斯卡拉维德舰载机
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_extradimensional_weapon_1 message = no }		# 太虚光束
+		give_technology = { tech = tech_mining_drone_weapon_1 message = no }			# 采矿无人机激光
+		give_technology = { tech = tech_space_cloud_weapon_1 message = no }				# 雷云导线
+		give_technology = { tech = tech_space_whale_weapon_1 message = no }				# 频率调谐
+		give_technology = { tech = tech_amoeba_strike_craft_1 message = no }			# 变形虫育种计划
+		give_technology = { tech = tech_regenerative_hull_tissue message = no }			# 再生舰体组织
+		give_technology = { tech = tech_crystal_armor_1 message = no }					# 水晶复合镀层
+		give_technology = { tech = tech_crystal_armor_2 message = no }					# 水晶锻造镀层
+		give_technology = { tech = tech_extradimensional_weapon_1 message = no }		# 高维武器
+		give_technology = { tech = tech_scourge_missile_1 message = no }				# 天灾导弹
+		give_technology = { tech = tech_swarm_strike_craft_1 message = no }				# 虫群产卵池
+		give_technology = { tech = tech_orbital_trash_dispersal message = no }			# 轨道垃圾散布
+		give_technology = { tech = tech_prescient_data_modeling message = no }			# 拜金教数据建模
+		give_technology = { tech = tech_strike_craft_skrand message = no }				# 斯卡拉维德舰载机
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}

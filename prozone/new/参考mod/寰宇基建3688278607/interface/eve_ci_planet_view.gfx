@@ -1,0 +1,76 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_eve_district_jg_physics_bg"
+        texturefile = gfx/interface/planetview/district_backgrounds/eve_district_jg_physics_bg.dds
+    }
+
+    spriteType = {
+        name = "GFX_eve_district_jg_physics_box_icon_rectangle"
+        texturefile = "gfx/interface/icons/districts/grid_box/district_arcology_research_rectangle.dds"
+        effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+        noOfFrames = 3
+        animation = {
+            animationmaskfile = "gfx/interface/icons/districts/grid_box/default_animated_mask.dds"
+            animationtexturefile = "gfx/interface/icons/districts/grid_box/default_animated_texture.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2.0
+            animationdelay = 0.0
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "pulsing"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+            #animationframes = { 1 2 3 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_eve_district_kg_engineering_bg"
+        texturefile = gfx/interface/planetview/district_backgrounds/eve_district_kg_engineering_bg.dds
+    }
+
+    spriteType = {
+        name = "GFX_eve_district_kg_engineering_box_icon_rectangle"
+        texturefile = "gfx/interface/icons/districts/grid_box/district_battle_thrall_rectangle.dds"
+        effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+        noOfFrames = 3
+        animation = {
+            animationmaskfile = "gfx/interface/icons/districts/grid_box/default_animated_mask.dds"
+            animationtexturefile = "gfx/interface/icons/districts/grid_box/default_animated_texture.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2.0
+            animationdelay = 0.0
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "pulsing"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+            #animationframes = { 1 2 3 }
+        }
+    }
+
+    spriteType = {
+        name = "GFX_eve_district_nm_society_bg"
+        texturefile = gfx/interface/planetview/district_backgrounds/eve_district_nm_society_bg.dds
+    }
+
+    spriteType = {
+        name = "GFX_eve_district_nm_society_box_icon_rectangle"
+        texturefile = "gfx/interface/icons/districts/grid_box/district_rw_farming_rectangle.dds"
+        effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+        noOfFrames = 3
+        animation = {
+            animationmaskfile = "gfx/interface/icons/districts/grid_box/default_animated_mask.dds"
+            animationtexturefile = "gfx/interface/icons/districts/grid_box/default_animated_texture.dds"
+            animationrotation = 90.0
+            animationlooping = yes
+            animationtime = 2.0
+            animationdelay = 0.0
+            animationblendmode = "add"       #add, multiply, overlay
+            animationtype = "pulsing"      #scrolling, rotating, pulsing
+            animationrotationoffset = { x = 0.0 y = 0.0 }
+            animationtexturescale = { x = 1.0 y = 1.0 }
+            #animationframes = { 1 2 3 }
+        }
+    }
+}

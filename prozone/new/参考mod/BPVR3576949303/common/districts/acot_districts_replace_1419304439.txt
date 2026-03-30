@@ -1,0 +1,455 @@
+######## FRACTURED #########
+
+district_acot_fractured_shelter = {
+	base_buildtime = 180
+	exempt_from_ai_planet_specialization = yes
+
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_city_government SLOT1 = slot_acot_fractured_world_sub_01 SLOT2 = slot_acot_fractured_world_sub_02 SLOT3 = slot_acot_fractured_world_sub_02 SLOT4 = slot_acot_fractured_world_sub_02 SLOT5 = slot_acot_fractured_world_sub_02 SLOT6 = slot_acot_fractured_world_sub_02 SLOT7 = slot_acot_fractured_world_sub_02 SLOT8 = slot_acot_fractured_world_sub_02 SLOT9 = slot_acot_fractured_world_sub_02 SLOT10 = slot_acot_fractured_world_sub_02 }
+
+	gridbox = district_generator
+
+	show_on_uncolonized = {
+		uses_district_set = fractured_world
+	}
+
+	potential = {
+		uses_district_set = fractured_world
+	}
+
+	prerequisites = {
+		tech_acot_fractured_shelter
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_acot_fractured_ae_shelter
+	}
+
+	allow = {
+		exists = owner
+		OR = {
+			AND = {
+				free_district_slots >= 2
+				owner = {
+					NOR = {
+						has_technology = tech_acot_fractured_size_upgrade_1
+						has_technology = tech_acot_fractured_size_upgrade_2
+					}
+				}
+			}
+			AND = {
+				free_district_slots >= 1
+				owner = {
+					has_technology = tech_acot_fractured_size_upgrade_1
+					NOT = {
+						has_technology = tech_acot_fractured_size_upgrade_2						
+					}
+				}
+			}
+			AND = {
+				owner = {
+					has_technology = tech_acot_fractured_size_upgrade_2
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 2500
+			alloys = 2500
+		}
+		produces = {
+			trigger = {
+				owner = {
+					country_uses_food = no
+				}
+			}
+			food = 5
+		}
+		produces = {
+			trigger = {
+				owner = {
+					country_uses_food = yes
+				}
+			}
+			energy = 5
+		}
+		upkeep = {
+			sr_dark_matter = 2
+			acot_sr_dark_energy = 2
+		}
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.05
+		planet_housing_add = 1000
+		planet_amenities_add = 1000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				has_technology = tech_acot_colonize_fractured_ae
+			}			
+		}	
+		pop_environment_tolerance = 0.05
+		planet_housing_add = 1000
+		planet_amenities_add = 1000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = no
+			}			
+		}
+		planet_amenities_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = no
+				has_technology = tech_acot_colonize_fractured_ae
+			}			
+		}	
+		planet_amenities_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = yes
+			}			
+		}
+		planet_amenities_no_happiness_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = yes
+				has_technology = tech_acot_colonize_fractured_ae
+			}			
+		}	
+		planet_amenities_no_happiness_add = 100
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				NOR = {
+					has_technology = tech_acot_fractured_size_upgrade_1
+					has_technology = tech_acot_fractured_size_upgrade_2
+				}				
+			}
+		}
+		planet_max_districts_add = -2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				has_technology = tech_acot_fractured_size_upgrade_1
+				NOT = {
+					has_technology = tech_acot_fractured_size_upgrade_2
+				}				
+			}
+		}
+		planet_max_districts_add = -1
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_shield
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_shield_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_shield
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_shield_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_lab
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_lab_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_lab
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_lab_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_pylon
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_pylon_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_pylon
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_pylon_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_fortress
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_fortress_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_fortress
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_fortress_swap_text_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 100
+		}
+	}
+}
+
+
+
+
+
+
+
+######## ALPHA #########
+
+######## FRACTURED #########
+
+district_acot_fractured_ae_shelter = {
+	base_buildtime = 90
+	exempt_from_ai_planet_specialization = yes
+
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_city_government SLOT1 = slot_acot_fractured_world_sub_01 SLOT2 = slot_acot_fractured_world_sub_02 SLOT3 = slot_acot_fractured_world_sub_02 SLOT4 = slot_acot_fractured_world_sub_02 SLOT5 = slot_acot_fractured_world_sub_02 SLOT6 = slot_acot_fractured_world_sub_02 SLOT7 = slot_acot_fractured_world_sub_02 SLOT8 = slot_acot_fractured_world_sub_02 SLOT9 = slot_acot_fractured_world_sub_02 SLOT10 = slot_acot_fractured_world_sub_02 }
+
+	show_on_uncolonized = {
+		uses_district_set = acot_enigmatic_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = acot_enigmatic_world
+	}
+
+	allow = {
+		exists = owner
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_acot_enigmapolis_city
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			alloys = 3000
+		}
+		produces = {
+			trigger = {
+				owner = {
+					country_uses_food = no
+				}
+			}
+			food = 20
+		}
+		produces = {
+			trigger = {
+				owner = {
+					country_uses_food = yes
+				}
+			}
+			energy = 20
+		}
+		upkeep = {
+			sr_dark_matter = 10
+			acot_sr_dark_energy = 10
+		}
+	}
+
+	planet_modifier = {
+		pop_environment_tolerance = 0.20
+		planet_housing_add = 4000
+		planet_amenities_add = 4000
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = no
+			}			
+		}
+		planet_amenities_add = 400
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = planet_owner
+			planet_owner = {
+				is_gestalt = yes
+			}			
+		}
+		planet_amenities_no_happiness_add = 400
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_shield
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_shield_ae_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_shield
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_shield_ae_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_lab
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_lab_ae_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_lab
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_lab_ae_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_pylon
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_pylon_ae_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_pylon
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_pylon_ae_swap_text_desc
+	}
+
+	triggered_name = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_fortress
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_fortress_ae_swap_text
+	}
+	triggered_flavor_desc = {
+		trigger = {
+			num_zones = {
+				type = zone_acot_fractured_fortress
+				value > 0
+			}
+		}
+		text = zone_acot_fractured_fortress_ae_swap_text_desc
+	}
+
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 100
+		}
+	}
+}
+
+
+
+
+
+
+
+#################### ECOMENUOPLOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+#################### PHANON DISTRUCT
+
+
+
+
+
+
+

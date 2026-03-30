@@ -1,0 +1,16 @@
+# { 城市专精加成
+triggered_district_planet_modifier = {
+	potential = {
+		has_building = building_yinsprozone_unban
+	}
+	planet_housing_add = 300
+	country_resource_max_add = 2500
+}
+
+# triggered_district_country_modifier = {
+# 	potential = {
+# 		has_building = building_yinsprozone_unban
+# 	}
+# 	country_resource_max_add = 2500
+# }
+# }	

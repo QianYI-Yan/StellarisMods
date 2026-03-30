@@ -1,0 +1,51 @@
+build_speed_up = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	resources = {
+		category = edicts
+		cost = {
+			unity = 1
+		}
+	}
+	modifier = {
+		planet_building_build_speed_mult =29 #星球上的建筑和区划建造加速
+		starbase_building_build_speed_mult = 19 #基地建筑加速水培仓之类的
+		starbase_module_build_speed_mult = 19 #基地模块加速船坞锚地之类的
+		starbase_upgrade_speed_mult = 29 #基地升级去擎天堡
+		shipsize_starbase_outpost_build_speed_mult = 9 #基地哨站建造速度（扩张领土）
+		megastructure_build_speed_mult = 19
+	}
+	potential = {
+		is_ai = no
+	}
+	allow = {
+		is_ai = no
+	}
+	ai_weight = {
+		weight =  0
+	}
+}
+
+bsu_terraform_speed_mult_edict = {
+    length = 1
+    icon = GFX_edict_type_policy
+    potential = {
+        is_ai = no
+    }
+    allow = {
+        fail_text = {
+            not = {
+                has_country_flag = bsu_terraform_speed_mult_setting
+            }
+            text = bsu_terraform_speed_mult_edict_ft
+        }
+    }
+    effect = {
+        hidden_effect = {
+            country_event = {
+                id = bsu_terraform_speed_mult_event.0
+            }
+        }
+        custom_tooltip = bsu_terraform_speed_mult_edict_tt
+    }
+}

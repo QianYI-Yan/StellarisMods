@@ -1,0 +1,84 @@
+namespace = playother
+
+country_event = {
+    id = playother.100
+    title = playother.100.title
+    custom_gui = "play_axis_window"
+
+    desc = {
+        text = "playother_100_1"
+        trigger = {
+            from = { is_country_type = play_axis }
+        }
+    }
+    desc = {
+        text = "play_home_2"
+        trigger = {
+            from = { is_country_type = play_axis }
+        }
+    }
+
+    diplomatic = yes
+    is_triggered_only = yes
+
+    trigger = {
+        play_axis_ui = no  # 没有打开的窗口
+    }
+    picture_event_data = {
+        portrait = event_target:play_axis_country
+        room = play_galactic_custodian_room
+    }
+    location = event_target:play_axis_system
+
+    immediate = {
+        root = {
+            save_event_target_as = player_country
+        }
+    }
+    option = {
+        custom_gui = "play_axis_option"
+        name = playotheroption_100_1
+        custom_tooltip = playotheroption_100_1.1
+        add_resource = {
+            # 添加资源
+            energy = -500
+            mult = value:leader_mult_value  # 乘领袖数量
+        }
+        hidden_effect = {
+            root = {
+                set_country_flag = yes_lxbh
+            }
+            every_owned_leader = {
+                limit = {
+                    not = {
+                        has_trait = leader_trait_axis_clone
+                    }
+                }
+                add_trait = leader_trait_axis_clone
+            }
+            country_event = { id = playother.100 }
+        }
+    }
+
+    option = {
+        custom_gui = "play_axis_option"
+        name = playotheroption_100_2
+        custom_tooltip = playotheroption_100_2.1
+        hidden_effect = {
+            event_target:play_axis_country = {
+                set_faction_hostility = {
+                    target = event_target:player_country
+                    set_hostile = no
+                    set_neutral = no
+                    set_friendly = yes
+                }
+            }
+            country_event = { id = playother.100 }
+        }
+    }
+    option = {
+        custom_gui = "play_axis_option"
+        name = back_home
+        hidden_effect = { country_event = { id = play.101 } }
+    }
+}

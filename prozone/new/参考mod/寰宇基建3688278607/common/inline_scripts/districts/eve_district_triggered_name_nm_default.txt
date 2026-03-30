@@ -1,0 +1,48 @@
+
+triggered_name = {
+    trigger = {
+        has_any_normal_mining_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_4
+        }
+    }
+    text = kg_4
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_mining_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_3
+        }
+    }
+    text = kg_3
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_mining_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_2
+        }
+    }
+    text = kg_2
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_mining_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_1
+        }
+    }
+    text = kg_1
+}
+
+triggered_name = {
+    text = nm_0
+}

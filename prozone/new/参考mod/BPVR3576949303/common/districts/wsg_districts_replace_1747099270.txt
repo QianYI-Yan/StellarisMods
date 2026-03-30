@@ -1,0 +1,345 @@
+district_arcology_wsg_housing = {
+	base_buildtime = 600
+	is_capped_by_modifier = no
+	icon = district_arcology_wsg_housing
+	#default_starting_district = yes
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_wsg_city SLOT1 = slot_wsg_city_01 SLOT2 = slot_wsg_city_02 SLOT3 = slot_wsg_city_02 SLOT4 = slot_wsg_city_02 SLOT5 = slot_wsg_city_02 SLOT6 = slot_wsg_city_02 SLOT7 = slot_wsg_city_02 SLOT8 = slot_wsg_city_02 SLOT9 = slot_wsg_city_02 SLOT10 = slot_wsg_city_02 }
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = port_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = port_world
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_city
+		district_nexus
+		district_hive
+		district_wg_hive_world_housing
+		district_wg_forge
+	}	
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}		
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 1500
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 800
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		modifier = {
+			job_wsg_idol_add = 100
+			job_clerk_add = 500
+			job_barthroom_worker_add = 200
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		text = job_clerk_effect_desc
+	}	
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		text = job_barthroom_worker_effect_desc
+	}	
+		
+	triggered_desc = {
+		trigger = { 
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+	}	
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			free_housing < 10
+		}
+	}
+}
+
+
+
+
+
+###################
+district_rw_wsg_city = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	icon = district_arcology_wsg_housing
+	#default_starting_district = yes
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_wsg_city SLOT1 = slot_wsg_city_01 SLOT2 = slot_wsg_city_02 SLOT3 = slot_wsg_city_02 SLOT4 = slot_wsg_city_02 SLOT5 = slot_wsg_city_02 SLOT6 = slot_wsg_city_02 SLOT7 = slot_wsg_city_02 SLOT8 = slot_wsg_city_02 SLOT9 = slot_wsg_city_02 SLOT10 = slot_wsg_city_02 }
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_port_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = rw_port_world
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1250
+		}
+		upkeep = {
+			energy = 7.5
+		}		
+	}	
+
+	planet_modifier = {
+		planet_housing_add = 2500
+		job_clerk_add = 500
+		job_barthroom_worker_add = 300
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		text = job_clerk_effect_desc
+	}	
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		text = job_barthroom_worker_effect_desc
+	}
+
+
+}
+
+
+
+
+#水球
+district_water_housing = {
+	base_buildtime = 180
+	is_capped_by_modifier = no
+	icon = district_water_housing
+	#default_starting_district = yes
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_wsg_city SLOT1 = slot_wsg_city_01 SLOT2 = slot_wsg_city_02 SLOT3 = slot_wsg_city_02 SLOT4 = slot_wsg_city_02 SLOT5 = slot_wsg_city_02 SLOT6 = slot_wsg_city_02 SLOT7 = slot_wsg_city_02 SLOT8 = slot_wsg_city_02 SLOT9 = slot_wsg_city_02 SLOT10 = slot_wsg_city_02 }
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = swim_world
+	}
+
+	potential = {
+		exists = owner
+		OR = {
+			uses_district_set  = swim_world
+		}
+	}
+		
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 500
+		}
+		upkeep = {
+			energy = 3
+		}		
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 600
+		job_barthroom_worker_add = 100
+		job_wg_tourism_add = 400
+		#planet_max_buildings_add = 1
+	}
+
+	
+
+	triggered_desc = {
+		text = job_barthroom_worker_effect_desc
+	}
+	triggered_desc = {
+		text = job_wg_tourism_effect_desc
+	}
+		
+	
+	ai_resource_production = {
+		energy = 5
+		unity = 5
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+
+
+#轨道胖次站
+
+
+#温泉环
+district_rw_water_housing = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	icon = district_water_housing
+	#default_starting_district = yes
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_wsg_city SLOT1 = slot_wsg_city_01 SLOT2 = slot_wsg_city_02 SLOT3 = slot_wsg_city_02 SLOT4 = slot_wsg_city_02 SLOT5 = slot_wsg_city_02 SLOT6 = slot_wsg_city_02 SLOT7 = slot_wsg_city_02 SLOT8 = slot_wsg_city_02 SLOT9 = slot_wsg_city_02 SLOT10 = slot_wsg_city_02 }
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = rw_swim_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = rw_swim_world
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1500
+		}
+		upkeep = {
+			energy = 5
+		}
+	}	
+
+	planet_modifier = {
+		planet_housing_add = 2500
+		job_barthroom_worker_add = 300
+		job_wg_tourism_add = 700
+	}
+
+	triggered_desc = {
+		text = job_barthroom_worker_effect_desc
+	}
+	triggered_desc = {
+		text = job_wg_tourism_effect_desc
+	}	
+	
+	ai_resource_production = {
+		unity = 1
+		trigger = {
+			always = yes
+		}
+	}
+}
+
+
+
+
+###戴森环
+district_dr_housing = {
+	base_buildtime = 360
+	is_capped_by_modifier = no
+	icon = district_hab_housing
+	#default_starting_district = yes
+	inline_script = { script = districts/BPV_district_slots GOVERNMENT = slot_wsg_city SLOT1 = slot_wsg_city_01 SLOT2 = slot_wsg_city_02 SLOT3 = slot_wsg_city_02 SLOT4 = slot_wsg_city_02 SLOT5 = slot_wsg_city_02 SLOT6 = slot_wsg_city_02 SLOT7 = slot_wsg_city_02 SLOT8 = slot_wsg_city_02 SLOT9 = slot_wsg_city_02 SLOT10 = slot_wsg_city_02 }
+	show_on_uncolonized = {
+		exists = from
+		from = { is_regular_empire = yes }
+		uses_district_set = dyson_ring_world
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = dyson_ring_world
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 1000
+		}
+		upkeep = {
+			energy = 5
+		}
+	}	
+
+	planet_modifier = {
+		planet_housing_add = 1000
+		job_clerk_add = 800
+	}
+
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_fallen_empire = no
+				is_regular_empire = yes 
+			}
+		}
+		text = job_clerk_effect_desc
+	}	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			free_jobs > 0 
+		}
+	}	
+	ai_resource_production = {
+		energy = 2
+		trigger = {
+			always = yes
+		}
+	}	
+}
+
+
+
+

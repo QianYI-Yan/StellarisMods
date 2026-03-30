@@ -1,0 +1,50 @@
+zone_default = {
+	# 图标：显示为外交权重的大图标
+	icon = GFX_diplomatic_weight_large
+	# 基础建造时间，使用变量 @zone_buildtime	
+	base_buildtime = @zone_buildtime
+	potential = {
+		# planet scope              # 潜在条件：决定该区域是否可建造（这里为空，默认可用）
+	}
+	unlock = {
+		# planet scope                 # 解锁条件：决定该区域是否解锁
+		NOT = {
+			# 如果行星是度假殖民地，则不能解锁
+			has_designation = col_resort
+		}
+	}
+	resources = {
+		# 建造成本
+		category = planet_zones
+		cost = {
+			# 使用变量 @zone_cost，消耗矿物
+			minerals = @zone_cost
+		}
+	}
+	max_buildings = 6	# 可建造建筑上限：6
+	zone_sets = {
+		# 区域集合：属于 default 集合
+		default
+	}
+	include = {
+		# 可建造的建筑类型：全部
+		all
+	}
+	excluded_building_sets = {
+		# 不允许的建筑集合
+		generator
+		mining
+		farming
+		knights
+		betharian
+		fallen_empire_generator
+		fallen_empire_farming
+		fallen_empire_mining
+		urban_automation
+		urban_automation_arcology
+		generator_automation
+		mining_automation
+		farming_automation
+	}
+	ai_priority = 0	# AI 优先级：0（AI 不会主动选择建造）
+}

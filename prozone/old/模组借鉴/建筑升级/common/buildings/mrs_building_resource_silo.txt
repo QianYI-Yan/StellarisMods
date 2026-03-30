@@ -1,0 +1,366 @@
+# 定义
+building_resource_silo = {
+    # 基础建造时间（秒），180秒完成建造
+    base_buildtime = 180
+    
+    # 建筑分类：资源类建筑
+    category = resource
+    
+    # 潜在可用条件（排除特定殖民地类型）
+    potential = {
+        NOR = {  # 排除以下三种殖民地类型
+            has_modifier = resort_colony     # 度假殖民地（不可建造）
+            has_modifier = slave_colony      # 奴隶殖民地（不可建造）
+            has_modifier = crucible_colony   # 熔炉殖民地（不可建造）
+        }
+    }
+    
+    # 建造允许条件（核心逻辑）
+    allow = {
+        exists = owner  # 必须存在星球所有者
+        # 隐藏触发条件（AI控制或满足特殊条件时允许建造）
+        hidden_trigger = {
+            OR = {
+                # 玩家控制时直接允许
+                owner = { is_ai = no }
+                # 满足复合条件时允许（主要针对AI建造限制）
+                AND = {
+                    # 未建造同类型建筑（避免重复建造）
+                    NOT = { has_building = building_resource_silo }
+                    OR = {  # 满足以下任一特殊条件：
+                        # 机器帝国且拥有"模块化仓库"传统
+                        owner = {
+                            is_machine_empire = yes
+                            has_active_tradition = tr_domination_modular_depot
+                        }
+                        # 激活银河共同体决议"平衡之道"
+                        is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+                        # 激活银河共同体决议"普遍繁荣法令"
+                        is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+                        # 拥有"巨型都市计划"飞升权限但未研发巨型工程
+                        owner = {
+                            has_ascension_perk = ap_arcology_project
+                            NOT = { has_technology = tech_mega_engineering }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    # 行星级触发修饰符（常规帝国适用）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            # 仅对常规帝国类型生效（非格式塔/机器帝国）
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_clerk_add = 1  # 增加1个文员岗位（提供基础资源产出）
+        }
+    }
+    
+    # 行星级触发修饰符（格式塔意识适用）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            # 仅对格式塔意识类型生效（蜂群/机飞）
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_maintenance_drone_add = 1  # 增加1个维护无人机岗位（保障建筑运转）
+        }
+    }
+    
+    # 资源消耗与维护成本
+    resources = {
+        category = planet_buildings  # 属于行星建筑类资源消耗
+        cost = {
+            minerals = 200  # 建造消耗200矿物资源
+        }
+        upkeep = {
+            energy = 1  # 每周期（月）消耗1能源维持运转
+        }
+    }
+    
+    # 国家级修饰符（永久生效）
+    country_modifier = {
+        country_resource_max_add = 5000  # 国家资源存储上限永久增加5000单位
+    }
+    
+    # 条件触发国家修饰符（科技研发后生效）
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            # 需研发"建造模板"科技（高级建筑规划科技）
+            owner = { has_technology = tech_construction_templates }
+        }
+        country_resource_max_add = 5000  # 额外增加5000资源上限（总计10000）
+    }
+    
+    # 科技前置条件（必须先研发基础工业科技）
+    prerequisites = {
+        "tech_basic_industry"  # 基础工业科技（解锁基础建造能力）
+    }
+    
+    # 建筑升级路径（可升级至中级资源仓库）
+    upgrades = {
+        mrs_building_resource_silo  # 指向中级资源仓库的升级选项
+    }
+    
+    # 触发式建筑描述（格式塔意识专用）
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = yes }  # 格式塔意识触发
+        }
+        text = job_maintenance_drone_effect_desc  # 显示维护无人机岗位效果描述
+    }
+    
+    # 触发式建筑描述（常规帝国专用）
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = no }  # 非格式塔意识触发
+        }
+        text = job_clerk_effect_desc  # 显示文员岗位效果描述
+    }
+}
+
+# 中级资源仓库（需首都升级后解锁）
+mrs_building_resource_silo = {
+    base_buildtime = 360  # 建造时间延长至360秒
+    can_build = no  # 默认不可直接建造（需通过升级路径）
+    category = resource
+    # 建造许可条件（首都必须完成升级改造）
+    allow = {
+        has_upgraded_capital = yes  # 首都建筑等级已提升至最高级
+    }
+    # 图标沿用基础型（保持UI一致性）
+    icon = building_resource_silo
+    
+    # 潜在可用条件（同基础型，排除特殊殖民地）
+    potential = {
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+        }
+    }
+    
+    # 建造允许条件（同基础型的复杂逻辑）
+    allow = {
+        exists = owner
+        hidden_trigger = {
+            OR = {
+                owner = { is_ai = no }
+                AND = {
+                    NOT = { has_building = building_resource_silo }
+                    OR = {
+                        owner = {
+                            is_machine_empire = yes
+                            has_active_tradition = tr_domination_modular_depot
+                        }
+                        is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+                        is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+                        owner = {
+                            has_ascension_perk = ap_arcology_project
+                            NOT = { has_technology = tech_mega_engineering }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    # 行星级修饰符（常规帝国）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_clerk_add = 2  # 增加2个文员岗位（基础型2倍）
+        }
+    }
+    
+    # 行星级修饰符（格式塔）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_maintenance_drone_add = 2  # 增加2个维护无人机岗位
+        }
+    }
+    
+    # 资源消耗（显著提升）
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 400  # 矿物消耗增加至400
+            alloys = 400    # 新增合金消耗400（战略资源）
+        }
+        upkeep = {
+            energy = 2  # 维护能耗提升至2单位/周期
+        }
+    }
+    
+    # 国家级修饰符（基础效果）
+    country_modifier = {
+        country_resource_max_add = 20000  # 资源上限直接增加20000
+    }
+    
+    # 条件触发修饰符（科技附加效果）
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_technology = tech_construction_templates }
+        }
+        country_resource_max_add = 20000  # 科技加成后总计40000上限
+    }
+    
+    # 升级路径（可升级至高级资源仓库）
+    upgrades = {
+        mrss_building_resource_silo
+    }
+    
+    # 科技前置（同基础型，保持科技树连贯性）
+    prerequisites = {
+        "tech_basic_industry"
+    }
+    
+    # 描述触发（同基础型的双模式描述）
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        text = job_maintenance_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        text = job_clerk_effect_desc
+    }
+}
+
+# 高级资源仓库（顶级存储设施）
+mrss_building_resource_silo = {
+    base_buildtime = 540  # 建造时间长达540秒
+    can_build = no  # 不可直接建造（仅通过升级获得）
+    category = resource
+    # 建造许可（必须完成首都终极升级）
+    allow = {
+        has_upgraded_capital = yes  # 首都建筑满级
+    }
+    # 图标保持系列一致性
+    icon = building_resource_silo
+    
+    # 潜在可用条件（同前两级）
+    potential = {
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+            has_modifier = crucible_colony
+        }
+    }
+    
+    # 建造允许条件（复杂逻辑同前）
+    allow = {
+        exists = owner
+        hidden_trigger = {
+            OR = {
+                owner = { is_ai = no }
+                AND = {
+                    NOT = { has_building = building_resource_silo }
+                    OR = {
+                        owner = {
+                            is_machine_empire = yes
+                            has_active_tradition = tr_domination_modular_depot
+                        }
+                        is_active_resolution = "resolution_greatergood_balance_in_the_middle"
+                        is_active_resolution = "resolution_greatergood_universal_prosperity_mandate"
+                        owner = {
+                            has_ascension_perk = ap_arcology_project
+                            NOT = { has_technology = tech_mega_engineering }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    # 行星级修饰符（常规帝国）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_clerk_add = 4  # 增加4个文员岗位（最高产出）
+        }
+    }
+    
+    # 行星级修饰符（格式塔）
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_maintenance_drone_add = 4  # 增加4个维护无人机
+        }
+    }
+    
+    # 资源消耗（最高成本）
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000  # 矿物消耗高达1000
+            alloys = 400    # 合金消耗保持400
+        }
+        upkeep = {
+            energy = 4  # 维护能耗4单位/周期
+        }
+    }
+    
+    # 国家级修饰符（海量存储）
+    country_modifier = {
+        country_resource_max_add = 100000  # 基础增加10万资源上限
+    }
+    
+    # 科技触发修饰符（附加存储）
+    triggered_country_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_technology = tech_construction_templates }
+        }
+        country_resource_max_add = 100000  # 科技加成后总计20万上限
+    }
+    
+    # 科技前置（保持系列一致性）
+    prerequisites = {
+        "tech_basic_industry"
+    }
+    
+    # 最终级建筑无后续升级路径
+    # 描述触发（双模式同前）
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        text = job_maintenance_drone_effect_desc
+    }
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        text = job_clerk_effect_desc
+    }
+}

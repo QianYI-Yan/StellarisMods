@@ -1,0 +1,40 @@
+option = {
+    name = {
+        trigger = {
+            nor = {
+                has_country_flag = zds_module_flag_s$slot$_shipyard
+                has_country_flag = zds_module_flag_s$slot$_anchorage
+                has_country_flag = zds_module_flag_s$slot$_solar_panel_network
+                has_country_flag = zds_module_flag_s$slot$_detection_array
+            }
+        }
+        text = zds_module.1.s$slot$.none
+    }
+    name = {
+        trigger = {
+            has_country_flag = zds_module_flag_s$slot$_shipyard
+        }
+        text = zds_module.1.s$slot$.shipyard
+    }
+    name = {
+        trigger = {
+            has_country_flag = zds_module_flag_s$slot$_anchorage
+        }
+        text = zds_module.1.s$slot$.anchorage
+    }
+    name = {
+        trigger = {
+            has_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        }
+        text = zds_module.1.s$slot$.solar_panel_network
+    }
+    name = {
+        trigger = {
+            has_country_flag = zds_module_flag_s$slot$_detection_array
+        }
+        text = zds_module.1.s$slot$.detection_array
+    }
+    country_event = {
+        id = zds_module.1$slot$
+    }
+}

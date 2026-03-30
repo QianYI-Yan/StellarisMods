@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ 
+  mrs_building_resource_silo:0 "大型资源仓库"
+  mrs_building_resource_silo_desc:0 "在原先基础上扩建改良而成的资源仓储设施，可以安全地保存更多的资源。"
+
+mrss_building_resource_silo:0 "巨型资源仓库"
+  mrss_building_resource_silo_desc:0 "巨大的资源仓储设施，可以安全地保存巨量资源。"

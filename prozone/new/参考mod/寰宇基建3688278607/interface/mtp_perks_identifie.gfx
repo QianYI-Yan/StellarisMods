@@ -1,0 +1,15 @@
+	spriteTypes = {
+
+		spriteType = {
+			name = "GFX_ap_promotion_dimension"
+			texturefile = "gfx/interface/icons/ascension_perks/promotion_dimension.dds"
+			alwaystransparent = yes
+		}
+
+        spriteType = {
+            name = "GFX_ap_cosmic_infrastructure"
+            texturefile = "gfx/interface/icons/ascension_perks/cosmic_infrastructure.dds"
+            alwaystransparent = yes
+        }
+
+	}

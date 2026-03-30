@@ -1,0 +1,3 @@
+portraits = {
+	NAME_TJXB = { textureFile = "gfx/models/portraits/tjxb.dds"	}
+}

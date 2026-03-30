@@ -1,0 +1,29 @@
+tjxb = {
+	show_in_contacts_list = yes 			#通讯界面
+	minimalist_contacts_list_profile = yes 	#简化通讯按钮
+	share_communications = no 				#共享通讯
+	default_ships = no 						#默认舰船
+	government = no 						#政府
+	uses_origins = no 						#起源
+	ai = {
+		enabled = no 						#AI
+	}
+	#阵营
+	faction = {
+		hostile = no 						#敌对
+		needs_border_access = no 			#边境通行
+		generate_borders = no 				#生成边境
+		needs_colony = no 					#需要殖民地
+		auto_delete = no 					#自动删除
+	}
+	custom_diplomacy = yes 					#自定义外交规则
+	#外交模块
+	modules = {
+		basic_technology_module = {}
+		#专属外交模块
+		exclusive_diplomacy_module = {
+			contact_rule = on_action_only 	#联系规则设为仅在触发事件时启用
+		}
+	}
+}
+

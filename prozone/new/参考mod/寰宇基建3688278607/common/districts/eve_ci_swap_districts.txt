@@ -1,0 +1,95 @@
+eve_district_jg_physics = {
+    icon = eve_district_jg_physics_icon
+    overlay_icon = GFX_district_physics
+    gridbox = eve_district_jg_physics
+    district_background = eve_district_jg_physics
+    zone_slots = {
+        slot_empty
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        always = no
+    }
+
+    inline_script = {
+        script = districts/eve_district_triggered_name_jg_default
+    }
+
+    inline_script = {
+        script = districts/district_triggered_flavor_desc_generator
+    }
+
+    triggered_name = {
+        text = jg_0
+    }
+
+
+}
+
+eve_district_kg_engineering = {
+    icon = eve_district_kg_engineering_icon
+    overlay_icon = GFX_district_engineering
+    gridbox = eve_district_kg_engineering
+    district_background = eve_district_kg_engineering
+    zone_slots = {
+        slot_empty
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        always = no
+    }
+
+    inline_script = {
+        script = districts/eve_district_triggered_name_kg_default
+    }
+
+    inline_script = {
+        script = districts/district_triggered_flavor_desc_generator
+    }
+
+    triggered_name = {
+        text = kg_0
+    }
+
+
+}
+
+eve_district_nm_society = {
+    icon = eve_district_nm_society_icon
+    overlay_icon = GFX_district_society
+    gridbox = eve_district_nm_society
+    district_background = eve_district_nm_society
+    zone_slots = {
+        slot_empty
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        always = no
+    }
+
+    inline_script = {
+        script = districts/eve_district_triggered_name_nm_default
+    }
+
+    inline_script = {
+        script = districts/district_triggered_flavor_desc_generator
+    }
+
+    triggered_name = {
+        text = kg_0
+    }
+
+
+}

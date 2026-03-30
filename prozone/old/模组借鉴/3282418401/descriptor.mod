@@ -1,0 +1,10 @@
+version="0.0.1"
+tags={
+	"Leaders"
+	"Gameplay"
+	"Military"
+}
+name="领袖培养小飞地"
+picture="thumbnail.png"
+supported_version="v4.*.*"
+remote_file_id="3282418401"

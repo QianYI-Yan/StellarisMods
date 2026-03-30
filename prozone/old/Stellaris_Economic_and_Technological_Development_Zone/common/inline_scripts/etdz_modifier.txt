@@ -1,0 +1,19 @@
+country_modifier = {
+    country_resource_max_add = value:etdz_phase_country_resource
+}
+
+planet_modifier = {
+    planet_max_districts_add = value:etdz_phase_max_districts
+    district_generator_max_add = value:etdz_phase_district_generator
+    district_mining_max_add = value:etdz_phase_district_mining
+    district_farming_max_add = value:etdz_phase_district_farming
+
+    planet_housing_add = value:housing_bonus_base
+    planet_amenities_add = value:amenities_bonus_base
+
+    planet_building_build_speed_mult = value:etdz_phase_build_speed
+    logistic_growth_mult = value:etdz_phase_growth
+    planet_jobs_produces_mult = value:etdz_phase_jobs
+    planet_buildings_cost_mult = value:etdz_phase_build_cost
+    planet_buildings_upkeep_mult = value:etdz_phase_upkeep
+}

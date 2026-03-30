@@ -1,0 +1,882 @@
+namespace = OCD_paragon_event
+
+country_event = {
+	id = OCD_paragon_event.1
+	title = OCD_paragon_event.1.name
+	desc = OCD_paragon_event.1.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		has_paragon_dlc = yes
+	}
+
+	#调整非格式塔统治者
+	option = {
+		name = OCD_paragon_event.1.ruler
+		trigger = {
+			is_gestalt = no
+		}
+		country_event = {
+			id = OCD_paragon_event.3
+		}
+	}
+	#调整格式塔统治者
+	option = {
+		name = OCD_paragon_event.1.gestalt
+		trigger = {
+			is_gestalt = yes
+		}
+		country_event = {
+			id = OCD_paragon_event.45
+		}
+	}
+	#12个完美领袖
+	option = {
+		name = OCD_paragon_event.1.b
+		country_event = {
+			id = OCD_paragon_event.12
+		}
+	}
+	option = {
+		name = OCD_paragon_event.1.c
+		country_event = {
+			id = OCD_paragon_event.16 	#思潮著名英杰
+		}
+	}
+	# option = {
+	# 	name = OCD_paragon_event.1.d
+	# 	country_event = {
+	# 		id = OCD_paragon_event.1
+	# 	}
+	# }
+	#传奇英杰
+	option = {
+		name = OCD_paragon_event.1.e
+		country_event = {
+			id = OCD_paragon_event.7
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = tjxb_country_event.11
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+
+
+#调整非格式塔统治者
+country_event = {
+	id = OCD_paragon_event.3
+	title = "OCD_paragon_event.3.name"
+	desc = "OCD_paragon_event.3.desc"
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = no
+	}
+
+	option = {
+		name = official 	#行政官
+		trigger = {
+			ruler = {
+				leader_class = official
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = official
+			}
+		}
+		ruler = {
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = {
+				trait = leader_trait_intemporal 			#时间永驻
+			}
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = trait_ruler_industrialist_2 } 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+			add_trait = { trait = leader_trait_principled_2 } 			# 恪守底线 Principled 						# Official
+			add_trait = { trait = leader_trait_spycraft_2 } 			# 谍战专家 Spycraft 						# Official
+
+			add_trait = { trait = leader_trait_cartographer_3 } 		# 测绘专家Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+			add_trait = { trait = leader_trait_peacekeeper } 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+
+		}
+	}
+	option = {
+		name = commander 	#指挥官
+		trigger = {
+			ruler = {
+				leader_class = commander
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = commander
+			}
+		}
+		ruler = {
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = {
+				trait = leader_trait_intemporal 			#时间永驻
+			}
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = leader_trait_fleet_organizer_2 } 		# 舰队组织者 Fleet Organizer 				# Commander
+			add_trait = { trait = trait_ruler_warlike_2 } 				# 好战 Hostility 							# Commander
+
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+			add_trait = { trait = leader_trait_peacekeeper } 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+
+		}
+	}
+	option = {
+		name = scientist 	#科学官
+		trigger = {
+			ruler = {
+				leader_class = scientist
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = scientist
+			}
+		}
+		ruler = {
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = {
+				trait = leader_trait_intemporal 			#时间永驻
+			}
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = trait_ruler_industrialist_2 } 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+
+			add_trait = { trait = leader_trait_spark_of_genius } 		# 灵光一闪 Spark of Genius 					# Scientist
+
+			add_trait = { trait = leader_trait_cartographer_3 } 		# 测绘专家 Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+
+		}
+	}
+	option = {
+		name = leader_trait_legendary_leader
+		ruler = {
+			remove_all_traits = yes
+			add_trait = { trait = leader_trait_legendary_leader } 					# 光耀者 Luminary
+			# 军国Militarist
+			add_trait = { trait = leader_trait_legendary_military_knowledge_3 } 	# 卓越将军 Inspired Commander
+			add_trait = { trait = leader_trait_legendary_foe_hammer_3 } 			# 坚定进攻者 Unwavering Aggressor
+			# 唯心Spiritualist
+			add_trait = { trait = leader_trait_legendary_great_teacher_3 } 			# 智慧导师 Wise Mentor
+			add_trait = { trait = leader_trait_legendary_pious_ascet_3 } 			# 虔诚禁欲 Pious Ascetic
+			# 威权Authoritarian
+			add_trait = { trait = leader_trait_legendary_commanding_presence_3 } 	# 威风堂堂 Commanding Presence
+			add_trait = { trait = leader_trait_legendary_high_king_3 } 				# 至高王 High King
+			# 亲外Xenophile
+			add_trait = { trait = leader_trait_legendary_gunboat_diplomacy_3 } 		# 炮舰外交 Gunboat Diplomacy
+			add_trait = { trait = leader_trait_legendary_scientific_diplomacy_3 } 	# 人才虹吸 Brain Poacher
+			# 和平Pacifist
+			add_trait = { trait = leader_trait_legendary_autarky_3 } 				# 自给经济派 Autark
+			add_trait = { trait = leader_trait_legendary_natural_ruler_3 } 			# 开明统治者 Enlightened Ruler
+			# 唯物Materialist
+			add_trait = { trait = leader_trait_legendary_industry_titan_3 } 		# 工业巨头 Titan of Industry
+			add_trait = { trait = leader_trait_legendary_great_inventor_3 } 		# 大发明家 Great Inventor
+			# 排外Xenophobe
+			add_trait = { trait = leader_trait_legendary_genetic_purist_3 } 		# 基因艺术家 Genome Artist
+			add_trait = { trait = leader_trait_legendary_evervigilant_3 } 			# 警钟长鸣 Ever Vigilant
+		}
+	}
+	option = {
+		name = OCD_paragon_event.3.k
+		ruler = {
+			remove_all_traits = yes
+			kill_leader = {
+				
+			}
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = OCD_paragon_event.1
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+#格式塔
+country_event = {
+	id = OCD_paragon_event.45
+	title = OCD_paragon_event.45.name
+	desc = OCD_paragon_event.45.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+		is_gestalt = yes
+	}
+
+	option = {
+		name = OCD_paragon_event.45.official
+		trigger = {
+			ruler = {
+				leader_class = official
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = official
+			}
+		}
+		ruler = {
+			set_skill = 10
+			add_trait = { trait = trait_ruler_feedback_loop_2 } 			# 回馈循环 Feedback Loop 				# Gestalt Consciousness
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = trait_ruler_industrialist_2 } 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+			add_trait = { trait = leader_trait_principled_2 } 			# 恪守底线 Principled 						# Official
+			add_trait = { trait = leader_trait_spycraft_2 } 			# 谍战专家 Spycraft 						# Official
+
+			add_trait = { trait = leader_trait_cartographer_3 } 		# 测绘专家Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+			add_trait = { trait = leader_trait_peacekeeper } 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.commander
+		trigger = {
+			ruler = {
+				leader_class = commander
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = commander
+			}
+		}
+		ruler = {
+			set_skill = 10
+			add_trait = { trait = trait_ruler_feedback_loop_2 } 			# 回馈循环 Feedback Loop 				# Gestalt Consciousness
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = leader_trait_fleet_organizer_2 } 		# 舰队组织者 Fleet Organizer 				# Commander
+			add_trait = { trait = trait_ruler_warlike_2 } 				# 好战 Hostility 							# Commander
+
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+			add_trait = { trait = leader_trait_peacekeeper } 			#和平守护者 +40%和平主义 	# 国务顾问Advisor or 战略家Strategist
+
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.scientist
+		trigger = {
+			ruler = {
+				leader_class = scientist
+			}
+		}
+		allow = {
+			ruler = {
+				leader_class = scientist
+			}
+		}
+		ruler = {
+			set_skill = 10
+			add_trait = { trait = trait_ruler_feedback_loop_2 } 			# 回馈循环 Feedback Loop 				# Gestalt Consciousness
+			add_trait = { trait = trait_ruler_charismatic_2 } 				# 魅力非凡 Charisma
+			add_trait = { trait = trait_ruler_eye_for_talent_2 } 			# 伯乐之眼 Eye for Talent
+			add_trait = { trait = trait_ruler_logistic_understanding_2 } 	# 深通后勤 Logistic Understanding
+			add_trait = { trait = trait_ruler_industrialist_2 } 			# 矿业狂潮 Mining Rush 					# Official or Scientist
+
+			add_trait = { trait = leader_trait_spark_of_genius } 		# 灵光一闪 Spark of Genius 					# Scientist
+
+			add_trait = { trait = leader_trait_cartographer_3 } 		# 测绘专家 Cartographer 		# 国务顾问Advisor or 统计学家Statistician
+			add_trait = { trait = leader_trait_master_bureaucrat } 		#官场老手
+			add_trait = { trait = leader_trait_educator } 				#敏锐导师
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.regulatory
+		every_owned_leader = {
+			limit = {
+				is_councilor_type = councilor_gestalt_regulatory
+			}
+			add_trait = {
+				trait = leader_trait_cartographer_3
+			}
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = { trait = subclass_official_diplomacy_councilor } 	#外交使节
+
+			add_trait = { trait = leader_trait_principled_2 } 			# 恪守底线 Principled
+			add_trait = { trait = leader_trait_spycraft_2 } 			# 谍战专家 Spycraft
+			add_trait = { trait = leader_trait_shipwright } 			# 造舰高手 Shipwright
+			add_trait = { trait = trait_ruler_fertility_preacher } 		# 重视农耕 Fertility Preacher
+			
+			add_trait = { trait = leader_trait_ambassador_ear_to_the_ground_3 } 		# 耳目众多 All-knowing
+			add_trait = { trait = leader_trait_ambassador_whisper_networks_3 } 			# 巧舌如簧 Blabbermouth
+			add_trait = { trait = trait_ruler_deep_connections_3 } 						# 关系深厚 Deep Connections
+			add_trait = { trait = leader_trait_ambassador_extra_envoys_3 } 				# 随从团队 Entourage
+			add_trait = { trait = leader_trait_ambassador_favor_maker_3 } 				# 见机行事 Opportunist
+			add_trait = { trait = leader_trait_ambassador_bully_3 } 					# 煽风点火 Spiteful
+			add_trait = { trait = leader_trait_ambassador_pact_keeper_3 } 				# 温文尔雅 Charmer
+			add_trait = { trait = leader_trait_ambassador_research_pact_focus_3 } 		# 研究交流 Research Exchange
+			add_trait = { trait = leader_trait_shadow_broker_2 } 						# 影子经纪人 Shady Contacts
+			add_trait = { trait = leader_trait_consul_general_2 } 						# 总领事官 Consul-General
+			add_trait = { trait = leader_trait_overseer_2 } 							# 秩序监察 Overseer
+			add_trait = { trait = leader_trait_courtroom_training_3 } 					# 外语学家 Xenolinguist
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.cognitive
+		every_owned_leader = {
+			limit = {
+				is_councilor_type = councilor_gestalt_cognitive
+			}
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = { trait = subclass_scientist_councilor } 					#统计学家
+
+			add_trait = { trait = leader_trait_spark_of_genius } 		# 灵光一闪 Spark of Genius
+			add_trait = { trait = leader_trait_planar_theorist_2 } 		# 位面理论家 Planar Theorist
+			
+			add_trait = { trait = trait_ruler_expansionist_3 } 						#扩张主义者 Expansionist
+			add_trait = { trait = leader_trait_maniacal_3 } 						#超级专注 Hyper Focus
+			add_trait = { trait = leader_trait_science_communicator_3 } 			#档案管理 Archivist
+			add_trait = { trait = leader_trait_inquisitive_3 } 						#求知若渴 Inquisitor
+
+			add_trait = { trait = leader_trait_expertise_industry_3 } 				#专长：工业 III
+			add_trait = { trait = leader_trait_expertise_materials_3 } 				#专长：材料科学 III
+			add_trait = { trait = leader_trait_expertise_propulsion_3 } 			#专长：推进力学 III
+			add_trait = { trait = leader_trait_expertise_voidcraft_3 } 				#专长：宇航技术 III
+			add_trait = { trait = leader_trait_expertise_computing_3 } 				#专长：计算技术 III
+			add_trait = { trait = leader_trait_expertise_field_manipulation_3 } 	#专长：力场操控 III
+			add_trait = { trait = leader_trait_expertise_particles_3 } 				#专长：粒子物理 III
+			add_trait = { trait = leader_trait_expertise_biology_3 } 				#专长：生物学 III
+			add_trait = { trait = leader_trait_expertise_military_theory_3 } 		#专长：军事理论 III
+			add_trait = { trait = leader_trait_expertise_new_worlds_3 } 			#专长：新世界理论 III
+			add_trait = { trait = leader_trait_expertise_statecraft_3 }				#专长：治国术 III
+			add_trait = { trait = leader_trait_expertise_psionics_3 } 				#专长：灵能理论 III
+			add_trait = { trait = leader_trait_expertise_archaeostudies_3 }			#专长：远古学 III
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.growth
+		every_owned_leader = {
+			limit = {
+				is_councilor_type = councilor_gestalt_growth
+			}
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = { trait = subclass_official_economy_councilor } 	#国务顾问
+
+			add_trait = { trait = leader_trait_principled_2 } 			# 恪守底线 Principled
+			add_trait = { trait = leader_trait_spycraft_2 } 			# 谍战专家 Spycraft
+			add_trait = { trait = leader_trait_shipwright } 			# 造舰高手 Shipwright
+			add_trait = { trait = trait_ruler_fertility_preacher } 		# 重视农耕 Fertility Preacher
+
+			add_trait = { trait = trait_ruler_architectural_sense_3 } 					# 重视建筑 Architectural Sense
+			add_trait = { trait = leader_trait_reformer_3 } 							# 改革家 Reformer
+			add_trait = { trait = trait_ruler_investor_3 } 								# 优化体/工作优化单元 Optimization Drone （格式塔）
+			add_trait = { trait = leader_trait_cartographer_3 } 						# 测绘专家 Cartographer
+			add_trait = { trait = leader_trait_frontier_spirit_2 } 						# 开拓精神 Frontier Spirit
+			add_trait = { trait = leader_trait_cultural_focus_3 } 						# 文宣专精 Unified Focus
+		}
+	}
+	option = {
+		name = OCD_paragon_event.45.legion
+		every_owned_leader = {
+			limit = {
+				is_councilor_type = councilor_gestalt_legion
+			}
+			set_skill = 10
+			remove_all_traits = yes
+			add_trait = { trait = subclass_commander_councilor } 			#战略家
+
+			add_trait = { trait = leader_trait_fleet_organizer_2 } 		# 舰队组织者 Fleet Organizer
+			add_trait = { trait = trait_ruler_warlike_2 } 				# 好战 Hostility
+			add_trait = { trait = leader_trait_defence_engineer } 		# 防御工程师 Defense Engineer
+			add_trait = { trait = leader_trait_skirmisher } 			# 出其不意 Skirmisher
+
+			add_trait = { trait = leader_trait_armada_logistician_2 } 	# 舰队后勤专家 Armada Logistician
+			add_trait = { trait = trait_ruler_fortifier_2 } 			# 驻防者 Fortifier
+			add_trait = { trait = leader_trait_gale_speed_2 } 			# 其疾如风 Gale-Speed
+			add_trait = { trait = trait_ruler_military_pioneer_2 } 		# 军事先驱 Military Pioneer
+			add_trait = { trait = trait_ruler_recruiter_2 } 			# 征兵官 Recruiter
+			add_trait = { trait = trait_ruler_from_the_ranks_2 } 		# 以战学战 Combat Knowledge
+			add_trait = { trait = leader_trait_border_guard_2 } 		# 边防卫士 Border Guard
+			add_trait = { trait = leader_trait_guardian_2 } 			# 守护者 Guardian
+			add_trait = { trait = leader_trait_home_guard_2 } 			# 家园卫士 Home Guard
+			add_trait = { trait = leader_trait_intimidator_2 } 			# 武力恫吓 Intimidator
+			add_trait = { trait = leader_trait_crew_trainer_2 } 		# 海军教官 Navy Instructor
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = OCD_paragon_event.1
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+
+
+
+#传奇英杰
+country_event = {
+	id = OCD_paragon_event.7
+	title = OCD_paragon_event.7.name
+	desc = OCD_paragon_event.7.desc
+	diplomatic = yes
+	picture_event_data = {
+		portrait = NAME_TJXB
+		room = specialist_scholarium_room
+	}
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	#小灰
+	#开启事件链
+	option = {
+		name = OCD_paragon_event.7.a
+		allow = {
+			has_distar = yes
+			NOR = {
+				has_country_flag = encountered_first_lgate
+				has_event_chain = "l_cluster_chain"
+			}
+		}
+		set_country_flag = encountered_first_lgate
+		start_lcluster_chain = yes
+	}
+	#凝望者 paragon_beholder_category
+	option = {
+		name = OCD_paragon_event.7.b
+		allow = {
+			has_astral_planes_dlc = yes
+		}
+		set_country_flag = beholder_chain_owner
+		random_planet_within_border = {
+			save_global_event_target_as = beholder_planet
+		}
+		country_event = {
+			id = paragon.1
+			days = 1
+		}
+	}
+	#乍狄伽
+	option = {
+		name = OCD_paragon_event.7.c
+		allow = {
+			has_astral_planes_dlc = yes
+			NOT = { has_global_flag = crystal_sphere_sent }
+			# has_technology = tech_rift_sphere
+			any_system_within_border = {
+				has_natural_wormhole = no
+				NOR = {
+					has_star_flag = shroud_tunnel_nexus
+					has_star_flag = shroud_tunnel_node
+					has_star_flag = sol_system
+				}
+			}
+		}
+		set_global_flag = crystal_sphere_sent
+		random_system_within_border = {
+			limit = {
+				has_natural_wormhole = no
+				NOR = {
+					has_star_flag = shroud_tunnel_nexus
+					has_star_flag = shroud_tunnel_node
+					has_star_flag = sol_system
+				}
+			}
+			set_star_flag = crystal_sphere_system
+			save_global_event_target_as = crystal_sphere_system
+		}
+		country_event = {
+			id = astral_planes.15
+			days = 1
+		}
+	}
+	#奈斯船长
+	option = {
+		name = OCD_paragon_event.7.d
+		allow = {
+			always = no
+		}
+	}
+	#太空创生家艾莎琳
+	option = {
+		name = OCD_paragon_event.7.e
+		allow = {
+			has_paragon_dlc = yes
+			NOT = { exists = event_target:azaryn_leader }
+			NOT = { has_country_flag = azaryn_chain_started }
+			has_country_flag = first_contact_protocol_event_happened
+			is_ai = no
+			# is_militarist = no
+			is_gestalt = no
+		}
+		set_country_flag = azaryn_chain_started
+		change_variable = {
+			which = variable_azaryn_score
+			value = 5
+		}
+		country_event = {
+			id = paragon.228
+			days = 1
+		}
+	}
+	#凯德斯，瓦格罗之子嗣
+	option = {
+		name = OCD_paragon_event.7.f
+		allow = {
+			always = no
+		}
+		# allow = {
+		# 	has_paragon_dlc = yes
+		# 	NOT = { has_global_flag = frozen_legendary_leader_found }
+		# }
+		# #如果没有杜戈尔星系，就生成
+		# if = {
+		# 	limit = {
+		# 		NOT = {
+		# 			any_system = { has_star_flag = legendary_leader_spawn_system }
+		# 		}
+		# 	}
+		# 	random_system_within_border = {
+		# 		spawn_system = {
+		# 			min_distance = 5
+		# 			max_distance = 30
+		# 			initializer = legendary_leader_start_site
+		# 			hyperlane = yes
+		# 		}
+		# 	}
+		# }
+		# #控制杜戈尔星系
+		# every_system = {
+		# 	limit = {
+		# 		has_star_flag = legendary_leader_spawn_system
+		# 	}
+		# 	if = {
+		# 		limit = { has_owner = no }
+		# 		create_starbase = { size = starbase_outpost }
+		# 	}
+		# 	else = {
+		# 		every_starbase_in_system = {
+		# 			set_owner = root 
+		# 		}
+		# 	}
+		# }
+	}
+	#斯克兰德·夏普比克
+	#触发事件“抵达”
+	option = {
+		name = OCD_paragon_event.7.g
+		allow = {
+			has_paragon_dlc = yes
+			is_ai = no
+			NOT = {
+				has_global_flag = gateway_dude_found
+			}
+			or = {
+				any_owned_megastructure = {
+					is_megastructure_type = gateway_final
+				}
+				any_owned_megastructure = {
+					is_megastructure_type = gateway_restored
+				}
+				any_owned_megastructure = {
+					is_megastructure_type = gateway_ness_restored
+				}
+			}
+		}
+		set_country_flag = sharpbeak_known
+		set_global_flag = gateway_dude_found
+		set_global_flag = sharpbeak_recruit_phase
+		every_system_within_border = {
+			limit = {
+				or = {
+					any_system_megastructure = {
+						is_megastructure_type = gateway_final
+					}
+					any_system_megastructure = {
+						is_megastructure_type = gateway_restored
+					}
+					any_system_megastructure = {
+						is_megastructure_type = gateway_ness_restored
+					}
+				}
+			}
+			set_star_flag = sharpbeak_starsystem
+			random_system_megastructure = {
+				limit = {
+					or = {
+						is_megastructure_type = gateway_final
+						is_megastructure_type = gateway_restored
+						is_megastructure_type = gateway_ness_restored
+					}
+				}
+				save_global_event_target_as = paragon_gateway_dude_homegate
+				set_megastructure_flag = paragon_gateway_dude_homegate_flag
+			}
+		}
+		country_event = {
+			id = paragon.3001
+			days = 1
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = OCD_paragon_event.1
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+
+
+#著名著名英杰
+country_event = {
+	id = OCD_paragon_event.16
+	title = OCD_paragon_event.16.name
+	desc = OCD_paragon_event.16.desc
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = {
+		name = NAME_xenophile1 		# 李萨拓·辛格
+		country_event = {
+			id = paragon.40100
+		}
+	}
+	option = {
+		name = NAME_xenophile2 		# 诺那
+		country_event = {
+			id = paragon.40200
+		}
+	}
+	option = {
+		name = NAME_militarist1 	# 维克托·夏里登男爵
+		country_event = {
+			id = paragon.40300
+		}
+	}
+	option = {
+		name = NAME_militarist2 	# 基雅·祖蒙
+		country_event = {
+			id = paragon.40400
+		}
+	}
+	option = {
+		name = NAME_xenophobe1 		# 工业人舒拉顿
+		country_event = {
+			id = paragon.40500
+		}
+	}
+	option = {
+		name = NAME_xenophobe2 		# 亚图里昂
+		country_event = {
+			id = paragon.40600
+		}
+	}
+	option = {
+		name = NAME_egalitarian1 	# 基恩
+		country_event = {
+			id = paragon.40700
+		}
+	}
+	option = {
+		name = NAME_egalitarian2 	# 佐西拉·科顿
+		country_event = {
+			id = paragon.40800
+		}
+	}
+	option = {
+		name = NAME_materialist1 	# 松达尔
+		country_event = {
+			id = paragon.40900
+		}
+	}
+	option = {
+		name = NAME_materialist2 	# 博林
+		country_event = {
+			id = paragon.41000
+		}
+	}
+	option = {
+		name = NAME_pacifist1 		# 乌尔德·达格尔大法官
+		country_event = {
+			id = paragon.41100
+		}
+	}
+	option = {
+		name = NAME_pacifist2 		# 万人迷沃斯
+		country_event = {
+			id = paragon.41200
+		}
+	}
+	option = {
+		name = NAME_authoritarian1 	# 卡伊·沙
+		country_event = {
+			id = paragon.41300
+		}
+	}
+	option = {
+		name = NAME_authoritarian2 	# 看守人喀·拉
+		country_event = {
+			id = paragon.41400
+		}
+	}
+	option = {
+		name = NAME_spiritualist1 	# 尤拉斯塔尔
+		country_event = {
+			id = paragon.41500
+		}
+	}
+	option = {
+		name = NAME_spiritualist2 	# 纳苏兹·德墨忒尔
+		country_event = {
+			id = paragon.41600
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = OCD_paragon_event.1
+		}
+	}
+	option = {
+		name = tjxb_event_close
+		default_hide_option = yes
+	}
+}
+
+
+#完美领袖
+country_event = {
+	id = OCD_paragon_event.12
+	title = OCD_paragon_event.12.name
+	desc = OCD_paragon_event.12.desc
+	picture = GFX_evt_chosen_leader
+	is_triggered_only = yes
+	trigger = {
+	}
+
+	option = {
+		name = OCD_paragon_event.12.all #招募全部12个完美领袖
+		create_official_delegate = yes #帝国代表
+		create_official_governor = yes #产业专员
+		create_official_diplomacy_councilor = yes #外交使节
+		create_official_economy_councilor = yes #国务顾问
+		create_commander_admiral = yes #舰队司令
+		create_commander_general = yes #陆军司令
+		create_commander_governor = yes #督管专员
+		create_commander_councilor = yes #战略家
+		create_scientist_explorer = yes #探索者
+		create_scientist_scholar = yes #前沿学者
+		create_scientist_governor = yes #分析专员
+		create_scientist_councilor = yes #统计学家
+	}
+	option = {
+		name = subclass_official_delegate
+		create_official_delegate = yes #帝国代表
+	}
+	option = {
+		name = subclass_official_governor
+		create_official_governor = yes #产业专员
+	}
+	option = {
+		name = subclass_official_diplomacy_councilor
+		create_official_diplomacy_councilor = yes #外交使节
+	}
+	option = {
+		name = subclass_official_economy_councilor
+		create_official_economy_councilor = yes #国务顾问
+	}
+	option = {
+		name = subclass_commander_admiral
+		create_commander_admiral = yes #舰队司令
+	}
+	option = {
+		name = subclass_commander_general
+		create_commander_general = yes #陆军司令
+	}
+	option = {
+		name = subclass_commander_governor
+		create_commander_governor = yes #督管专员
+	}
+	option = {
+		name = subclass_commander_councilor
+		create_commander_councilor = yes #战略家
+	}
+	option = {
+		name = subclass_scientist_explorer
+		create_scientist_explorer = yes #探索者
+	}
+	option = {
+		name = subclass_scientist_scholar
+		create_scientist_scholar = yes #前沿学者
+	}
+	option = {
+		name = subclass_scientist_governor
+		create_scientist_governor = yes #分析专员
+	}
+	option = {
+		name = subclass_scientist_councilor
+		create_scientist_councilor = yes #统计学家
+	}
+	option = {
+		name = tjxb_event_back
+		default_hide_option = yes
+		country_event = {
+			id = OCD_paragon_event.1
+		}
+	}
+}
+

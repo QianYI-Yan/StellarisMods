@@ -1,0 +1,153 @@
+# Major Capital - 主要首都建筑
+# 游戏内的一个核心建筑，通常作为帝国的行政中心
+building_major_capital = {
+    # 基础建造时间，引用变量 @b3_time
+    base_buildtime = @b3_time
+    
+    # 标识属性：这是首都建筑
+    capital = yes
+    # 权限控制：玩家不能手动建造/拆除/破坏此建筑
+    can_build = no
+    can_demolish = no
+    can_be_ruined = no
+    can_be_disabled = no
+    
+    # 建筑位置优先级（0表示最高优先级）
+    position_priority = 0
+    # 首都等级：3级（游戏内最高级首都）
+    capital_tier = 3
+    
+    # 分类：政府建筑
+    category = government
+    
+    # 所属建筑集合
+    building_sets = {
+        government
+    }
+    
+    # 潜在条件：何时可以显示/存在此建筑
+    potential = {
+        # 必须存在拥有者（防止空星球）
+        exists = owner
+        # 拥有者必须是常规帝国，不能是失落帝国
+        owner = {
+            is_regular_empire = yes
+            is_fallen_empire = no
+        }
+        # 星球不能是度假或奴隶殖民地
+        NOR = {
+            has_modifier = resort_colony
+            has_modifier = slave_colony
+        }
+    }
+    
+    # 允许建造的条件
+    allow = {
+        # 需要至少2500智慧人口
+        sapient_pop_amount >= 2500
+    }
+    
+    # 转换目标：在特定条件下可以转换为其他类型的首都
+    convert_to = {
+        building_hive_major_capital          # 蜂巢思维首都
+        building_machine_major_capital       # 机械帝国首都
+        building_resort_major_capital        # 度假星球首都
+        building_slave_major_capital         # 奴隶星球首都
+        building_ancient_control_center      # 古代控制中心
+        building_ancient_palace              # 古代宫殿
+        building_major_capital_wilderness    # 荒原首都（可能为蛮族准备）
+    }
+    
+    # 科技前置需求
+    prerequisites = {
+        "tech_colonial_centralization"  # 需要"殖民中央集权"科技
+    }
+    
+    # 科技解锁显示条件
+    show_tech_unlock_if = {
+        is_regular_empire = yes  # 仅对常规帝国显示
+    }
+    
+    # 基础星球修正效果
+    planet_modifier = {
+        job_enforcer_add = 200                    # +200执法者岗位
+        planet_housing_add = 1500                 # +1500住房
+        planet_amenities_add = 1500               # +1500舒适度
+        planet_max_branch_office_buildings_add = 2 # +2分支建筑槽位
+        planet_defense_armies_add = @tier_3_capital_defense_armies  # +首都防御军队（变量）
+    }
+    
+    # 内联脚本1：应用通用首都建筑逻辑
+    inline_script = {
+        script = buildings/on_all_capital_buildings
+    }
+    
+    # 内联脚本2：为常规帝国生成首都工作岗位
+    inline_script = {
+        script = buildings/regular_empire_capital_jobs
+        AMOUNT = 300  # 生成300个工作岗位
+    }
+    
+    # 触发修正1：当拥有"专横建筑"传统时生效
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_active_tradition = tr_domination_imperious_architecture
+            }
+        }
+        modifier = {
+            planet_housing_add = 100  # +100额外住房
+        }
+    }
+    
+    # 触发修正2：拥有1级首都生产力科技时生效
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                has_technology = tech_capital_productivity_1
+                NOT = {
+                    has_technology = tech_capital_productivity_2  # 但没有2级科技
+                }
+            }
+        }
+        pop_bonus_workforce_mult = 0.1  # +10%劳动力产出
+    }
+    
+    # 触发修正3：拥有2级首都生产力科技时生效
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_technology = tech_capital_productivity_2 }
+        }
+        pop_bonus_workforce_mult = 0.2  # +20%劳动力产出
+    }
+    
+    # 资源消耗
+    resources = {
+        category = planet_buildings  # 建筑类别
+        cost = {
+            minerals = @b3_minerals  # 建造消耗矿物（变量）
+        }
+        upkeep = {
+            energy = @b3_upkeep  # 每月维护费（能量）
+        }
+    }
+    
+    # 升级目标：可以升级为星系首都
+    upgrades = {
+        "building_system_capital"
+    }
+    
+    # AI权重：AI建造此建筑的倾向性（100为较高优先级）
+    additional_ai_weight = 100
+}
+
+# 注释说明：
+# 1. 此建筑是Stellaris游戏中常规帝国的最高级首都
+# 2. 使用@开头的变量如@b3_time需要在defines或脚本中定义
+# 3. 建筑效果包括：大量岗位、住房、舒适度、防御军队
+# 4. 有多种条件触发的额外加成（传统、科技）
+# 5. 可以转换为其他帝国类型的首都（蜂巢、机械等）
+# 6. 最终可以升级为"星系首都"（跨行星首都）

@@ -1,0 +1,112 @@
+namespace = fallen_empire_tech_event
+
+country_event = {
+    id = fallen_empire_tech_event.1
+	title = fallen_empire_tech_event.1.name
+	desc = fallen_empire_tech_event.1.desc
+	picture = GFX_evt_fallen_empire
+	is_triggered_only = yes
+
+	option = {
+		name = fallen_empire_tech_event.1.a
+		add_research_option = tech_dark_matter_deflector 	# 暗物质偏导护盾
+		add_research_option = tech_dark_matter_power_core 	# 暗物质能源
+		add_research_option = tech_dark_matter_power_core 	# 暗物质推进
+	}
+	option = {
+		name = fallen_empire_tech_event.1.b
+		add_research_option = tech_fe_affluence_1
+		add_research_option = tech_fe_affluence_2
+		add_research_option = tech_fe_nourishment_1
+		add_research_option = tech_fe_nourishment_2
+		add_research_option = tech_fe_fabricator_1
+		add_research_option = tech_fe_fabricator_2
+		add_research_option = tech_fe_singularity_1
+		add_research_option = tech_fe_singularity_2
+		add_research_option = tech_fe_forge_1
+		add_research_option = tech_fe_forge_2
+		add_research_option = tech_fe_dome_1
+		add_research_option = tech_fe_dome_2
+		add_research_option = tech_fe_fortress_1
+		add_research_option = tech_fe_fortress_2
+		add_research_option = tech_fe_administration_1
+		add_research_option = tech_fe_administration_2
+		add_research_option = tech_fe_assembly_1
+		add_research_option = tech_fe_assembly_2
+		add_research_option = tech_fe_clinic_1
+		add_research_option = tech_fe_clinic_2
+		add_research_option = tech_fe_security_1
+		add_research_option = tech_fe_security_2
+		add_research_option = tech_fe_market_1
+		add_research_option = tech_fe_market_2
+		add_research_option = tech_fe_silo_1
+		add_research_option = tech_fe_silo_2
+		add_research_option = tech_fe_entertainment_1
+		add_research_option = tech_fe_entertainment_2
+		add_research_option = tech_fe_lab_1
+		add_research_option = tech_fe_lab_2
+		add_research_option = tech_fe_mine_1
+		add_research_option = tech_fe_mine_2
+	}
+
+	option = {
+		name = fallen_empire_tech_event.1.c
+		give_technology = { tech = tech_dark_matter_deflector message = no } 	# 暗物质偏导护盾
+		give_technology = { tech = tech_dark_matter_power_core message = no } 	# 暗物质能源
+		give_technology = { tech = tech_dark_matter_propulsion message = no } 	# 暗物质推进
+	}
+	option = {
+		name = fallen_empire_tech_event.1.d
+		give_technology = { tech = tech_fe_affluence_1 message = no }
+		give_technology = { tech = tech_fe_affluence_2 message = no }
+		give_technology = { tech = tech_fe_nourishment_1 message = no }
+		give_technology = { tech = tech_fe_nourishment_2 message = no }
+		give_technology = { tech = tech_fe_fabricator_1 message = no }
+		give_technology = { tech = tech_fe_fabricator_2 message = no }
+		give_technology = { tech = tech_fe_singularity_1 message = no }
+		give_technology = { tech = tech_fe_singularity_2 message = no }
+		give_technology = { tech = tech_fe_forge_1 message = no }
+		give_technology = { tech = tech_fe_forge_2 message = no }
+		give_technology = { tech = tech_fe_dome_1 message = no }
+		give_technology = { tech = tech_fe_dome_2 message = no }
+		give_technology = { tech = tech_fe_fortress_1 message = no }
+		give_technology = { tech = tech_fe_fortress_2 message = no }
+		give_technology = { tech = tech_fe_administration_1 message = no }
+		give_technology = { tech = tech_fe_administration_2 message = no }
+		give_technology = { tech = tech_fe_assembly_1 message = no }
+		give_technology = { tech = tech_fe_assembly_2 message = no }
+		give_technology = { tech = tech_fe_clinic_1 message = no }
+		give_technology = { tech = tech_fe_clinic_2 message = no }
+		give_technology = { tech = tech_fe_security_1 message = no }
+		give_technology = { tech = tech_fe_security_2 message = no }
+		give_technology = { tech = tech_fe_market_1 message = no }
+		give_technology = { tech = tech_fe_market_2 message = no }
+		give_technology = { tech = tech_fe_silo_1 message = no }
+		give_technology = { tech = tech_fe_silo_2 message = no }
+		give_technology = { tech = tech_fe_entertainment_1 message = no }
+		give_technology = { tech = tech_fe_entertainment_2 message = no }
+		give_technology = { tech = tech_fe_lab_1 message = no }
+		give_technology = { tech = tech_fe_lab_2 message = no }
+		give_technology = { tech = tech_fe_mine_1 message = no }
+		give_technology = { tech = tech_fe_mine_2 message = no }
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

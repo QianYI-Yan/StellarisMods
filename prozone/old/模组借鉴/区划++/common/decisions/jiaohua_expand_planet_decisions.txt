@@ -1,0 +1,103 @@
+# 决策：行星扩张等级1（jiaohua_decision_expand_planet_1）
+jiaohua_decision_expand_planet_1 = {
+    owned_planets_only = yes  # 仅限已拥有的行星执行
+    enactment_time = 90      # 决策执行需要90天
+    resources = {            # 决策消耗的资源
+        category = decisions  # 资源类别为决策类
+        cost = {             # 具体消耗
+            energy = 1000    # 消耗1000单位能源
+            influence = 50   # 消耗50单位影响力
+        }
+    }
+
+    # 决策可用条件（潜在触发条件）
+    potential = {
+        owner = {            # 决策拥有者需满足
+            is_ai = no       # 仅限非AI玩家（人类玩家）
+        }
+    }
+
+    # 决策允许条件（实际执行条件）
+    allow = {
+        owner = {            # 与potential条件相同
+            is_ai = no       # 仅限人类玩家执行
+        }
+    }
+
+    # 决策执行效果
+    effect = {
+        # 添加基础修正器（持续生效）
+        add_modifier = {
+            modifier = jiaohua_expand_planet_1  # 修正器名称
+            days = -1         # 永久生效（负值表示无限期）
+            mult = 1          # 基础倍数1
+        }
+        
+        # 隐藏效果（不直接显示）
+        hidden_effect = {
+            # 变更全局变量（用于后续计算）
+            change_variable = { 
+                which = num_APE_planet_modifer  # 目标变量名
+                value = 1                       # 增加值1
+            }
+            # 添加动态修正器（基于变量值）
+            add_modifier = {
+                modifier = jiaohua_expand_planet_1 
+                days = -1 
+                mult = num_APE_planet_modifer  # 使用变量值作为倍数
+            }
+        }
+    }
+
+    # AI权重设置（AI不会选择此决策）
+    ai_weight = {
+        weight = 0  # 权重为0表示AI不会执行
+    }
+}
+
+# 决策：行星扩张等级10（jiaohua_decision_expand_planet_10）
+jiaohua_decision_expand_planet_10 = {
+    owned_planets_only = yes  # 同上
+    enactment_time = 90      # 同上
+    resources = {
+        category = decisions
+        cost = {
+            energy = 10000   # 成本提升为10000能源
+            influence = 500  # 影响力消耗提升至500
+        }
+    }
+
+    potential = { owner = { is_ai = no } }  # 简写形式
+    allow = { owner = { is_ai = no } }     # 简写形式
+
+    effect = {
+        # 添加基础修正器（与等级1相同）
+        add_modifier = {
+            modifier = jiaohua_expand_planet_10 
+            days = -1 
+            mult = 1
+        }
+        
+        hidden_effect = {
+            # 添加临时修正器（立即生效）
+            add_modifier = {
+                modifier = jiaohua_expand_planet_10 
+                days = 0  # 0天表示立即生效不持续
+                mult = 1
+            }
+            # 关键变量变更：设置行星扩张倍数为10
+            change_variable = { 
+                which = num_APE_planet_modifer 
+                value = 10 
+            }
+            # 添加动态修正器（基于新变量值）
+            add_modifier = {
+                modifier = jiaohua_expand_planet_1 
+                days = -1 
+                mult = num_APE_planet_modifer  # 使用10倍效果
+            }
+        }
+    }
+
+    ai_weight = { weight = 0 }  # 同上
+}

@@ -1,0 +1,3 @@
+zds_module_exclude_modifier = {
+    icon = gfx/interface/icons/planet_modifiers/pm_unrest.dds
+}

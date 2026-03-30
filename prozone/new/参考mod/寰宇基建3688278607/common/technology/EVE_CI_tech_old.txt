@@ -1,0 +1,405 @@
+#涌现算法
+tech_emergence_algorithm = {
+    area = physics
+    tier = 3
+    cost = 8000
+    category = { computing }
+    is_rare = yes
+
+    modifier = {
+        category_biology_research_speed_mult = 0.2
+        category_materials_research_speed_mult = 0.2
+    }
+
+    weight = 25
+
+    weight_modifier = {
+
+    }
+}
+
+#量子系统操纵
+
+tech_quantum_system_manipulation = {
+    area = physics
+    tier = 3
+    cost = 7500
+    is_rare = yes
+
+    modifier = {
+        country_physics_research_produces_mult = 0.05
+        country_engineering_research_produces_mult = 0.05
+        country_society_research_produces_mult = 0.05
+    }
+
+    weight = 25
+
+    weight_modifier = {
+
+    }
+}
+
+
+#局部引力操纵
+tech_gravitational_manipulation = {
+    area = physics
+    tier = 3
+    cost = 9200
+    category = { quantum_manipulation }
+    is_rare = yes
+    prerequisites = { tech_quantum_system_manipulation }
+
+    modifier = {
+        planet_building_build_speed_mult = 0.2
+    }
+
+    weight = 25
+
+    weight_modifier = {
+
+    }
+}
+
+#负能态粒子模型
+tech_negative_energy_particle_model = {
+    area = physics
+    tier = 2
+    cost = 9000
+    category = { particles }
+    is_rare = yes
+
+    modifier = {
+        country_physics_research_produces_mult = 0.15
+    }
+
+    weight = 25
+
+    weight_modifier = {
+
+    }
+}
+
+#空间架模型
+tech_space_frame_model = {
+    area = physics
+    tier = 4
+    cost = 12000
+    is_rare = yes
+
+    category = { spacetime_mutually }
+
+    prerequisites = { "tech_gravitational_manipulation" }
+
+    modifier = {
+        category_spacetime_mutually_research_speed_mult = 0.15
+        planet_building_build_speed_mult = 0.1
+    }
+
+    weight = 25
+
+
+}
+
+#######################
+#统一场论
+tech_unified_field_theory = {
+    area = physics
+    tier = 5
+    cost = 12000
+    category = { basic_theory }
+    is_rare = yes
+
+    weight = 10
+
+    modifier = {
+        all_technology_research_speed = 0.1
+    }
+
+    weight_modifier = {
+        modifier = {
+        }
+    }
+}
+
+#############################################
+##跨纬度研究LOCAL PLANE FOLDING FORCE FIELD##
+#############################################
+tech_mtp_dimension_stride_research = {
+    area = physics
+    cost = 175000
+    tier = 5
+    category = { Multidimensional_Technology }
+
+    is_rare = yes
+    is_dangerous = yes
+
+    prerequisites = {
+        "tech_starbase_5"
+        "tech_battleships"
+        "tech_jump_drive_1"
+        "tech_zero_point_power"
+        "tech_thrusters_4"
+        "tech_basic_science_lab_3"
+        "tech_physics_3"
+    }
+
+    modifier = {
+        physics_tech_cost_mult = -0.
+    }
+
+    weight = 10
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 10
+    }
+}
+#####################################################
+##四维物质传送机Four dimensional material transport##
+#####################################################
+tech_mtp_dimension_4_material_transfer = {
+    area = engineering
+    cost = 80000
+    tier = 5
+    category = { "Dimension_Engineering" }
+
+    is_rare = yes
+
+    prerequisites = { }
+
+    modifier = {
+        country_resource_max_alloys_add = 100000
+        country_resource_max_energy_add = 100000
+        country_resource_max_minerals_add = 100000
+        country_resource_max_food_add = 100000
+    }
+
+    weight = 10
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 10
+    }
+}
+############################################
+##小型微势面褶皱力场 tech_mtp_gravitation_micro_dimension_field##
+############################################
+tech_mtp_gravitation_micro_dimension_field = {
+    area = engineering
+    cost = 200000
+    tier = 5
+    category = { "Dimension_military_application" }
+
+    is_rare = yes
+
+    prerequisites = { "tech_mtp_dimension_4_material_transfer" }
+
+    modifier = {
+        shipsize_corvette_hull_add = 500
+        shipsize_destroyer_hull_add = 1000
+        shipsize_cruiser_hull_add = 2000
+        shipsize_battleship_hull_add = 4000
+        shipsize_titan_hull_add = 10000
+    }
+
+    weight = 10
+
+    weight_modifier = {
+        weight = 10
+    }
+    ai_weight = {
+    }
+}
+###################################################
+##运输船空间压缩 Transport ship space compression##
+###################################################
+tech_mtp_gravitation_space_compression = {
+    area = engineering
+    cost = 110000
+    tier = 5
+    category = { "Dimension_military_application" }
+
+    is_rare = yes
+
+    prerequisites = { "tech_mtp_gravitation_micro_dimension_field" }
+
+    modifier = {
+        army_attack_damage_mult = 0.5
+        army_health = 0.5
+    }
+
+    weight = 10
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 10
+    }
+}
+###########################################################
+##四维高价值物提取技术 Materials of different dimensions ##
+###########################################################
+tech_mtp_dimension_material_extraction = {
+    area = physics
+    cost = 190000
+    tier = 5
+    category = { Heterotopic_materials }
+
+    is_rare = yes
+
+    prerequisites = { "tech_mtp_dimension_4_material_transfer" }
+
+    modifier = {
+        ship_armor_add = 900
+    }
+
+    weight = 10
+    ai_weight = {
+        weight = 10
+    }
+}
+
+#######################################
+##窥视之窗 Parallel universe window##
+#######################################
+tech_mtp_dimension_parallel_universe_window = {
+    area = physics
+    cost = 220000
+    tier = 5
+    category = { tech_mtp_parallel_universe_theory }
+
+    is_rare = yes
+    is_dangerous = yes
+
+    prerequisites = { "tech_mtp_parallel_universe_theory" }
+
+    modifier = {
+        country_physics_research_produces_mult = 0.25
+        country_engineering_research_produces_mult = 0.25
+        country_society_research_produces_mult = 0.25
+    }
+
+    weight = 10
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 5
+    }
+}
+#############################
+##维度理论 Dimension theory##
+#############################
+tech_mtp_dimension_reduce_theory = {
+    area = society
+    cost = 3200
+    tier = 2
+    category = { Multidimensional_Technology }
+
+    is_rare = yes
+
+    modifier = {
+        country_influence_produces_mult = 0.2
+    }
+
+    weight = 5
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 5
+    }
+}
+
+######################
+## 空间构架解离理论 ##
+######################
+
+tech_mtp_phasestate_framework_dissociation = {
+    area = physics
+    tier = 4
+    cost = 12000
+    category = { Heterotopic_materials }
+
+    is_rare = yes
+    prerequisites = { "tech_space_frame_model" "tech_mtp_parallel_universe_theory" }
+
+    weight = 20
+    modifier = {
+        terraform_speed_mult = 0.25
+        terraforming_cost_mult = -0.5
+    }
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 3
+    }
+}
+
+##########################################
+##平行宇宙理论 Parallel universe theory##
+##########################################
+
+tech_mtp_parallel_universe_theory = {
+    area = physics
+    cost = 300000
+    tier = 5
+    is_rare = yes
+    is_dangerous = yes
+    category = { Multidimensional_Technology }
+
+    prerequisites = { "tech_mtp_dimension_stride_research" }
+
+    modifier = {
+        country_energy_cost_mult = -0.12
+        country_physics_research_produces_mult = 0.25
+    }
+
+    weight = 5
+
+    weight_modifier = {
+    }
+    ai_weight = {
+        weight = 2
+    }
+}
+
+##########################
+##思想钢印Module cooling##
+##########################
+mtp_tech_thought_stamp = {
+    area = society
+    cost = @repeatableTechBaseCost
+    cost_per_level = @repeatableTechLevelCost
+    tier = @repeatableTechTier
+    is_rare = yes
+
+    category = { particles }
+    ai_update_type = military
+    levels = -1
+    prerequisites = {"tech_lasers_4"}
+    weight = @repeatableTechWeight
+
+    prerequisites = { "tech_mtp_dimension_4_material_transfer" }
+
+    weight_modifier = {
+        factor = @repatableTechFactor
+    }
+
+    ai_weight = {
+        factor = 1.0
+    }
+
+    weight_groups = {
+        repeatable
+    }
+    mod_weight_if_group_picked = {
+        repeatable = 0.01
+    }
+
+    modifier = {
+        country_naval_cap_mult = 0.08
+    }
+}

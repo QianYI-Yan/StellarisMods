@@ -1,0 +1,60 @@
+namespace = shroud_tech_event
+
+country_event = {
+	id = shroud_tech_event.1
+	title = shroud_tech
+	desc = shroud_tech_event.1.desc
+	picture = GFX_evt_shroud_psionic_aura
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_psionic_aura 		# 灵能光环
+		add_research_option = tech_aura_intensification # 灵能光环增强
+		add_research_option = tech_psionic_suppression 	# 灵能压制
+		add_research_option = tech_aura_resonation 		# 光环共鸣
+		add_research_option = tech_materiality_engine 	# 物现引擎
+		add_research_option = tech_psionic_bombers 		# 灵能轰炸机
+		add_research_option = tech_psionic_lightning 	# 灵能雷霆
+		add_research_option = tech_psionic_disruptor 	# 灵能裂解炮
+		add_research_option = tech_zro_launcher 		# 泽珞发射器
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_psionic_aura } 			# 灵能光环
+		give_technology = { tech = tech_aura_intensification } 	# 灵能光环增强
+		give_technology = { tech = tech_psionic_suppression } 	# 灵能压制
+		give_technology = { tech = tech_aura_resonation } 		# 光环共鸣
+		give_technology = { tech = tech_materiality_engine } 	# 物现引擎
+		give_technology = { tech = tech_psionic_bombers } 		# 灵能轰炸机
+		give_technology = { tech = tech_psionic_lightning } 	# 灵能雷霆
+		give_technology = { tech = tech_psionic_disruptor } 	# 灵能裂解炮
+		give_technology = { tech = tech_zro_launcher } 			# 泽珞发射器
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+	option = {
+		name = shroud_tech_event.1.a
+		add_research_option = tech_psionic_theory 			# 灵能理论
+		add_research_option = tech_telepathy 				# 心灵感应
+		add_research_option = tech_precognition_interface 	# 预知接口
+		add_research_option = tech_thought_enforcement 		# 思想钢印
+		add_research_option = tech_psi_jump_drive_1			# 灵能跃迁引擎
+		add_research_option = tech_psionic_barrier 			# 灵能屏障
+		add_research_option = tech_psionic_shield 			# 灵能护盾
+		add_research_option = tech_cloaking_psi 			# 灵能相位场发生器
+	}
+	option = {
+		name = shroud_tech_event.1.b
+		add_research_option = tech_covenant_composer 	# 织缕刻印
+		add_research_option = tech_covenant_eater 		# 喰煞刻印
+		add_research_option = tech_covenant_instrument 	# 器具刻印
+		add_research_option = tech_covenant_cradle 		# 月窠刻印
+		add_research_option = tech_covenant_whisperers 	# 低语刻印
+	}
+}

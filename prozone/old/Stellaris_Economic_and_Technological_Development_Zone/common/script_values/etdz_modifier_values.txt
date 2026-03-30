@@ -1,0 +1,63 @@
+# ============================
+# ETDZ 阶段相关数值计算
+# ============================
+
+# 国家资源上限加成 = 阶段参数 × 100000
+etdz_phase_country_resource = {
+    value = $etdz_phase_level$
+    multiply = 100000
+}
+
+# 最大区划数量加成 = 阶段参数 × 4
+etdz_phase_max_districts = {
+    value = $etdz_phase_level$
+    multiply = 4
+}
+
+# 标准区划上限加成 = 阶段参数 × 2
+etdz_phase_district_generator = {
+    value = $etdz_phase_level$
+    multiply = 2
+}
+
+# 采矿区划上限加成 = 阶段参数 × 2
+etdz_phase_district_mining = {
+    value = $etdz_phase_level$
+    multiply = 2
+}
+
+# 农业区划上限加成 = 阶段参数 × 2
+etdz_phase_district_farming = {
+    value = $etdz_phase_level$
+    multiply = 2
+}
+
+# 建造速度加成 = 阶段参数 × 0.12
+etdz_phase_build_speed = {
+    value = $etdz_phase_level$
+    multiply = 0.12
+}
+
+# 人口增长速度加成 = 阶段参数 × 0.12
+etdz_phase_growth = {
+    value = $etdz_phase_level$
+    multiply = 0.12
+}
+
+# 工作产出加成 = 阶段参数 × 0.12
+etdz_phase_jobs = {
+    value = $etdz_phase_level$
+    multiply = 0.12
+}
+
+# 建筑建造成本加成 = 阶段参数 × -0.12
+etdz_phase_build_cost = {
+    value = $etdz_phase_level$
+    multiply = -0.12
+}
+
+# 建筑维护成本加成 = 阶段参数 × -0.12
+etdz_phase_upkeep = {
+    value = $etdz_phase_level$
+    multiply = -0.12
+}

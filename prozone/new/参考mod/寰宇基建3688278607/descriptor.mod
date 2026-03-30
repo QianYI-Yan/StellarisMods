@@ -1,0 +1,11 @@
+version="0.4"
+tags={
+	"Events"
+	"Technologies"
+	"Buildings"
+	"Fixes"
+}
+name="CosmicInfrastructure"
+picture="thumbnail.png"
+supported_version="v4.3.2"
+remote_file_id="3688278607"

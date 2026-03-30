@@ -1,0 +1,47 @@
+namespace = leviathans_tech_event
+
+country_event = {
+    id = leviathans_tech_event.1
+	title = leviathans_tech_event.1.name
+	desc = leviathans_tech_event.1.desc
+	picture = GFX_evt_space_dragon
+	is_triggered_only = yes
+
+	option = {
+		name = ocd_tech_event_add_research_option
+		add_research_option = tech_dragon_armor
+		add_research_option = tech_enigmatic_encoder
+		add_research_option = tech_enigmatic_decoder
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = ocd_tech_event_give_technology
+		give_technology = { tech = tech_dragon_armor }
+		give_technology = { tech = tech_enigmatic_encoder }
+		give_technology = { tech = tech_enigmatic_decoder }
+		country_event = {
+			id = ocd_tech_event.0
+		}
+	}
+	option = {
+		name = tjxb_event_back
+		country_event = {
+			id = ocd_tech_event.0
+		}
+		default_hide_option = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

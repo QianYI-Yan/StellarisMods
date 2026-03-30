@@ -1,0 +1,23 @@
+option = {
+    name = {
+        trigger = {
+            always = yes
+        }
+        text = csbs.1.$value$
+    }
+    hidden_effect = {
+        change_variable = {
+            which = csbs_now
+            value = $value$
+        }
+        add_modifier = {
+            modifier = csbs_ms
+            multiplier = csbs_now
+        }
+        country_event = {
+            id = csbs.1
+        }
+        custom_tooltip = csbs.1.$value$.tt
+    }
+
+}

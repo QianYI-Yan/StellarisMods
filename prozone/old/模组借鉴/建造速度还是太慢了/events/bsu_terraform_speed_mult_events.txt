@@ -1,0 +1,104 @@
+namespace = bsu_terraform_speed_mult_event
+
+country_event = { 
+    id = bsu_terraform_speed_mult_event.0
+    hide_window = yes
+    
+    is_triggered_only = yes
+    trigger = { 
+        is_ai = no
+    }
+    
+    immediate = {
+        if = { 
+            limit = {
+                not = {
+                    is_variable_set = bsu_terraform_speed_mult_variable
+                }
+            }
+            set_variable = {
+                which = bsu_terraform_speed_mult_variable
+                value = 0
+            }
+        }
+        country_event = {
+            id = bsu_terraform_speed_mult_event.1
+        }
+        set_country_flag = bsu_terraform_speed_mult_setting
+    }
+}
+
+country_event = {
+    id = bsu_terraform_speed_mult_event.1
+    picture = GFX_evt_a_rift_in_space
+    title = bsu_terraform_speed_mult_event.1.title
+    desc = bsu_terraform_speed_mult_event.1.desc
+
+    is_triggered_only = yes
+    trigger = {
+        is_ai = no
+    }
+
+    option = {
+        name = bsu_terraform_speed_mult_event.1.ok
+        hidden_effect = {
+            remove_country_flag = bsu_terraform_speed_mult_setting
+        }
+        add_modifier = {
+            modifier = bsu_terraform_speed_mult_static_modifier
+            mult = bsu_terraform_speed_mult_variable
+        }
+    }
+
+    option = {
+        name = bsu_terraform_speed_mult_event.1.variable_add_100
+        hidden_effect = {
+            change_variable = {
+                which = bsu_terraform_speed_mult_variable
+                value = 100
+            }
+            country_event = {
+                id = bsu_terraform_speed_mult_event.1
+            }
+        }
+    }
+
+    option = {
+        name = bsu_terraform_speed_mult_event.1.variable_add_10
+        hidden_effect = {
+            change_variable = {
+                which = bsu_terraform_speed_mult_variable
+                value = 10
+            }
+            country_event = {
+                id = bsu_terraform_speed_mult_event.1
+            }
+        }
+    }
+
+    option = {
+        name = bsu_terraform_speed_mult_event.1.variable_minus_10
+        hidden_effect = {
+            change_variable = {
+                which = bsu_terraform_speed_mult_variable
+                value = -10
+            }
+            country_event = {
+                id = bsu_terraform_speed_mult_event.1
+            }
+        }
+    }
+
+    option = {
+        name = bsu_terraform_speed_mult_event.1.variable_minus_100
+        hidden_effect = {
+            change_variable = {
+                which = bsu_terraform_speed_mult_variable
+                value = -100
+            }
+            country_event = {
+                id = bsu_terraform_speed_mult_event.1
+            }
+        }
+    }
+}

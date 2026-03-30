@@ -1,0 +1,44 @@
+if = {
+    limit = {
+        owner = {
+            has_country_flag = zds_module_flag_s$slot$_shipyard
+        }
+    }
+    set_starbase_module = {
+        slot = $slot$
+        module = shipyard
+    }
+}
+else_if = {
+    limit = {
+        owner = {
+            has_country_flag = zds_module_flag_s$slot$_anchorage
+        }
+    }
+    set_starbase_module = {
+        slot = $slot$
+        module = anchorage
+    }
+}
+else_if = {
+    limit = {
+        owner = {
+            has_country_flag = zds_module_flag_s$slot$_solar_panel_network
+        }
+    }
+    set_starbase_module = {
+        slot = $slot$
+        module = solar_panel_network
+    }
+}
+else_if = {
+    limit = {
+        owner = {
+            has_country_flag = zds_module_flag_s$slot$_detection_array
+        }
+    }
+    set_starbase_module = {
+        slot = $slot$
+        module = detection_array
+    }
+}

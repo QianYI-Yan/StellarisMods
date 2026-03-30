@@ -1,0 +1,50 @@
+# triggered district names will pick the first one that they hit.
+# triggered district names will pick the first one that they hit.
+
+triggered_name = {
+    trigger = {
+        has_any_normal_generator_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_4
+        }
+    }
+    text = jg_4
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_generator_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_3
+        }
+    }
+    text = jg_3
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_generator_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_2
+        }
+    }
+    text = jg_2
+}
+
+triggered_name = {
+    trigger = {
+        has_any_normal_generator_zone = yes
+        exists = owner
+        owner = {
+            has_technology = tech_power_plant_1
+        }
+    }
+    text = jg_1
+}
+
+triggered_name = {
+    text = jg_0
+}

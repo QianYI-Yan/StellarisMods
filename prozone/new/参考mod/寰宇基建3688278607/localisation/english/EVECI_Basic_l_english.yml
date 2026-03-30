@@ -1,0 +1,78 @@
+﻿l_english:
+ #法令
+ edict_EVE_edicts_MaternityAllowance: "§HCI:Maternity Allowance§!£pop£"
+ edict_EVE_edicts_MaternityAllowance_desc: "To encourage population growth and secure our empire’s future, we grant a Maternity Subsidy to eligible families across the realm. This eases the burden of raising children, boosting pop happiness and natural growth rate."
+ edict_EVE_edicts_SystemicProductionLine: "§HCI:System Production Line§!£pop£"
+ edict_EVE_edicts_SystemicProductionLine_desc: "Through galaxy-wide industrial scheduling and standardized assembly processes, we greatly improve the construction efficiency of mechanical pops, allowing synthetic units to join our imperial operations at an accelerated rate."
+ edict_EVE_edicts_BroodHivePropagation: "§HCI:Hive Propagation§!£pop£"
+ edict_EVE_edicts_BroodHivePropagation_desc: "The will of our Hive must focus greater energy on the propagation of its offspring. Worker drones will continuously deliver nourishment to the breeding gestalt entities."
+
+
+ #科技种类
+ structural_iteration:"§UArchitecture§!"
+ structural_iteration_desc:"magnifying or shrinking, strengthening or weakening a thing is not a simple matter of addition and subtraction—it is a rewriting of its overall structure. Our infrastructure will ultimately revolutionize the rules of production."
+
+ #科技
+ eve_tech_decision_focus_1: "§CCI:Focused Will§!£society£"
+ eve_tech_decision_focus_1_desc: "§WOur government works as one, concentrating all efforts on one thing.§!"
+ eve_tech_EnergyCycleFeedback: "§CCI:Energy Cycle Feedback§!£energy£"
+ eve_tech_EnergyCycleFeedback_desc: "By recycling waste energy from ships and infrastructure into a closed loop, our empire's energy efficiency is greatly improved, allowing every technician to produce more power."
+ eve_ci_tech_agri_architecture:0 "§CCI:Tech Agri-Architecture§!£society£"
+ eve_ci_tech_tech_agri_architecture_desc:0 "By deploying specialized technical teams to support agricultural production, we achieve intelligent control over the entire process of farming, breeding and resource recycling. Meanwhile, ecological data and genetic samples accumulated from agricultural practices feed back into our biological research system, significantly advancing progress in related fields."
+ eve_ci_tech_self_evolving_production_system_desc: "§CCI:Self-Evolving Production System§!£engineering£"
+ eve_ci_tech_self_evolving_production_system: "Pushing the boundaries of traditional static industrial paradigms, this technology integrates distributed intelligent modules with emergent computational logic. It enables production units to autonomously analyze operational data and dynamically restructure manufacturing processes without human intervention. Once deployed, all industrial complexes will possess self-diagnostic, adaptive optimization, and even self-replication capabilities, allowing instant adjustment of production ratios based on galactic resource fluctuations and wartime demands, achieving an exponential leap in productivity."
+ eve_ci_tech_energy_research_institute: "§CCI:Private Energy Research Institute§!£physics£"
+ eve_ci_tech_energy_research_institute_desc: "A cutting-edge research facility integrating stellar physics, vacuum energy extraction, and high-energy particle physics, upgrading scattered energy laboratories into a galaxy-wide research hub. This institute not only accelerates breakthroughs in clean energy technologies such as controlled nuclear fusion and zero-point energy extraction, but also enables directional observation and simulation of stellar energy through giant energy lens arrays, providing core theoretical support for megastructures like Dyson Swarms and interstellar energy transmission. Once deployed, it will significantly boost energy-related research speed across the empire and unlock higher-tier cosmic energy utilization technologies."
+ eve_tech_modular_vertical_farming: "§CCI:Modular Vertical Farming§!£food£"
+ eve_tech_modular_vertical_farming_desc: "Breaking the limits of traditional planar agriculture, we restructure planetary farming systems using standardized modules and vertical stacking architecture. With closed-loop environmental control, high-efficiency light utilization and automated cultivation networks, we drastically increase per-unit land productivity and reduce reliance on habitability, allowing deserts, ice worlds and orbital colonies to achieve stable food self-sufficiency, completely rewriting the rules of agricultural production across the galaxy. The massive vertical farming systems even extend thousands of kilometers underground, forming endless 立体 farmland within the rock strata, extending life and harvest to every neglected corner of the planet."
+ eve_tech_Deep_Full_Prospecting: "§CCI:Deep Full-Section Prospecting§!£minerals£"
+ eve_tech_Deep_Full_Prospecting_desc: "Break through the technical bottleneck of traditional planetary surface exploration, extend the exploration scope to the full-section structure of the planet's crust, mantle and even core, and greatly improve the detection accuracy and collection efficiency of minerals and strategic resources."
+ eve_tech_grid_coordination_control:0 "§CCI:Global Power Grid Coordination Control§!£energy£"
+ eve_tech_grid_coordination_control_desc:0 "Break through the transmission loss bottleneck of traditional planetary power grids, extending energy scheduling to the galaxy-wide network of colonies, starbases, and power facilities. Greatly improves energy output efficiency and grid stability. Unlocks the Global Intelligent Power Distribution System, recovers waste heat energy, and reduces power consumption for high-energy buildings."
+ eve_tech_tactical_command_system:0 "§CCI:Tactical Command System§!£commander£"
+ eve_tech_tactical_command_system_desc:0 "Integrates fleet fire control, ship maneuvering, and battlefield intelligence analysis networks, greatly improving the fleet's real-time responsiveness in complex combat environments. Enhances commander tactical effects, reduces ship delay and battle damage losses, granting the fleet a decisive advantage in deep-space encounters."
+
+ #区域特化
+ eve_ci_zone_food_biology: "§UCI:Advanced Biosphere Research Support§!£society£"
+ eve_ci_zone_minerals_engineering: "§UCI:Advanced Materials Science Research Support§!£engineering£"
+ eve_ci_zone_energy_physics: "§UCI:Advanced Physics Research Support§!£physics£"
+ eve_ci_zone_urban_energy: "§UCI:Advanced Energy Focus§!£energy£"
+ eve_ci_zone_urban_minerals: "§UCI:Advanced Mineral Focus§!£minerals£"
+ eve_ci_zone_urban_food: "§UCI:Advanced Food Focus§!£food£"
+ eve_ci_zone_food_biology_desc: "We may dispatch a number of specialists to oversee our basic resource production, while refining our current technologies."
+ mod_planet_eve_ci_zone_food_biology_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_food_biology_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_minerals_engineering_desc: "We may dispatch a number of specialists to oversee our basic resource production, while refining our current technologies."
+ mod_planet_eve_ci_zone_minerals_engineering_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_minerals_engineering_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_energy_physics_desc: "We may dispatch a number of specialists to oversee our basic resource production, while refining our current technologies."
+ mod_planet_eve_ci_zone_energy_physics_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_energy_physics_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_energy_desc: "We may incorporate more supporting facilities into our basic resource extraction and production."
+ mod_planet_eve_ci_zone_urban_energy_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_energy_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_minerals_desc: "We may incorporate more supporting facilities into our basic resource extraction and production."
+ mod_planet_eve_ci_zone_urban_minerals_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_minerals_build_speed_mult_desc: "REPLACE_ME"
+ eve_ci_zone_urban_food_desc: "We may incorporate more supporting facilities into our basic resource extraction and production."
+ mod_planet_eve_ci_zone_urban_food_build_speed_mult: "REPLACE_ME"
+ mod_planet_eve_ci_zone_urban_food_build_speed_mult_desc: "REPLACE_ME"
+
+ #区划
+ eve_district_generator_physics: "§UCI:Physics Production-Research Integration Complex§!£physics£"
+ #eve_district_generator_physics_name: "§UCI:物理学产研结合体§!£physics£"
+ eve_district_generator_physics_plural: "§UCI:Physics Production-Research Integration Complex§!£physics£"
+ jg_0: "§HPhysics-Focused Campus§!"
+ eve_district_kg_engineering: "§UCI:Engineering Production-Research Integration Complex§!£engineering£"
+ eve_district_kg_engineering_plural: "§UCI:Engineering Production-Research Integration Complex§!£engineering£"
+ kg_0: "§HEngineering-Focused Campus§!"
+ eve_district_nm_society: "§UCI:Society Production-Research Integration Complex§!£society£"
+ eve_district_nm_society_plural: "§UCI:Society Production-Research Integration Complex§!£society£"
+ nm_0: "§HSociety-Focused Campus§!"
+
+ #修正
+ mod_country_energy_cost_mult: "§UCountry Energy Cost Mult§!£energy£"
+
+ #飞升
+ ap_cosmic_infrastructure: "§UCosmic Infrastructure§!£megastructure£"
+ ap_cosmic_infrastructure_desc: "§WAt last, after countless acts of creation, every single one of us has come to understand. Creation is the ultimate purpose of the cosmos. And for this, we are willing to sacrifice everything.§!"

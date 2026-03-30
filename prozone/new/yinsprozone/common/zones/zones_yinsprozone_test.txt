@@ -1,7 +1,8 @@
+# 基础专精区
 zones_yinsprozone_test = {
 	icon = GFX_district_specialization_urban	# 图标：原版城市专精
 	base_buildtime = 180	# 建造时间：180天
-	# --- [1] 准入与显示逻辑 ---
+	#先决条件，不满隐藏
 	potential = {
 		exists = owner
 		owner = {
@@ -9,19 +10,61 @@ zones_yinsprozone_test = {
 		}
 		# 仅玩家可用，AI禁止
 	}
-	# --- [2] 建造资源消耗 ---
+	# 消耗
 	resources = {
-		category = planet_districts
+		category = planet_districts		# 资源类型
 		cost = {
-			minerals = 2400			# 矿物 2400
-			energy = 1200			# 能量币 1200
-			food = 2000			# 食物 2000
-			trade = 2000			# 贸易额 2000
-			consumer_goods = 450			# 消费品 450
-			alloys = 150			# 合金 150
+			minerals = 800			# 矿物
+			energy = 300			# 能量币
+			food = 200			# 食物
+			trade = 200			# 贸易额
+			consumer_goods = 50			# 消费品
+			alloys = 20			# 合金
 		}
 	}
-	# --- [3] 标签与联动体系 ---
+	# 简介
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = zones_yinsprozone_test_desc
+	}
+	# 星球修正
+	planet_modifier = {
+		zone_building_slots_add = 255		# 建筑槽位
+		#
+		planet_max_districts_add = 2		# 区划上限
+		planet_max_districts_mult = 0.01		# 区划上限倍率
+		# district_generator_max_add = 1		# 发电区划上限
+		# district_mining_max_add = 1		# 采矿区划上限
+		# district_farming_max_add = 1		# 农业区划上限
+		#
+		planet_housing_mult = 0.05		# 住房
+		planet_stability_mult = 0.05		# 稳定性
+		planet_amenities_mult = 0.05		# 舒适度
+		planet_crime_mult = 0.05		# 犯罪率
+		#
+		logistic_growth_mult = 0.01		# 人口增速
+		pop_demotion_time_mult = -0.05		# 降职时间
+		#
+		planet_districts_cost_mult = -0.05		# 区划花费
+		planet_buildings_cost_mult = -0.05		# 建筑花费
+		planet_building_build_speed_mult = 0.05		# 建筑建造速度
+		#
+		planet_jobs_produces_mult = 0.01		# 全岗位产出
+		planet_jobs_trade_produces_mult = 0.05		# 贸易值
+	}
+	# 内联
+	inline_script = "yinsprozone_zones_unban"	# 城市
+	# # 国家修正
+	# country_modifier = {
+	# 	country_resource_max_add = 0.1		# 资源存储上限
+	# }
+	# # AI权重
+	# ai_weight = {
+	# 	weight = 0		# 禁止AI建造
+	# }
+	# 标签
 	zone_sets = {
 		urban
 		food
@@ -30,8 +73,8 @@ zones_yinsprozone_test = {
 		research
 		habitat_urban
 	}
+	#building_sets
 	included_building_sets = {
-		#building_sets
 		urban
 		farming
 		mining
@@ -41,41 +84,4 @@ zones_yinsprozone_test = {
 		society
 		yinsprozone_buildings
 	}
-	# --- [4] 星球修正 ---
-	planet_modifier = {
-		# --- 社会与管理 ---
-		planet_stability_mult = 0.1		# 稳定性 +10%
-		planet_amenities_mult = 0.2		# 舒适度 +20%
-		planet_crime_mult = 0.05		# 犯罪率 +5%
-		# --- 人口与增长 ---
-		logistic_growth_mult = 0.33		# 人口增速 +33%
-		pop_demotion_time_mult = -0.35		# 降职时间 -35%
-		planet_housing_mult = 0.2		# 住房 +20%
-		# --- 基建与扩张 ---
-		zone_building_slots_add = 255		# 建筑槽位 +255
-		planet_max_districts_add = 5		# 区划上限 +5
-		planet_max_districts_mult = 0.1		# 区划上限 +10%
-		planet_districts_cost_mult = -0.15		# 区划花费 -15%
-		planet_buildings_cost_mult = -0.15		# 建筑花费 -15%
-		planet_building_build_speed_mult = 0.15		# 建筑建造速度 +15%
-		# --- 经济产出 ---
-		planet_jobs_produces_mult = 0.05		# 全岗位产出 +5%
-		planet_jobs_trade_produces_mult = 0.15		# 贸易值 +15%
-	}
-	# --- [4] inline ---
-	inline_script = "yinsprozone_zones_unban"
-	# --- [5] 国家修正 ---
-	# country_modifier = {
-	# 	country_resource_max_add = 0.1		# 资源存储上限 +10%
-	# }
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = zones_yinsprozone_test_desc
-	}
-	# # --- [6] AI权重 ---
-	# ai_weight = {
-	# 	weight = 0		# 禁止AI建造
-	# }
 }

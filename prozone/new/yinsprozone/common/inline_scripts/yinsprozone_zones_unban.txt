@@ -1,16 +1,90 @@
-# { 城市专精加成
+# 城市专精加成
 triggered_district_planet_modifier = {
 	potential = {
-		has_building = building_yinsprozone_unban
+		has_building = buildings_yinsprozone_unban
 	}
-	planet_housing_add = 300
-	country_resource_max_add = 2500
+	planet_housing_add = 300	# 住房
+	# # --------------------------------
+	# job_technician_add = 0	# 技工岗位
+	# job_miner_add = 0	# 矿工岗位
+	# job_farmer_add = 0	# 农夫岗位
+	# # -------------------------------
+	# job_mote_harvester_add = 0	# 微粒收割者岗位
+	# job_crystal_miner_add = 0	# 水晶矿工岗位
+	# job_gas_extractor_add = 0	# 气体提取者岗位
+	# # -------------------------------
+	# job_artisan_add = 0	# 工匠岗位
+	# job_foundry_add = 0	# 冶金师岗位
+	# # -------------------------------
+	# job_entertainer_add = 0	# 演艺人员岗位
+	job_trader_add = 20	# 商贩岗位
+	# # -------------------------------
+	# job_physicist_add = 0	# 物理学家岗位
+	# job_biologist_add = 0	# 生物学家岗位
+	# job_engineer_add = 0	# 工程师岗位
+	# # -------------------------------
+	# job_educator_add = 0	# 教育家岗位
+	job_enforcer_add = 5	# 执法者岗位
+	# # -------------------------------
+	job_healthcare_add = 3	# 医务工作者岗位
+	# job_soldier_add = 0	# 士兵岗位
+	# # -------------------------------
+	job_bureaucrat_add = 1	# 官僚岗位
+	# # -------------------------------
 }
 
-# triggered_district_country_modifier = {
-# 	potential = {
-# 		has_building = building_yinsprozone_unban
-# 	}
-# 	country_resource_max_add = 2500
-# }
-# }	
+triggered_district_country_modifier = {
+	potential = {
+		has_building = buildings_yinsprozone_unban
+	}
+	country_resource_max_add = 2500	# 国家资源上限
+}
+
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------
+# lv1
+triggered_district_planet_modifier = {
+	potential = {
+		has_building = buildings_yinsprozone_unban_1
+	}
+	planet_housing_add = 500	# 住房
+	# # --------------------------------
+	# job_technician_add = 0	# 技工岗位
+	# job_miner_add = 0	# 矿工岗位
+	# job_farmer_add = 0	# 农夫岗位
+	# # -------------------------------
+	# job_mote_harvester_add = 0	# 微粒收割者岗位
+	# job_crystal_miner_add = 0	# 水晶矿工岗位
+	# job_gas_extractor_add = 0	# 气体提取者岗位
+	# # -------------------------------
+	# job_artisan_add = 0	# 工匠岗位
+	# job_foundry_add = 0	# 冶金师岗位
+	# # -------------------------------
+	# job_entertainer_add = 0	# 演艺人员岗位
+	job_trader_add = 50	# 商贩岗位
+	# # -------------------------------
+	# job_physicist_add = 0	# 物理学家岗位
+	# job_biologist_add = 0	# 生物学家岗位
+	# job_engineer_add = 0	# 工程师岗位
+	# # -------------------------------
+	# job_educator_add = 0	# 教育家岗位
+	job_enforcer_add = 10	# 执法者岗位
+	# # -------------------------------
+	job_healthcare_add = 5	# 医务工作者岗位
+	# job_soldier_add = 0	# 士兵岗位
+	# # -------------------------------
+	job_bureaucrat_add = 3	# 官僚岗位
+	# # -------------------------------
+}
+
+triggered_district_country_modifier = {
+	potential = {
+		has_building = buildings_yinsprozone_unban
+	}
+	country_resource_max_add = 3500	# 国家资源上限
+}
+
+# ---------------------------------
+# ---------------------------------
+# ---------------------------------

@@ -1,16 +1,23 @@
-#住房规划
+# 基础城市规划
 buildings_yinsprozone_unban = {
 	base_buildtime = 360	# 基础建造时间，单位为天
-	# capital = yes # 是否是首都建筑
+	# capital = yes	# 是否是首都建筑
 	can_build = yes	# 是否可修建
 	can_demolish = yes	# 是否可被拆除
 	can_be_ruined = yes	# 能否被废弃
 	can_be_disabled = yes	# 能否被停止运作
 	# icon = xxx
-	category = amenity
+	category = amenity 	# 建筑类别
+	# pop_assembly	government	resource	manufacturing
+	# 人口组装		政府		资源		制造业	
+	# research	trade	amenity	unity	army
+	# 研究		贸易	舒适度	凝聚力	军队
+	position_priority = 32767	# 建筑优先级
+	base_cap_amount = 1	#每个星球最大建造数
 	building_sets = {
 		yinsprozone_buildings
 	}
+	#先决条件，不满隐藏
 	potential = {
 		exists = owner
 		owner = {
@@ -18,31 +25,19 @@ buildings_yinsprozone_unban = {
 		}
 		# 仅玩家可用，AI禁止
 	}
+	# 条件，不满变灰
 	allow = {
-		# 允许，满足下列条件，则该建筑可以被允许建造
 		has_upgraded_capital = yes
 	}
 	# abort_trigger = {}        # 当该触发器满足条件时，建造将被取消
 	# ruined_trigger = {}       # 当该触发器满足条件时，建筑将被废弃
 	# destroy_trigger = {}      # 当该触发器满足条件时，建筑将被摧毁
 	# convert_to = {}           # 可被转化的目标` [建筑ID](如果判断为不可用)` 例如智械帝国征服了蜂群帝国之后，改变星球首府建筑
-	# planet_modifier = { }     # 星球范围内的修正
-	# country_modifier = {}     # 国家范围内的修正。
-	# triggered_planet_modifier = {
-	# 	# 条件触发的修正器，不满足条件则无法获得修正
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = {
-	# 			is_ai = no
-	# 		}
-	# 		# 仅玩家可用，AI禁止
-	# 	}
-	# }
 	planet_modifier = {
 		planet_max_districts_add = 2		# 区划上限 +2
 	}
 	country_modifier = {
-	country_resource_max_add = 5000
+		country_resource_max_add = 5000		# 国家资源上限 +5000
 	}
 	resources = {
 		# 资源相关
@@ -56,11 +51,12 @@ buildings_yinsprozone_unban = {
 			energy = 4
 		}
 	}
-	# upgrades = {            # 升级到什么建筑
-	#     ""
-	# }
+	# 升级到什么建筑
+	upgrades = {
+		"buildings_yinsprozone_unban_1"
+	}
+	# 需要的前置科技
 	# prerequisites = {
-	# 	# 需要的前置科技
 	# 	""
 	# }
 	triggered_desc = {
@@ -78,3 +74,81 @@ buildings_yinsprozone_unban = {
 		weight = 0
 	}
 }
+
+# 城市规划1
+buildings_yinsprozone_unban_1 = {
+	base_buildtime = 360	# 基础建造时间，单位为天
+	# capital = yes	# 是否是首都建筑
+	can_build = yes	# 是否可修建
+	can_demolish = yes	# 是否可被拆除
+	can_be_ruined = yes	# 能否被废弃
+	can_be_disabled = yes	# 能否被停止运作
+	# icon = xxx
+	category = amenity 	# 建筑类别
+	# pop_assembly	government	resource	manufacturing
+	# 人口组装		政府		资源		制造业	
+	# research	trade	amenity	unity	army
+	# 研究		贸易	舒适度	凝聚力	军队
+	position_priority = 32767	# 建筑优先级
+	base_cap_amount = 1	#每个星球最大建造数
+	building_sets = {
+		yinsprozone_buildings
+	}
+	#先决条件，不满隐藏
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+		}
+		# 仅玩家可用，AI禁止
+	}
+	# 条件，不满变灰
+	allow = {
+		has_upgraded_capital = yes
+	}
+	# abort_trigger = {}        # 当该触发器满足条件时，建造将被取消
+	# ruined_trigger = {}       # 当该触发器满足条件时，建筑将被废弃
+	# destroy_trigger = {}      # 当该触发器满足条件时，建筑将被摧毁
+	# convert_to = {}           # 可被转化的目标` [建筑ID](如果判断为不可用)` 例如智械帝国征服了蜂群帝国之后，改变星球首府建筑
+	planet_modifier = {
+		planet_max_districts_add = 2		# 区划上限 +2
+	}
+	country_modifier = {
+		country_resource_max_add = 5000		# 国家资源上限 +5000
+	}
+	resources = {
+		# 资源相关
+		category = planet_buildings		# 类型
+		cost = {
+			# 一次性花费
+			minerals = 600
+		}
+		upkeep = {
+			# 维持，为每月多少
+			energy = 5
+		}
+	}
+	# 升级到什么建筑
+	upgrades = {
+		# "buildings_yinsprozone_unban_2"
+	}
+	# 需要的前置科技
+	# prerequisites = {
+	# 	""
+	# }
+	triggered_desc = {
+		# 条件触发的文本，满足条件才对玩家显示建筑的文本
+		trigger = {
+			exists = owner
+			owner = {
+				is_ai = no
+			}
+			# 不是AI
+		}
+		text = buildings_yinsprozone_unban_1_desc		# 具体的文本
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+

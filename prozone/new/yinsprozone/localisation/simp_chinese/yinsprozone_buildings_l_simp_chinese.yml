@@ -1,5 +1,10 @@
-﻿l_simp_chinese:
-  buildings_yinsprozone_unban: "市区初期规划"
-  buildings_yinsprozone_unban_desc: "这个可以给你每区划加300住房和2500的资源上限\n20商贩5执法3医疗1官僚\n\n\n\n我还不知道怎么把建筑锁在区划里面所以请你把建筑造区划里面\nby-yinsprozone"
-  buildings_yinsprozone_unban_1: "市区中期规划"
-  buildings_yinsprozone_unban_1_desc: "这个可以给你每区划加500住房和3500的资源上限\n50商贩10执法5医疗3官僚\n\n\n\nby-yinsprozone"
+﻿# 建筑文本
+l_simp_chinese:
+ buildings_yinsprozone_unban: "市区初期规划"
+ buildings_yinsprozone_unban_desc: "这个可以给你每区划加300住房和2500的资源上限\n我还不知道怎么把建筑锁在区划里面所以请你把建筑造区划里面\nby-yinsprozone"
+ buildings_yinsprozone_unban_1: "市区中期规划"
+ buildings_yinsprozone_unban_1_desc: "这个可以给你每区划加500住房和3500的资源上限\nby-yinsprozone"
+ buildings_yinsprozone_p1p1: "纯粹的+1"
+ buildings_yinsprozone_p1p1_desc: "字面意思"
+ buildings_yinsprozone_p1p2: "纯粹的+1（2）"
+ buildings_yinsprozone_p1p2_desc: "字面意思"

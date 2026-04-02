@@ -1,0 +1,89 @@
+# unban job add 数值
+# ============================================================
+# 城市专精数值变量 (变量名 = 数值)
+# ============================================================
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 住房 (Housing) ---
+# 住房加成
+@yisnprozone_var_housing_add_unban = 300
+@yisnprozone_var_housing_add_unban_1 = 500
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 基础资源岗位 (Basic Resource Jobs) ---
+# 技工岗位	城市修电线来的说是
+@yisnprozone_var_technician_add_unban = 1
+@yisnprozone_var_technician_add_unban_1 = 3
+# 矿工岗位
+@yisnprozone_var_miner_add_unban = 0
+@yisnprozone_var_miner_add_unban_1 = 0
+# 农夫岗位
+@yisnprozone_var_farmer_add_unban = 0
+@yisnprozone_var_farmer_add_unban_1 = 0
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 稀有资源岗位 (Strategic Resource Jobs) ---
+# 易爆微粒岗位
+@yisnprozone_var_mote_harvester_add_unban = 0
+@yisnprozone_var_mote_harvester_add_unban_1 = 0
+# 稀有水晶岗位
+@yisnprozone_var_crystal_miner_add_unban = 0
+@yisnprozone_var_crystal_miner_add_unban_1 = 0
+# 异星天然气岗位
+@yisnprozone_var_gas_extractor_add_unban = 0
+@yisnprozone_var_gas_extractor_add_unban_1 = 0
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 工业岗位 (Industrial Jobs) ---
+# 工匠岗位
+@yisnprozone_var_artisan_add_unban = 0
+@yisnprozone_var_artisan_add_unban_1 = 0
+# 冶金师岗位
+@yisnprozone_var_foundry_add_unban = 0
+@yisnprozone_var_foundry_add_unban_1 = 0
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 社会与商业岗位 (Social & Trade Jobs) ---
+# 演艺人员岗位
+@yisnprozone_var_entertainer_add_unban = 10
+@yisnprozone_var_entertainer_add_unban_1 = 20
+# 商贩岗位
+@yisnprozone_var_trader_add_unban = 20
+@yisnprozone_var_trader_add_unban_1 = 50
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 科研岗位 (Research Jobs) ---
+# 物理学家岗位
+@yisnprozone_var_physicist_add_unban = 0
+@yisnprozone_var_physicist_add_unban_1 = 0
+# 生物学家岗位
+@yisnprozone_var_biologist_add_unban = 0
+@yisnprozone_var_biologist_add_unban_1 = 0
+# 工程师岗位
+@yisnprozone_var_engineer_add_unban = 0
+@yisnprozone_var_engineer_add_unban_1 = 0
+# ############################################################
+# ############################################################
+# ############################################################
+# --- 其他功能性岗位 (Functional Jobs) ---
+# 教育家岗位
+@yisnprozone_var_educator_add_unban = 0
+@yisnprozone_var_educator_add_unban_1 = 0
+# 执法者岗位
+@yisnprozone_var_enforcer_add_unban = 5
+@yisnprozone_var_enforcer_add_unban_1 = 10
+# 医务工作者岗位
+@yisnprozone_var_healthcare_add_unban = 3
+@yisnprozone_var_healthcare_add_unban_1 = 5
+# 士兵岗位
+@yisnprozone_var_soldier_add_unban = 0
+@yisnprozone_var_soldier_add_unban_1 = 0
+# 官僚岗位
+@yisnprozone_var_bureaucrat_add_unban = 1
+@yisnprozone_var_bureaucrat_add_unban_1 = 3

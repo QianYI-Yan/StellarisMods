@@ -1,0 +1,96 @@
+# 基础专精区
+zones_yinsprozone_unbanpro = {
+    icon = GFX_district_specialization_urban    # 图标：原版城市专精
+    base_buildtime = 180    # 建造时间：180天
+    #先决条件，不满隐藏
+    potential = {
+        exists = owner
+        owner = {
+            is_ai = no
+        }
+        # 仅玩家可用，AI禁止
+    }
+    # 消耗
+    resources = {
+        category = planet_districts        # 资源类型
+        cost = {
+            minerals = 1200            # 矿物
+            energy = 600            # 能量币
+            food = 400            # 食物
+            trade = 400            # 贸易额
+            consumer_goods = 150            # 消费品
+            alloys = 120            # 合金
+        }
+    }
+    # 星球修正
+    planet_modifier = {
+        zone_building_slots_add = 255        # 建筑槽位
+        #
+        planet_max_districts_add = 5        # 区划上限
+        planet_max_districts_mult = 0.05        # 区划上限倍率
+        # district_generator_max_add = 1		# 发电区划上限
+        # district_mining_max_add = 1		# 采矿区划上限
+        # district_farming_max_add = 1		# 农业区划上限
+        #
+        planet_housing_mult = 0.1        # 住房
+        planet_stability_mult = 0.1        # 稳定性
+        planet_amenities_mult = 0.1        # 舒适度
+        planet_crime_mult = 0.02        # 犯罪率
+        #
+        logistic_growth_mult = 0.05        # 人口增速
+        pop_demotion_time_mult = -0.1        # 降职时间
+        #
+        planet_districts_cost_mult = -0.1        # 区划花费
+        planet_buildings_cost_mult = -0.1        # 建筑花费
+        planet_building_build_speed_mult = 0.1        # 建筑建造速度
+        #
+        planet_jobs_produces_mult = 0.08        # 全岗位产出
+        planet_jobs_trade_produces_mult = 0.15        # 贸易值
+    }
+    # 内联
+    inline_script = {
+        script = yinsprozone_zones_unban        # 城市
+        mult = 1.5
+    }
+    # # 国家修正
+    # country_modifier = {
+    # 	country_resource_max_add = 0.1		# 资源存储上限
+    # }
+    # # AI权重
+    # ai_weight = {
+    # 	weight = 0		# 禁止AI建造
+    # }
+    # 标签
+    zone_sets = {
+        urban
+        food
+        minerals
+        energy
+        research
+        habitat_urban
+    }
+    #building_sets
+    included_building_sets = {
+        urban
+        farming
+        mining
+        generator
+        physics
+        engineering
+        society
+        yinsprozone_buildings
+    }
+    # 简介
+    # 这是mod标记
+    triggered_desc = {
+        # 条件触发的文本，满足条件才对玩家显示建筑的文本
+        trigger = {
+            exists = owner
+            owner = {
+                is_ai = no
+            }
+            # 不是AI
+        }
+        text = by_yinsprozone        # 具体的文本
+    }
+}

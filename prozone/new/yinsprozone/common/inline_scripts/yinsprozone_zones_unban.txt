@@ -1,90 +1,79 @@
-# 城市专精加成
+# 区划调用，有城市专精建筑
+# ============================================================
+# ============================================================
+# ============================================================
+# --- UNBAN ---
 triggered_district_planet_modifier = {
-	potential = {
-		has_building = buildings_yinsprozone_unban
-	}
-	planet_housing_add = 300	# 住房
-	# # --------------------------------
-	# job_technician_add = 0	# 技工岗位
-	# job_miner_add = 0	# 矿工岗位
-	# job_farmer_add = 0	# 农夫岗位
-	# # -------------------------------
-	# job_mote_harvester_add = 0	# 微粒收割者岗位
-	# job_crystal_miner_add = 0	# 水晶矿工岗位
-	# job_gas_extractor_add = 0	# 气体提取者岗位
-	# # -------------------------------
-	# job_artisan_add = 0	# 工匠岗位
-	# job_foundry_add = 0	# 冶金师岗位
-	# # -------------------------------
-	# job_entertainer_add = 0	# 演艺人员岗位
-	job_trader_add = 20	# 商贩岗位
-	# # -------------------------------
-	# job_physicist_add = 0	# 物理学家岗位
-	# job_biologist_add = 0	# 生物学家岗位
-	# job_engineer_add = 0	# 工程师岗位
-	# # -------------------------------
-	# job_educator_add = 0	# 教育家岗位
-	job_enforcer_add = 5	# 执法者岗位
-	# # -------------------------------
-	job_healthcare_add = 3	# 医务工作者岗位
-	# job_soldier_add = 0	# 士兵岗位
-	# # -------------------------------
-	job_bureaucrat_add = 1	# 官僚岗位
-	# # -------------------------------
+    potential = {
+        has_active_building = buildings_yinsprozone_unban
+    }
+    planet_housing_add = @yisnprozone_var_housing_add_unban    # 住房
+    # -- 基础资源 --
+    job_technician_add = @yisnprozone_var_technician_add_unban    # 技工
+    job_miner_add = @yisnprozone_var_miner_add_unban    # 矿工
+    job_farmer_add = @yisnprozone_var_farmer_add_unban    # 农夫
+    # -- 稀有资源 --
+    job_mote_harvester_add = @yisnprozone_var_mote_harvester_add_unban    # 微粒
+    job_crystal_miner_add = @yisnprozone_var_crystal_miner_add_unban    # 水晶
+    job_gas_extractor_add = @yisnprozone_var_gas_extractor_add_unban    # 天然气
+    # -- 工业 --
+    job_artisan_add = @yisnprozone_var_artisan_add_unban    # 工匠
+    job_foundry_add = @yisnprozone_var_foundry_add_unban    # 冶金
+    # -- 社会贸易 --
+    job_entertainer_add = @yisnprozone_var_entertainer_add_unban    # 演艺
+    job_trader_add = @yisnprozone_var_trader_add_unban    # 商贩
+    # -- 科研 --
+    job_physicist_add = @yisnprozone_var_physicist_add_unban    # 物理
+    job_biologist_add = @yisnprozone_var_biologist_add_unban    # 生物
+    job_engineer_add = @yisnprozone_var_engineer_add_unban    # 工程
+    # -- 功能 --
+    job_educator_add = @yisnprozone_var_educator_add_unban    # 教育
+    job_enforcer_add = @yisnprozone_var_enforcer_add_unban    # 执法
+    job_healthcare_add = @yisnprozone_var_healthcare_add_unban    # 医务
+    job_soldier_add = @yisnprozone_var_soldier_add_unban    # 士兵
+    job_bureaucrat_add = @yisnprozone_var_bureaucrat_add_unban    # 官僚
+    mult = $mult$
 }
 
+# --- 国家修饰 基础 ---
 triggered_district_country_modifier = {
-	potential = {
-		has_building = buildings_yinsprozone_unban
-	}
-	country_resource_max_add = 2500	# 国家资源上限
+    potential = {
+        has_active_building = buildings_yinsprozone_unban
+    }
+    country_resource_max_add = 2500    # 资源上限
 }
 
-# ---------------------------------
-# ---------------------------------
-# ---------------------------------
-# lv1
+# --- UNBAN_1 ---
 triggered_district_planet_modifier = {
-	potential = {
-		has_building = buildings_yinsprozone_unban_1
-	}
-	planet_housing_add = 500	# 住房
-	# # --------------------------------
-	# job_technician_add = 0	# 技工岗位
-	# job_miner_add = 0	# 矿工岗位
-	# job_farmer_add = 0	# 农夫岗位
-	# # -------------------------------
-	# job_mote_harvester_add = 0	# 微粒收割者岗位
-	# job_crystal_miner_add = 0	# 水晶矿工岗位
-	# job_gas_extractor_add = 0	# 气体提取者岗位
-	# # -------------------------------
-	# job_artisan_add = 0	# 工匠岗位
-	# job_foundry_add = 0	# 冶金师岗位
-	# # -------------------------------
-	# job_entertainer_add = 0	# 演艺人员岗位
-	job_trader_add = 50	# 商贩岗位
-	# # -------------------------------
-	# job_physicist_add = 0	# 物理学家岗位
-	# job_biologist_add = 0	# 生物学家岗位
-	# job_engineer_add = 0	# 工程师岗位
-	# # -------------------------------
-	# job_educator_add = 0	# 教育家岗位
-	job_enforcer_add = 10	# 执法者岗位
-	# # -------------------------------
-	job_healthcare_add = 5	# 医务工作者岗位
-	# job_soldier_add = 0	# 士兵岗位
-	# # -------------------------------
-	job_bureaucrat_add = 3	# 官僚岗位
-	# # -------------------------------
+    potential = {
+        has_active_building = buildings_yinsprozone_unban_1
+    }
+    planet_housing_add = @yisnprozone_var_housing_add_unban_1    # 住房
+    job_technician_add = @yisnprozone_var_technician_add_unban_1    # 技工
+    job_miner_add = @yisnprozone_var_miner_add_unban_1    # 矿工
+    job_farmer_add = @yisnprozone_var_farmer_add_unban_1    # 农夫
+    job_mote_harvester_add = @yisnprozone_var_mote_harvester_add_unban_1    # 微粒
+    job_crystal_miner_add = @yisnprozone_var_crystal_miner_add_unban_1    # 水晶
+    job_gas_extractor_add = @yisnprozone_var_gas_extractor_add_unban_1    # 天然气
+    job_artisan_add = @yisnprozone_var_artisan_add_unban_1    # 工匠
+    job_foundry_add = @yisnprozone_var_foundry_add_unban_1    # 冶金
+    job_entertainer_add = @yisnprozone_var_entertainer_add_unban_1    # 演艺
+    job_trader_add = @yisnprozone_var_trader_add_unban_1    # 商贩
+    job_physicist_add = @yisnprozone_var_physicist_add_unban_1    # 物理
+    job_biologist_add = @yisnprozone_var_biologist_add_unban_1    # 生物
+    job_engineer_add = @yisnprozone_var_engineer_add_unban_1    # 工程
+    job_educator_add = @yisnprozone_var_educator_add_unban_1    # 教育
+    job_enforcer_add = @yisnprozone_var_enforcer_add_unban_1    # 执法
+    job_healthcare_add = @yisnprozone_var_healthcare_add_unban_1    # 医务
+    job_soldier_add = @yisnprozone_var_soldier_add_unban_1    # 士兵
+    job_bureaucrat_add = @yisnprozone_var_bureaucrat_add_unban_1    # 官僚
+    mult = $mult$
 }
 
+# --- 国家修饰 ---
 triggered_district_country_modifier = {
-	potential = {
-		has_building = buildings_yinsprozone_unban_1
-	}
-	country_resource_max_add = 3500	# 国家资源上限
+    potential = {
+        has_active_building = buildings_yinsprozone_unban_1
+    }
+    country_resource_max_add = 3500    # 资源上限
 }
-
-# ---------------------------------
-# ---------------------------------
-# ---------------------------------

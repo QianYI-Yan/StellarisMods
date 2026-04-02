@@ -1,5 +1,5 @@
-# 基础城市规划
-buildings_yinsprozone_unban = {
+# 我认为区划太几把少了
+buildings_yinsprozone_p1p1 = {
     base_buildtime = 360    # 基础建造时间，单位为天
     # capital = yes	# 是否是首都建筑
     can_build = yes    # 是否可修建
@@ -13,7 +13,7 @@ buildings_yinsprozone_unban = {
     # research	trade	amenity	unity	army
     # 研究		贸易	舒适度	凝聚力	军队
     position_priority = 32767    # 建筑优先级
-    base_cap_amount = 1    #每个星球最大建造数
+    # base_cap_amount = 1	#每个星球最大建造数
     building_sets = {
         yinsprozone_buildings
     }
@@ -34,30 +34,35 @@ buildings_yinsprozone_unban = {
     # destroy_trigger = {}      # 当该触发器满足条件时，建筑将被摧毁
     # convert_to = {}           # 可被转化的目标` [建筑ID](如果判断为不可用)` 例如智械帝国征服了蜂群帝国之后，改变星球首府建筑
     planet_modifier = {
-        planet_max_districts_add = 2        # 区划上限
+        planet_max_districts_add = 5        # 区划上限
     }
     country_modifier = {
-        country_resource_max_add = 5000        # 国家资源上限
+        # country_resource_max_add = 15000		# 国家资源上限
     }
+    # 我认为不能加资源上限
     resources = {
         # 资源相关
         category = planet_buildings        # 类型
         cost = {
             # 一次性花费
-            minerals = 400
+            minerals = 4000
         }
         upkeep = {
             # 维持，为每月多少
-            energy = 4
+            energy = 10
         }
     }
     # 升级到什么建筑
     upgrades = {
-        "buildings_yinsprozone_unban_1"
+        "buildings_yinsprozone_p1p2"
     }
     # 需要的前置科技
     # prerequisites = {
     # 	""
+    # }
+    # inline_script = {
+    # 	script = yinsprozone_buildings_desc_s		# 建筑描述
+    # 	suffix = _p1p1
     # }
     # 这是mod标记
     triggered_desc = {
@@ -76,8 +81,8 @@ buildings_yinsprozone_unban = {
     }
 }
 
-# 城市规划1
-buildings_yinsprozone_unban_1 = {
+# 急了
+buildings_yinsprozone_p1p2 = {
     base_buildtime = 360    # 基础建造时间，单位为天
     # capital = yes	# 是否是首都建筑
     can_build = yes    # 是否可修建
@@ -91,7 +96,7 @@ buildings_yinsprozone_unban_1 = {
     # research	trade	amenity	unity	army
     # 研究		贸易	舒适度	凝聚力	军队
     position_priority = 32767    # 建筑优先级
-    base_cap_amount = 1    #每个星球最大建造数
+    # base_cap_amount = 1	#每个星球最大建造数
     building_sets = {
         yinsprozone_buildings
     }
@@ -112,30 +117,35 @@ buildings_yinsprozone_unban_1 = {
     # destroy_trigger = {}      # 当该触发器满足条件时，建筑将被摧毁
     # convert_to = {}           # 可被转化的目标` [建筑ID](如果判断为不可用)` 例如智械帝国征服了蜂群帝国之后，改变星球首府建筑
     planet_modifier = {
-        planet_max_districts_add = 2        # 区划上限
+        planet_max_districts_add = 15        # 区划上限
     }
     country_modifier = {
-        country_resource_max_add = 5000        # 国家资源上限
+        # country_resource_max_add = 55000		# 国家资源上限
     }
+    # 俺寻思这应该填个很魔怔的数值
     resources = {
         # 资源相关
         category = planet_buildings        # 类型
         cost = {
             # 一次性花费
-            minerals = 600
+            minerals = 40000
         }
         upkeep = {
             # 维持，为每月多少
-            energy = 5
+            energy = 100
         }
     }
     # 升级到什么建筑
     upgrades = {
-        # "buildings_yinsprozone_unban_2"
+        # "buildings_yinsprozone_p1p2"
     }
     # 需要的前置科技
     # prerequisites = {
     # 	""
+    # }
+    # inline_script = {
+    # 	script = yinsprozone_buildings_desc_s		# 建筑描述
+    # 	suffix = _p1p2
     # }
     # 这是mod标记
     triggered_desc = {
